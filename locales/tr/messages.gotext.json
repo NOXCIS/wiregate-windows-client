@@ -60,9 +60,9 @@
             ]
         },
         {
-            "id": "You must use the native version of WireGate on this computer.",
-            "message": "You must use the native version of WireGate on this computer.",
-            "translation": "Bu bilgisayarda WireGate'ın yerel sürümünü kullanmalısınız.",
+            "id": "You must use the native version of AmneziaWG on this computer.",
+            "message": "You must use the native version of AmneziaWG on this computer.",
+            "translation": "Bu bilgisayarda AmneziaWG'ın yerel sürümünü kullanmalısınız.",
             "translatorComment": "Copied from source."
         },
         {
@@ -82,9 +82,9 @@
             ]
         },
         {
-            "id": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "message": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "WireGate'ı sadece yerleşik {AdminGroupName} grubunun üyeleri kullanabilir.",
+            "id": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "message": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "translation": "AmneziaWG'ı sadece yerleşik {AdminGroupName} grubunun üyeleri kullanabilir.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -98,9 +98,9 @@
             ]
         },
         {
-            "id": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "message": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "WireGate çalışıyor fakat kullanıcı arayüzüne sadece yerleşik {AdminGroupName} grubunun bilgisayarlarından erişilebilir.",
+            "id": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "message": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "translation": "AmneziaWG çalışıyor fakat kullanıcı arayüzüne sadece yerleşik {AdminGroupName} grubunun bilgisayarlarından erişilebilir.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -114,9 +114,9 @@
             ]
         },
         {
-            "id": "WireGate system tray icon did not appear after 30 seconds.",
-            "message": "WireGate system tray icon did not appear after 30 seconds.",
-            "translation": "WireGate sistem tepsisi simgesi 30 saniye sonunda belirmedi.",
+            "id": "AmneziaWG system tray icon did not appear after 30 seconds.",
+            "message": "AmneziaWG system tray icon did not appear after 30 seconds.",
+            "translation": "AmneziaWG sistem tepsisi simgesi 30 saniye sonunda belirmedi.",
             "translatorComment": "Copied from source."
         },
         {
@@ -574,15 +574,15 @@
             "comment": "Text to insert when combining units of a measure - most languages will translate ‘[UnitSeparator]’ into ‘ ’ (space) to produce lists like ‘2 minuti 30 sekund’, or empty string ‘’ to produce ‘2分30秒’."
         },
         {
-            "id": "About WireGate",
-            "message": "About WireGate",
-            "translation": "WireGate Hakkında",
+            "id": "About AmneziaWG",
+            "message": "About AmneziaWG",
+            "translation": "AmneziaWG Hakkında",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGate logo image",
-            "message": "WireGate logo image",
-            "translation": "WireGate logosu",
+            "id": "AmneziaWG logo image",
+            "message": "AmneziaWG logo image",
+            "translation": "AmneziaWG logosu",
             "translatorComment": "Copied from source."
         },
         {
@@ -1066,9 +1066,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "&About WireGate…",
-            "message": "&About WireGate…",
-            "translation": "&WireGate hakkında…",
+            "id": "&About AmneziaWG…",
+            "message": "&About AmneziaWG…",
+            "translation": "&AmneziaWG hakkında…",
             "translatorComment": "Copied from source."
         },
         {
@@ -1110,15 +1110,15 @@
             ]
         },
         {
-            "id": "WireGate Detection Error",
-            "message": "WireGate Detection Error",
-            "translation": "WireGate Tespit Hatası",
+            "id": "AmneziaWG Detection Error",
+            "message": "AmneziaWG Detection Error",
+            "translation": "AmneziaWG Tespit Hatası",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Unable to wait for WireGate window to appear: {Err}",
-            "message": "Unable to wait for WireGate window to appear: {Err}",
-            "translation": "WireGate penceresinin belirmesi beklenemedi: {Err}",
+            "id": "Unable to wait for AmneziaWG window to appear: {Err}",
+            "message": "Unable to wait for AmneziaWG window to appear: {Err}",
+            "translation": "AmneziaWG penceresinin belirmesi beklenemedi: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1132,9 +1132,9 @@
             ]
         },
         {
-            "id": "WireGate: Deactivated",
-            "message": "WireGate: Deactivated",
-            "translation": "WireGate: Devre dışı",
+            "id": "AmneziaWG: Deactivated",
+            "message": "AmneziaWG: Deactivated",
+            "translation": "AmneziaWG: Devre dışı",
             "translatorComment": "Copied from source."
         },
         {
@@ -1174,9 +1174,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGate Activated",
-            "message": "WireGate Activated",
-            "translation": "WireGate Etkin",
+            "id": "AmneziaWG Activated",
+            "message": "AmneziaWG Activated",
+            "translation": "AmneziaWG Etkin",
             "translatorComment": "Copied from source."
         },
         {
@@ -1196,9 +1196,9 @@
             ]
         },
         {
-            "id": "WireGate Deactivated",
-            "message": "WireGate Deactivated",
-            "translation": "WireGate Devre Dışı Bırakıldı",
+            "id": "AmneziaWG Deactivated",
+            "message": "AmneziaWG Deactivated",
+            "translation": "AmneziaWG Devre Dışı Bırakıldı",
             "translatorComment": "Copied from source."
         },
         {
@@ -1218,15 +1218,15 @@
             ]
         },
         {
-            "id": "WireGate Tunnel Error",
-            "message": "WireGate Tunnel Error",
-            "translation": "WireGate Tünel Hatası",
+            "id": "AmneziaWG Tunnel Error",
+            "message": "AmneziaWG Tunnel Error",
+            "translation": "AmneziaWG Tünel Hatası",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGate: {TextForStateglobalState_true}",
-            "message": "WireGate: {TextForStateglobalState_true}",
-            "translation": "WireGate: {TextForStateglobalState_true}",
+            "id": "AmneziaWG: {TextForStateglobalState_true}",
+            "message": "AmneziaWG: {TextForStateglobalState_true}",
+            "translation": "AmneziaWG: {TextForStateglobalState_true}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1278,15 +1278,15 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGate Update Available",
-            "message": "WireGate Update Available",
-            "translation": "WireGate Güncellemesi Mevcut",
+            "id": "AmneziaWG Update Available",
+            "message": "AmneziaWG Update Available",
+            "translation": "AmneziaWG Güncellemesi Mevcut",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "An update to WireGate is now available. You are advised to update as soon as possible.",
-            "message": "An update to WireGate is now available. You are advised to update as soon as possible.",
-            "translation": "Yeni bir WireGate güncellemesi yayımlandı. İlk fırsatta güncelleme yapmanız tavsiye edilir.",
+            "id": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
+            "message": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
+            "translation": "Yeni bir AmneziaWG güncellemesi yayımlandı. İlk fırsatta güncelleme yapmanız tavsiye edilir.",
             "translatorComment": "Copied from source."
         },
         {
@@ -1696,15 +1696,15 @@
             ]
         },
         {
-            "id": "Error Exiting WireGate",
-            "message": "Error Exiting WireGate",
-            "translation": "WireGate Çıkış Hatası",
+            "id": "Error Exiting AmneziaWG",
+            "message": "Error Exiting AmneziaWG",
+            "translation": "AmneziaWG Çıkış Hatası",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
-            "message": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
-            "translation": "Şu nedenden dolayı hizmetten çıkılamadı: {Err}. WireGate'ı hizmet yöneticisinden durdurabilirsiniz.",
+            "id": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
+            "message": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
+            "translation": "Şu nedenden dolayı hizmetten çıkılamadı: {Err}. AmneziaWG'ı hizmet yöneticisinden durdurabilirsiniz.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1718,9 +1718,9 @@
             ]
         },
         {
-            "id": "An update to WireGate is available. It is highly advisable to update without delay.",
-            "message": "An update to WireGate is available. It is highly advisable to update without delay.",
-            "translation": "Yeni bir WireGate güncellemesi yayımlandı. Vakit kaybetmeden güncelleme yapmanız tavsiye edilir.",
+            "id": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
+            "message": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
+            "translation": "Yeni bir AmneziaWG güncellemesi yayımlandı. Vakit kaybetmeden güncelleme yapmanız tavsiye edilir.",
             "translatorComment": "Copied from source."
         },
         {

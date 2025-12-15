@@ -329,15 +329,15 @@
             "comment": "Text to insert when combining units of a measure - most languages will translate ‘[UnitSeparator]’ into ‘ ’ (space) to produce lists like ‘2 minuti 30 sekund’, or empty string ‘’ to produce ‘2分30秒’."
         },
         {
-            "id": "About WireGate",
-            "message": "About WireGate",
-            "translation": "Thông tin về WireGate",
+            "id": "About AmneziaWG",
+            "message": "About AmneziaWG",
+            "translation": "Thông tin về AmneziaWG",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "WireGate logo image",
-            "message": "WireGate logo image",
-            "translation": "Logo WireGate",
+            "id": "AmneziaWG logo image",
+            "message": "AmneziaWG logo image",
+            "translation": "Logo AmneziaWG",
             "translatorComment": "Copied from source."
         },
         {

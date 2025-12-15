@@ -65,9 +65,9 @@
             "fuzzy": true
         },
         {
-            "id": "You must use the native version of WireGate on this computer.",
-            "message": "You must use the native version of WireGate on this computer.",
-            "translation": "You must use the native version of WireGate on this computer.",
+            "id": "You must use the native version of AmneziaWG on this computer.",
+            "message": "You must use the native version of AmneziaWG on this computer.",
+            "translation": "You must use the native version of AmneziaWG on this computer.",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
@@ -89,9 +89,9 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "message": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "id": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "message": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "translation": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -106,9 +106,9 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "message": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "id": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "message": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "translation": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -123,9 +123,9 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate system tray icon did not appear after 30 seconds.",
-            "message": "WireGate system tray icon did not appear after 30 seconds.",
-            "translation": "WireGate system tray icon did not appear after 30 seconds.",
+            "id": "AmneziaWG system tray icon did not appear after 30 seconds.",
+            "message": "AmneziaWG system tray icon did not appear after 30 seconds.",
+            "translation": "AmneziaWG system tray icon did not appear after 30 seconds.",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
@@ -618,16 +618,16 @@
             "comment": "Text to insert when combining units of a measure - most languages will translate ‘[UnitSeparator]’ into ‘ ’ (space) to produce lists like ‘2 minuti 30 sekund’, or empty string ‘’ to produce ‘2分30秒’."
         },
         {
-            "id": "About WireGate",
-            "message": "About WireGate",
-            "translation": "About WireGate",
+            "id": "About AmneziaWG",
+            "message": "About AmneziaWG",
+            "translation": "About AmneziaWG",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
         {
-            "id": "WireGate logo image",
-            "message": "WireGate logo image",
-            "translation": "WireGate logo image",
+            "id": "AmneziaWG logo image",
+            "message": "AmneziaWG logo image",
+            "translation": "AmneziaWG logo image",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
@@ -1124,9 +1124,9 @@
             "fuzzy": true
         },
         {
-            "id": "\u0026About WireGate…",
-            "message": "\u0026About WireGate…",
-            "translation": "\u0026About WireGate…",
+            "id": "\u0026About AmneziaWG…",
+            "message": "\u0026About AmneziaWG…",
+            "translation": "\u0026About AmneziaWG…",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
@@ -1172,16 +1172,16 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate Detection Error",
-            "message": "WireGate Detection Error",
-            "translation": "WireGate Detection Error",
+            "id": "AmneziaWG Detection Error",
+            "message": "AmneziaWG Detection Error",
+            "translation": "AmneziaWG Detection Error",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
         {
-            "id": "Unable to wait for WireGate window to appear: {Err}",
-            "message": "Unable to wait for WireGate window to appear: {Err}",
-            "translation": "Unable to wait for WireGate window to appear: {Err}",
+            "id": "Unable to wait for AmneziaWG window to appear: {Err}",
+            "message": "Unable to wait for AmneziaWG window to appear: {Err}",
+            "translation": "Unable to wait for AmneziaWG window to appear: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1196,9 +1196,9 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate: Deactivated",
-            "message": "WireGate: Deactivated",
-            "translation": "WireGate: Deactivated",
+            "id": "AmneziaWG: Deactivated",
+            "message": "AmneziaWG: Deactivated",
+            "translation": "AmneziaWG: Deactivated",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
@@ -1238,9 +1238,9 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate Activated",
-            "message": "WireGate Activated",
-            "translation": "WireGate Activated",
+            "id": "AmneziaWG Activated",
+            "message": "AmneziaWG Activated",
+            "translation": "AmneziaWG Activated",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
@@ -1262,9 +1262,9 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate Deactivated",
-            "message": "WireGate Deactivated",
-            "translation": "WireGate Deactivated",
+            "id": "AmneziaWG Deactivated",
+            "message": "AmneziaWG Deactivated",
+            "translation": "AmneziaWG Deactivated",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
@@ -1286,16 +1286,16 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate Tunnel Error",
-            "message": "WireGate Tunnel Error",
-            "translation": "WireGate Tunnel Error",
+            "id": "AmneziaWG Tunnel Error",
+            "message": "AmneziaWG Tunnel Error",
+            "translation": "AmneziaWG Tunnel Error",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
         {
-            "id": "WireGate: {TextForStateglobalState_true}",
-            "message": "WireGate: {TextForStateglobalState_true}",
-            "translation": "WireGate: {TextForStateglobalState_true}",
+            "id": "AmneziaWG: {TextForStateglobalState_true}",
+            "message": "AmneziaWG: {TextForStateglobalState_true}",
+            "translation": "AmneziaWG: {TextForStateglobalState_true}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1351,16 +1351,16 @@
             "fuzzy": true
         },
         {
-            "id": "WireGate Update Available",
-            "message": "WireGate Update Available",
-            "translation": "WireGate Update Available",
+            "id": "AmneziaWG Update Available",
+            "message": "AmneziaWG Update Available",
+            "translation": "AmneziaWG Update Available",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
         {
-            "id": "An update to WireGate is now available. You are advised to update as soon as possible.",
-            "message": "An update to WireGate is now available. You are advised to update as soon as possible.",
-            "translation": "An update to WireGate is now available. You are advised to update as soon as possible.",
+            "id": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
+            "message": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
+            "translation": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
@@ -1806,16 +1806,16 @@
             "fuzzy": true
         },
         {
-            "id": "Error Exiting WireGate",
-            "message": "Error Exiting WireGate",
-            "translation": "Error Exiting WireGate",
+            "id": "Error Exiting AmneziaWG",
+            "message": "Error Exiting AmneziaWG",
+            "translation": "Error Exiting AmneziaWG",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
         {
-            "id": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
-            "message": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
-            "translation": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
+            "id": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
+            "message": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
+            "translation": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1830,9 +1830,9 @@
             "fuzzy": true
         },
         {
-            "id": "An update to WireGate is available. It is highly advisable to update without delay.",
-            "message": "An update to WireGate is available. It is highly advisable to update without delay.",
-            "translation": "An update to WireGate is available. It is highly advisable to update without delay.",
+            "id": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
+            "message": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
+            "translation": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
