@@ -64,7 +64,13 @@ type peerView struct {
 	persistentKeepalive *labelTextLine
 	latestHandshake     *labelTextLine
 	transfer            *labelTextLine
-	lines               []widgetsLine
+	// TLS tunneling fields
+	tlsEnabled     *labelTextLine
+	tlsFingerprint *labelTextLine
+	// Split tunneling fields
+	splitMode  *labelTextLine
+	splitSites *labelTextLine
+	lines      []widgetsLine
 }
 
 type ConfView struct {
@@ -339,6 +345,12 @@ func newPeerView(parent walk.Container) (*peerView, error) {
 		{l18n.Sprintf("Persistent keepalive:"), &pv.persistentKeepalive},
 		{l18n.Sprintf("Latest handshake:"), &pv.latestHandshake},
 		{l18n.Sprintf("Transfer:"), &pv.transfer},
+		// TLS tunneling fields
+		{l18n.Sprintf("TLS tunnel:"), &pv.tlsEnabled},
+		{l18n.Sprintf("TLS fingerprint:"), &pv.tlsFingerprint},
+		// Split tunneling fields
+		{l18n.Sprintf("Split tunnel mode:"), &pv.splitMode},
+		{l18n.Sprintf("Split tunnel sites:"), &pv.splitSites},
 	}
 	var err error
 	if pv.lines, err = createLabelTextLines(items, parent, nil); err != nil {
@@ -486,6 +498,41 @@ func (pv *peerView) apply(c *conf.Peer) {
 		pv.transfer.show(l18n.Sprintf("%s received, %s sent", c.RxBytes.String(), c.TxBytes.String()))
 	} else {
 		pv.transfer.hide()
+	}
+
+	// TLS tunneling display
+	if c.UdpTlsPipe != nil && c.UdpTlsPipe.Enabled {
+		pv.tlsEnabled.show(l18n.Sprintf("enabled"))
+		if c.UdpTlsPipe.FingerprintProfile != "" {
+			pv.tlsFingerprint.show(c.UdpTlsPipe.FingerprintProfile)
+		} else {
+			pv.tlsFingerprint.show(l18n.Sprintf("default"))
+		}
+	} else {
+		pv.tlsEnabled.hide()
+		pv.tlsFingerprint.hide()
+	}
+
+	// Split tunneling display
+	if c.SplitTunneling != nil && c.SplitTunneling.Mode != conf.SplitModeAllSites {
+		var modeStr string
+		switch c.SplitTunneling.Mode {
+		case conf.SplitModeOnlyForwardSites:
+			modeStr = l18n.Sprintf("Only forward specified sites")
+		case conf.SplitModeAllExceptSites:
+			modeStr = l18n.Sprintf("All except specified sites")
+		default:
+			modeStr = l18n.Sprintf("Unknown")
+		}
+		pv.splitMode.show(modeStr)
+		if len(c.SplitTunneling.Sites) > 0 {
+			pv.splitSites.show(strings.Join(c.SplitTunneling.Sites, l18n.EnumerationSeparator()))
+		} else {
+			pv.splitSites.hide()
+		}
+	} else {
+		pv.splitMode.hide()
+		pv.splitSites.hide()
 	}
 }
 

@@ -51,6 +51,16 @@ const (
 	highlightI5
 	highlightWarning
 	highlightError
+	// TLS tunneling highlights
+	highlightUdpTlsPipe
+	highlightPassword
+	highlightTlsServerName
+	highlightSecure
+	highlightProxy
+	highlightFingerprintProfile
+	// Split tunneling highlights
+	highlightSplitTunnelingMode
+	highlightSplitTunnelingSites
 )
 
 func validateHighlight(isValid bool, t highlight) highlight {
@@ -396,6 +406,29 @@ func (s stringSpan) isValidIField() bool {
 	return s.len != 0
 }
 
+func (s stringSpan) isValidBoolean() bool {
+	return s.isCaselessSame("true") || s.isCaselessSame("false") ||
+		s.isCaselessSame("yes") || s.isCaselessSame("no") ||
+		s.isCaselessSame("on") || s.isCaselessSame("off") ||
+		s.isSame("1") || s.isSame("0")
+}
+
+func (s stringSpan) isValidFingerprintProfile() bool {
+	return s.isCaselessSame("chrome") || s.isCaselessSame("firefox") ||
+		s.isCaselessSame("safari") || s.isCaselessSame("edge") ||
+		s.isCaselessSame("okhttp") || s.isCaselessSame("ios") ||
+		s.isCaselessSame("randomized") || s.isCaselessSame("default")
+}
+
+func (s stringSpan) isValidSplitTunnelingMode() bool {
+	return s.isCaselessSame("allsites") || s.isCaselessSame("onlyforwardsites") ||
+		s.isCaselessSame("allexceptsites")
+}
+
+func (s stringSpan) isValidNonEmpty() bool {
+	return s.len > 0
+}
+
 type field int32
 
 const (
@@ -432,6 +465,16 @@ const (
 	fieldAllowedIPs
 	fieldEndpoint
 	fieldPersistentKeepalive
+	// TLS tunneling fields (Peer section)
+	fieldUdpTlsPipe
+	fieldUdpTlsPipePassword
+	fieldUdpTlsPipeTlsServerName
+	fieldUdpTlsPipeSecure
+	fieldUdpTlsPipeProxy
+	fieldUdpTlsPipeFingerprintProfile
+	// Split tunneling fields (Peer section)
+	fieldSplitTunnelingMode
+	fieldSplitTunnelingSites
 	fieldInvalid
 )
 
@@ -509,6 +552,24 @@ func (s stringSpan) field() field {
 		return fieldI4
 	case s.isCaselessSame("I5"):
 		return fieldI5
+	// TLS tunneling fields
+	case s.isCaselessSame("UdpTlsPipe"):
+		return fieldUdpTlsPipe
+	case s.isCaselessSame("UdpTlsPipePassword"):
+		return fieldUdpTlsPipePassword
+	case s.isCaselessSame("UdpTlsPipeTlsServerName"):
+		return fieldUdpTlsPipeTlsServerName
+	case s.isCaselessSame("UdpTlsPipeSecure"):
+		return fieldUdpTlsPipeSecure
+	case s.isCaselessSame("UdpTlsPipeProxy"):
+		return fieldUdpTlsPipeProxy
+	case s.isCaselessSame("UdpTlsPipeFingerprintProfile"):
+		return fieldUdpTlsPipeFingerprintProfile
+	// Split tunneling fields
+	case s.isCaselessSame("SplitTunnelingMode"):
+		return fieldSplitTunnelingMode
+	case s.isCaselessSame("SplitTunnelingSites"):
+		return fieldSplitTunnelingSites
 	}
 	return fieldInvalid
 }
@@ -537,6 +598,27 @@ func (hsa *highlightSpanArray) highlightMultivalueValue(parent, s stringSpan, se
 	case fieldDNS:
 		if s.isValidIPv4() || s.isValidIPv6() {
 			hsa.append(parent.s, s, highlightIP)
+		} else if s.isValidHostname() {
+			hsa.append(parent.s, s, highlightHost)
+		} else {
+			hsa.append(parent.s, s, highlightError)
+		}
+	case fieldSplitTunnelingSites:
+		// Split tunneling sites can be IP, CIDR, or hostname
+		if s.isValidNetwork() {
+			slash := 0
+			for ; slash < s.len; slash++ {
+				if *s.at(slash) == '/' {
+					break
+				}
+			}
+			if slash == s.len {
+				hsa.append(parent.s, s, highlightIP)
+			} else {
+				hsa.append(parent.s, stringSpan{s.s, slash}, highlightIP)
+				hsa.append(parent.s, stringSpan{s.at(slash), 1}, highlightDelimiter)
+				hsa.append(parent.s, stringSpan{s.at(slash + 1), s.len - slash - 1}, highlightCidr)
+			}
 		} else if s.isValidHostname() {
 			hsa.append(parent.s, s, highlightHost)
 		} else {
@@ -661,6 +743,22 @@ func (hsa *highlightSpanArray) highlightValue(parent, s stringSpan, section fiel
 		hsa.append(parent.s, s, validateHighlight(s.isValidIField(), highlightI4))
 	case fieldI5:
 		hsa.append(parent.s, s, validateHighlight(s.isValidIField(), highlightI5))
+	// TLS tunneling fields
+	case fieldUdpTlsPipe, fieldUdpTlsPipeSecure:
+		hsa.append(parent.s, s, validateHighlight(s.isValidBoolean(), highlightUdpTlsPipe))
+	case fieldUdpTlsPipePassword:
+		hsa.append(parent.s, s, validateHighlight(s.isValidNonEmpty(), highlightPassword))
+	case fieldUdpTlsPipeTlsServerName:
+		hsa.append(parent.s, s, validateHighlight(s.isValidHostname(), highlightTlsServerName))
+	case fieldUdpTlsPipeProxy:
+		hsa.append(parent.s, s, validateHighlight(s.isValidNonEmpty(), highlightProxy))
+	case fieldUdpTlsPipeFingerprintProfile:
+		hsa.append(parent.s, s, validateHighlight(s.isValidFingerprintProfile(), highlightFingerprintProfile))
+	// Split tunneling fields
+	case fieldSplitTunnelingMode:
+		hsa.append(parent.s, s, validateHighlight(s.isValidSplitTunnelingMode(), highlightSplitTunnelingMode))
+	case fieldSplitTunnelingSites:
+		hsa.highlightMultivalue(parent, s, section)
 	default:
 		hsa.append(parent.s, s, highlightError)
 	}
