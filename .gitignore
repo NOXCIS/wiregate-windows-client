@@ -16,3 +16,5 @@
 *.syso
 .idea
 *.ico
+docs/SIGNING.md
+sign.bat.example
