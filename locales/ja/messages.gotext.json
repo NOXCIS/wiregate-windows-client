@@ -60,9 +60,9 @@
             ]
         },
         {
-            "id": "You must use the native version of AmneziaWG on this computer.",
-            "message": "You must use the native version of AmneziaWG on this computer.",
-            "translation": "このコンピュータではネイティブ版の AmneziaWG を使ってください。",
+            "id": "You must use the native version of WireGate on this computer.",
+            "message": "You must use the native version of WireGate on this computer.",
+            "translation": "このコンピュータではネイティブ版の WireGate を使ってください。",
             "translatorComment": "Copied from source."
         },
         {
@@ -82,9 +82,9 @@
             ]
         },
         {
-            "id": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "message": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "AmneziaWG は組み込みの {AdminGroupName} グループのメンバーだけが使えます。",
+            "id": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "message": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "translation": "WireGate は組み込みの {AdminGroupName} グループのメンバーだけが使えます。",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -98,9 +98,9 @@
             ]
         },
         {
-            "id": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "message": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "AmneziaWG は実行中ですが、UI画面は組み込みの {AdminGroupName} グループのデスクトップからしか開けません。",
+            "id": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "message": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "translation": "WireGate は実行中ですが、UI画面は組み込みの {AdminGroupName} グループのデスクトップからしか開けません。",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -114,9 +114,9 @@
             ]
         },
         {
-            "id": "AmneziaWG system tray icon did not appear after 30 seconds.",
-            "message": "AmneziaWG system tray icon did not appear after 30 seconds.",
-            "translation": "AmneziaWG システムトレイアイコンは30秒後に非表示になります。",
+            "id": "WireGate system tray icon did not appear after 30 seconds.",
+            "message": "WireGate system tray icon did not appear after 30 seconds.",
+            "translation": "WireGate システムトレイアイコンは30秒後に非表示になります。",
             "translatorComment": "Copied from source."
         },
         {
@@ -559,15 +559,15 @@
             "comment": "Text to insert when combining units of a measure - most languages will translate ‘[UnitSeparator]’ into ‘ ’ (space) to produce lists like ‘2 minuti 30 sekund’, or empty string ‘’ to produce ‘2分30秒’."
         },
         {
-            "id": "About AmneziaWG",
-            "message": "About AmneziaWG",
-            "translation": "AmneziaWG について",
+            "id": "About WireGate",
+            "message": "About WireGate",
+            "translation": "WireGate について",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG logo image",
-            "message": "AmneziaWG logo image",
-            "translation": "AmneziaWG ロゴ画像",
+            "id": "WireGate logo image",
+            "message": "WireGate logo image",
+            "translation": "WireGate ロゴ画像",
             "translatorComment": "Copied from source."
         },
         {
@@ -1051,9 +1051,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "&About AmneziaWG…",
-            "message": "&About AmneziaWG…",
-            "translation": "AmneziaWGについて…(&A)",
+            "id": "&About WireGate…",
+            "message": "&About WireGate…",
+            "translation": "WireGateについて…(&A)",
             "translatorComment": "Copied from source."
         },
         {
@@ -1095,15 +1095,15 @@
             ]
         },
         {
-            "id": "AmneziaWG Detection Error",
-            "message": "AmneziaWG Detection Error",
-            "translation": "AmneziaWG 検出エラー",
+            "id": "WireGate Detection Error",
+            "message": "WireGate Detection Error",
+            "translation": "WireGate 検出エラー",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Unable to wait for AmneziaWG window to appear: {Err}",
-            "message": "Unable to wait for AmneziaWG window to appear: {Err}",
-            "translation": "AmneziaWG ウィンドウが表示できませんでした: {Err}",
+            "id": "Unable to wait for WireGate window to appear: {Err}",
+            "message": "Unable to wait for WireGate window to appear: {Err}",
+            "translation": "WireGate ウィンドウが表示できませんでした: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1117,9 +1117,9 @@
             ]
         },
         {
-            "id": "AmneziaWG: Deactivated",
-            "message": "AmneziaWG: Deactivated",
-            "translation": "AmneziaWG: 無効化済み",
+            "id": "WireGate: Deactivated",
+            "message": "WireGate: Deactivated",
+            "translation": "WireGate: 無効化済み",
             "translatorComment": "Copied from source."
         },
         {
@@ -1159,9 +1159,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG Activated",
-            "message": "AmneziaWG Activated",
-            "translation": "AmneziaWG 有効化済み",
+            "id": "WireGate Activated",
+            "message": "WireGate Activated",
+            "translation": "WireGate 有効化済み",
             "translatorComment": "Copied from source."
         },
         {
@@ -1181,9 +1181,9 @@
             ]
         },
         {
-            "id": "AmneziaWG Deactivated",
-            "message": "AmneziaWG Deactivated",
-            "translation": "AmneziaWG 無効化済み",
+            "id": "WireGate Deactivated",
+            "message": "WireGate Deactivated",
+            "translation": "WireGate 無効化済み",
             "translatorComment": "Copied from source."
         },
         {
@@ -1203,15 +1203,15 @@
             ]
         },
         {
-            "id": "AmneziaWG Tunnel Error",
-            "message": "AmneziaWG Tunnel Error",
-            "translation": "AmneziaWG トンネルエラー",
+            "id": "WireGate Tunnel Error",
+            "message": "WireGate Tunnel Error",
+            "translation": "WireGate トンネルエラー",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG: {TextForStateglobalState_true}",
-            "message": "AmneziaWG: {TextForStateglobalState_true}",
-            "translation": "AmneziaWG: {TextForStateglobalState_true}",
+            "id": "WireGate: {TextForStateglobalState_true}",
+            "message": "WireGate: {TextForStateglobalState_true}",
+            "translation": "WireGate: {TextForStateglobalState_true}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1263,15 +1263,15 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG Update Available",
-            "message": "AmneziaWG Update Available",
-            "translation": "AmneziaWG の更新が利用可能です",
+            "id": "WireGate Update Available",
+            "message": "WireGate Update Available",
+            "translation": "WireGate の更新が利用可能です",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
-            "message": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
-            "translation": "AmneziaWG の更新が利用可能になりました。できるだけ早く更新してください。",
+            "id": "An update to WireGate is now available. You are advised to update as soon as possible.",
+            "message": "An update to WireGate is now available. You are advised to update as soon as possible.",
+            "translation": "WireGate の更新が利用可能になりました。できるだけ早く更新してください。",
             "translatorComment": "Copied from source."
         },
         {
@@ -1666,15 +1666,15 @@
             ]
         },
         {
-            "id": "Error Exiting AmneziaWG",
-            "message": "Error Exiting AmneziaWG",
-            "translation": "AmneziaWG 終了エラー",
+            "id": "Error Exiting WireGate",
+            "message": "Error Exiting WireGate",
+            "translation": "WireGate 終了エラー",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
-            "message": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
-            "translation": "{Err} のためサービスを終了できませんでした。サービスマネージャから AmneziaWG を停止できます。",
+            "id": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
+            "message": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
+            "translation": "{Err} のためサービスを終了できませんでした。サービスマネージャから WireGate を停止できます。",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1688,9 +1688,9 @@
             ]
         },
         {
-            "id": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
-            "message": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
-            "translation": "AmneziaWG の更新が利用可能です。速やかに更新することを強く推奨します。",
+            "id": "An update to WireGate is available. It is highly advisable to update without delay.",
+            "message": "An update to WireGate is available. It is highly advisable to update without delay.",
+            "translation": "WireGate の更新が利用可能です。速やかに更新することを強く推奨します。",
             "translatorComment": "Copied from source."
         },
         {

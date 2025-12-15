@@ -60,9 +60,9 @@
             ]
         },
         {
-            "id": "You must use the native version of AmneziaWG on this computer.",
-            "message": "You must use the native version of AmneziaWG on this computer.",
-            "translation": "V tomto počítači musíte používať pôvodnú verziu programu AmneziaWG.",
+            "id": "You must use the native version of WireGate on this computer.",
+            "message": "You must use the native version of WireGate on this computer.",
+            "translation": "V tomto počítači musíte používať pôvodnú verziu programu WireGate.",
             "translatorComment": "Copied from source."
         },
         {
@@ -82,9 +82,9 @@
             ]
         },
         {
-            "id": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "message": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "AmneziaWG môžu používať iba členovia Builtin skupiny {AdminGroupName}.",
+            "id": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "message": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "translation": "WireGate môžu používať iba členovia Builtin skupiny {AdminGroupName}.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -98,9 +98,9 @@
             ]
         },
         {
-            "id": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "message": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "AmneziaWG je spustený, ale používateľské rozhranie je prístupné iba členom Builtin skupiny {AdminGroupName}.",
+            "id": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "message": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "translation": "WireGate je spustený, ale používateľské rozhranie je prístupné iba členom Builtin skupiny {AdminGroupName}.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -114,9 +114,9 @@
             ]
         },
         {
-            "id": "AmneziaWG system tray icon did not appear after 30 seconds.",
-            "message": "AmneziaWG system tray icon did not appear after 30 seconds.",
-            "translation": "AmneziaWG ikona sa ani po 30 sekundách neobjavila na systémovej lište.",
+            "id": "WireGate system tray icon did not appear after 30 seconds.",
+            "message": "WireGate system tray icon did not appear after 30 seconds.",
+            "translation": "WireGate ikona sa ani po 30 sekundách neobjavila na systémovej lište.",
             "translatorComment": "Copied from source."
         },
         {
@@ -604,15 +604,15 @@
             "comment": "Text to insert when combining units of a measure - most languages will translate ‘[UnitSeparator]’ into ‘ ’ (space) to produce lists like ‘2 minuti 30 sekund’, or empty string ‘’ to produce ‘2分30秒’."
         },
         {
-            "id": "About AmneziaWG",
-            "message": "About AmneziaWG",
-            "translation": "O AmneziaWG",
+            "id": "About WireGate",
+            "message": "About WireGate",
+            "translation": "O WireGate",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG logo image",
-            "message": "AmneziaWG logo image",
-            "translation": "Obrázok AmneziaWG loga",
+            "id": "WireGate logo image",
+            "message": "WireGate logo image",
+            "translation": "Obrázok WireGate loga",
             "translatorComment": "Copied from source."
         },
         {
@@ -1096,9 +1096,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "&About AmneziaWG…",
-            "message": "&About AmneziaWG…",
-            "translation": "&O AmneziaWG…",
+            "id": "&About WireGate…",
+            "message": "&About WireGate…",
+            "translation": "&O WireGate…",
             "translatorComment": "Copied from source."
         },
         {
@@ -1140,15 +1140,15 @@
             ]
         },
         {
-            "id": "AmneziaWG Detection Error",
-            "message": "AmneziaWG Detection Error",
-            "translation": "Chyba detekcie AmneziaWG",
+            "id": "WireGate Detection Error",
+            "message": "WireGate Detection Error",
+            "translation": "Chyba detekcie WireGate",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Unable to wait for AmneziaWG window to appear: {Err}",
-            "message": "Unable to wait for AmneziaWG window to appear: {Err}",
-            "translation": "Nie je možné čakať na zobrazenie AmneziaWG okna: {Err}",
+            "id": "Unable to wait for WireGate window to appear: {Err}",
+            "message": "Unable to wait for WireGate window to appear: {Err}",
+            "translation": "Nie je možné čakať na zobrazenie WireGate okna: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1162,9 +1162,9 @@
             ]
         },
         {
-            "id": "AmneziaWG: Deactivated",
-            "message": "AmneziaWG: Deactivated",
-            "translation": "AmneziaWG: deaktivovaný",
+            "id": "WireGate: Deactivated",
+            "message": "WireGate: Deactivated",
+            "translation": "WireGate: deaktivovaný",
             "translatorComment": "Copied from source."
         },
         {
@@ -1204,9 +1204,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG Activated",
-            "message": "AmneziaWG Activated",
-            "translation": "AmneziaWG je aktivovaný",
+            "id": "WireGate Activated",
+            "message": "WireGate Activated",
+            "translation": "WireGate je aktivovaný",
             "translatorComment": "Copied from source."
         },
         {
@@ -1226,9 +1226,9 @@
             ]
         },
         {
-            "id": "AmneziaWG Deactivated",
-            "message": "AmneziaWG Deactivated",
-            "translation": "AmneziaWG je deaktivovaný",
+            "id": "WireGate Deactivated",
+            "message": "WireGate Deactivated",
+            "translation": "WireGate je deaktivovaný",
             "translatorComment": "Copied from source."
         },
         {
@@ -1248,15 +1248,15 @@
             ]
         },
         {
-            "id": "AmneziaWG Tunnel Error",
-            "message": "AmneziaWG Tunnel Error",
-            "translation": "Chyba AmneziaWG tunelu",
+            "id": "WireGate Tunnel Error",
+            "message": "WireGate Tunnel Error",
+            "translation": "Chyba WireGate tunelu",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG: {TextForStateglobalState_true}",
-            "message": "AmneziaWG: {TextForStateglobalState_true}",
-            "translation": "AmneziaWG: {TextForStateglobalState_true}",
+            "id": "WireGate: {TextForStateglobalState_true}",
+            "message": "WireGate: {TextForStateglobalState_true}",
+            "translation": "WireGate: {TextForStateglobalState_true}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1308,15 +1308,15 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG Update Available",
-            "message": "AmneziaWG Update Available",
-            "translation": "Dostupná aktualizácia pre AmneziaWG",
+            "id": "WireGate Update Available",
+            "message": "WireGate Update Available",
+            "translation": "Dostupná aktualizácia pre WireGate",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
-            "message": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
-            "translation": "Je k dispozícii aktualizácia programu AmneziaWG. Je odporúčané čo najskôr vykonať aktualizáciu.",
+            "id": "An update to WireGate is now available. You are advised to update as soon as possible.",
+            "message": "An update to WireGate is now available. You are advised to update as soon as possible.",
+            "translation": "Je k dispozícii aktualizácia programu WireGate. Je odporúčané čo najskôr vykonať aktualizáciu.",
             "translatorComment": "Copied from source."
         },
         {
@@ -1756,15 +1756,15 @@
             ]
         },
         {
-            "id": "Error Exiting AmneziaWG",
-            "message": "Error Exiting AmneziaWG",
-            "translation": "Chyba ukončenia AmneziaWG",
+            "id": "Error Exiting WireGate",
+            "message": "Error Exiting WireGate",
+            "translation": "Chyba ukončenia WireGate",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
-            "message": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
-            "translation": "Nie je možné ukončiť služby z dôvodu: {Err}. Skúste zastaviť AmneziaWG v správcovi služieb.",
+            "id": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
+            "message": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
+            "translation": "Nie je možné ukončiť služby z dôvodu: {Err}. Skúste zastaviť WireGate v správcovi služieb.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1778,9 +1778,9 @@
             ]
         },
         {
-            "id": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
-            "message": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
-            "translation": "Je k dispozícii nová verzia programu AmneziaWG. Odporúčame bezodkladne vykonať aktualizáciu.",
+            "id": "An update to WireGate is available. It is highly advisable to update without delay.",
+            "message": "An update to WireGate is available. It is highly advisable to update without delay.",
+            "translation": "Je k dispozícii nová verzia programu WireGate. Odporúčame bezodkladne vykonať aktualizáciu.",
             "translatorComment": "Copied from source."
         },
         {

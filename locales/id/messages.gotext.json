@@ -60,9 +60,9 @@
             ]
         },
         {
-            "id": "You must use the native version of AmneziaWG on this computer.",
-            "message": "You must use the native version of AmneziaWG on this computer.",
-            "translation": "Anda harus menggunakan AmneziaWG versi asli pada komputer ini.",
+            "id": "You must use the native version of WireGate on this computer.",
+            "message": "You must use the native version of WireGate on this computer.",
+            "translation": "Anda harus menggunakan WireGate versi asli pada komputer ini.",
             "translatorComment": "Copied from source."
         },
         {
@@ -82,9 +82,9 @@
             ]
         },
         {
-            "id": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "message": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "AmneziaWG hanya dapat digunakan oleh pengguna yang merupakan anggota grup Bawaan {AdminGroupName}.",
+            "id": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "message": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "translation": "WireGate hanya dapat digunakan oleh pengguna yang merupakan anggota grup Bawaan {AdminGroupName}.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -98,9 +98,9 @@
             ]
         },
         {
-            "id": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "message": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "AmneziaWG sedang berjalan, tetapi UI hanya dapat diakses dari desktop grup Bawaan {AdminGroupName}.",
+            "id": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "message": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "translation": "WireGate sedang berjalan, tetapi UI hanya dapat diakses dari desktop grup Bawaan {AdminGroupName}.",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -114,9 +114,9 @@
             ]
         },
         {
-            "id": "AmneziaWG system tray icon did not appear after 30 seconds.",
-            "message": "AmneziaWG system tray icon did not appear after 30 seconds.",
-            "translation": "Ikon sistem AmneziaWG tidak muncul setelah 30 detik.",
+            "id": "WireGate system tray icon did not appear after 30 seconds.",
+            "message": "WireGate system tray icon did not appear after 30 seconds.",
+            "translation": "Ikon sistem WireGate tidak muncul setelah 30 detik.",
             "translatorComment": "Copied from source."
         },
         {
@@ -559,15 +559,15 @@
             "comment": "Text to insert when combining units of a measure - most languages will translate ‘[UnitSeparator]’ into ‘ ’ (space) to produce lists like ‘2 minuti 30 sekund’, or empty string ‘’ to produce ‘2分30秒’."
         },
         {
-            "id": "About AmneziaWG",
-            "message": "About AmneziaWG",
-            "translation": "Tentang AmneziaWG",
+            "id": "About WireGate",
+            "message": "About WireGate",
+            "translation": "Tentang WireGate",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG logo image",
-            "message": "AmneziaWG logo image",
-            "translation": "Gambar logo AmneziaWG",
+            "id": "WireGate logo image",
+            "message": "WireGate logo image",
+            "translation": "Gambar logo WireGate",
             "translatorComment": "Copied from source."
         },
         {
@@ -789,9 +789,9 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "&About AmneziaWG…",
-            "message": "&About AmneziaWG…",
-            "translation": "&Tentang AmneziaWG…",
+            "id": "&About WireGate…",
+            "message": "&About WireGate…",
+            "translation": "&Tentang WireGate…",
             "translatorComment": "Copied from source."
         },
         {
@@ -833,15 +833,15 @@
             ]
         },
         {
-            "id": "AmneziaWG Detection Error",
-            "message": "AmneziaWG Detection Error",
-            "translation": "Deteksi eror AmneziaWG",
+            "id": "WireGate Detection Error",
+            "message": "WireGate Detection Error",
+            "translation": "Deteksi eror WireGate",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Unable to wait for AmneziaWG window to appear: {Err}",
-            "message": "Unable to wait for AmneziaWG window to appear: {Err}",
-            "translation": "Tidak dapat menunggu jendela AmneziaWG muncul: {Err}",
+            "id": "Unable to wait for WireGate window to appear: {Err}",
+            "message": "Unable to wait for WireGate window to appear: {Err}",
+            "translation": "Tidak dapat menunggu jendela WireGate muncul: {Err}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -855,9 +855,9 @@
             ]
         },
         {
-            "id": "AmneziaWG: Deactivated",
-            "message": "AmneziaWG: Deactivated",
-            "translation": "AmneziaWG: Dinonaktifkan",
+            "id": "WireGate: Deactivated",
+            "message": "WireGate: Deactivated",
+            "translation": "WireGate: Dinonaktifkan",
             "translatorComment": "Copied from source."
         },
         {
@@ -891,15 +891,15 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG Tunnel Error",
-            "message": "AmneziaWG Tunnel Error",
-            "translation": "AmneziaWG Tunnel Eror",
+            "id": "WireGate Tunnel Error",
+            "message": "WireGate Tunnel Error",
+            "translation": "WireGate Tunnel Eror",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG: {TextForStateglobalState_true}",
-            "message": "AmneziaWG: {TextForStateglobalState_true}",
-            "translation": "AmneziaWG: {TextForStateglobalState_true}",
+            "id": "WireGate: {TextForStateglobalState_true}",
+            "message": "WireGate: {TextForStateglobalState_true}",
+            "translation": "WireGate: {TextForStateglobalState_true}",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {

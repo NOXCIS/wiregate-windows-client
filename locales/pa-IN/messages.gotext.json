@@ -54,9 +54,9 @@
             ]
         },
         {
-            "id": "You must use the native version of AmneziaWG on this computer.",
-            "message": "You must use the native version of AmneziaWG on this computer.",
-            "translation": "ਤੁਹਾਨੂੰ ਇਸ ਕੰਪਿਊਟਰ ਉੱਤੇ AmneziaWG ਦਾ ਮੂਲ ਵਰਜ਼ਨ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।",
+            "id": "You must use the native version of WireGate on this computer.",
+            "message": "You must use the native version of WireGate on this computer.",
+            "translation": "ਤੁਹਾਨੂੰ ਇਸ ਕੰਪਿਊਟਰ ਉੱਤੇ WireGate ਦਾ ਮੂਲ ਵਰਜ਼ਨ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।",
             "translatorComment": "Copied from source."
         },
         {
@@ -76,9 +76,9 @@
             ]
         },
         {
-            "id": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "message": "AmneziaWG may only be used by users who are a member of the Builtin {AdminGroupName} group.",
-            "translation": "AmneziaWG ਨੂੰ ਸਿਰਫ਼ ਉਹੀ ਵਰਤੋਂਕਾਰ ਵਰਤ ਸਕਦੇ ਹਨ, ਜੋ ਕਿ ਪਹਿਲਾਂ ਮੌਜੂਦ {AdminGroupName} ਗਰੁੱਪ ਦੇ ਮੈਂਬਰ ਹਨ।",
+            "id": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "message": "WireGate may only be used by users who are a member of the Builtin {AdminGroupName} group.",
+            "translation": "WireGate ਨੂੰ ਸਿਰਫ਼ ਉਹੀ ਵਰਤੋਂਕਾਰ ਵਰਤ ਸਕਦੇ ਹਨ, ਜੋ ਕਿ ਪਹਿਲਾਂ ਮੌਜੂਦ {AdminGroupName} ਗਰੁੱਪ ਦੇ ਮੈਂਬਰ ਹਨ।",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -92,9 +92,9 @@
             ]
         },
         {
-            "id": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "message": "AmneziaWG is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
-            "translation": "AmneziaWG ਚੱਲ ਰਿਹਾ ਹੈ, ਪਰ UI ਨੂੰ ਸਿਰਫ਼ ਪਹਿਲਾਂ ਮੌਜੂਦ {AdminGroupName} ਗਰੁੱਪ ਦੇ ਡੈਸਕਟਾਪ ਰਾਹੀਂ ਹੀ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।",
+            "id": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "message": "WireGate is running, but the UI is only accessible from desktops of the Builtin {AdminGroupName} group.",
+            "translation": "WireGate ਚੱਲ ਰਿਹਾ ਹੈ, ਪਰ UI ਨੂੰ ਸਿਰਫ਼ ਪਹਿਲਾਂ ਮੌਜੂਦ {AdminGroupName} ਗਰੁੱਪ ਦੇ ਡੈਸਕਟਾਪ ਰਾਹੀਂ ਹੀ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -108,9 +108,9 @@
             ]
         },
         {
-            "id": "AmneziaWG system tray icon did not appear after 30 seconds.",
-            "message": "AmneziaWG system tray icon did not appear after 30 seconds.",
-            "translation": "AmneziaWG ਸਿਸਟਮ ਟਰੇ ਆਈਕਾਨ 30 ਸਕਿੰਟਾਂ ਬਾਅਦ ਦਿਖਾਈ ਨਹੀਂ ਦਿੱਤਾ ਹੈ।",
+            "id": "WireGate system tray icon did not appear after 30 seconds.",
+            "message": "WireGate system tray icon did not appear after 30 seconds.",
+            "translation": "WireGate ਸਿਸਟਮ ਟਰੇ ਆਈਕਾਨ 30 ਸਕਿੰਟਾਂ ਬਾਅਦ ਦਿਖਾਈ ਨਹੀਂ ਦਿੱਤਾ ਹੈ।",
             "translatorComment": "Copied from source."
         },
         {
@@ -490,8 +490,8 @@
             "comment": "Text to insert when combining units of a measure - most languages will translate ‘[UnitSeparator]’ into ‘ ’ (space) to produce lists like ‘2 minuti 30 sekund’, or empty string ‘’ to produce ‘2分30秒’."
         },
         {
-            "id": "About AmneziaWG",
-            "message": "About AmneziaWG",
+            "id": "About WireGate",
+            "message": "About WireGate",
             "translation": "ਵਾਇਰਗਾਰਡ ਬਾਰੇ",
             "translatorComment": "Copied from source."
         },
@@ -924,8 +924,8 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "&About AmneziaWG…",
-            "message": "&About AmneziaWG…",
+            "id": "&About WireGate…",
+            "message": "&About WireGate…",
             "translation": "ਵਾਇਰਗਾਰਡ ਬਾਰੇ(&A)…",
             "translatorComment": "Copied from source."
         },
@@ -968,14 +968,14 @@
             ]
         },
         {
-            "id": "AmneziaWG Detection Error",
-            "message": "AmneziaWG Detection Error",
-            "translation": "AmneziaWG ਖੋਜ ਗ਼ਲਤੀ",
+            "id": "WireGate Detection Error",
+            "message": "WireGate Detection Error",
+            "translation": "WireGate ਖੋਜ ਗ਼ਲਤੀ",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG: Deactivated",
-            "message": "AmneziaWG: Deactivated",
+            "id": "WireGate: Deactivated",
+            "message": "WireGate: Deactivated",
             "translation": "ਵਾਇਰਗਾਰਡ: ਨਾ-ਸਰਗਰਮ ਕੀਤਾ",
             "translatorComment": "Copied from source."
         },
@@ -1016,8 +1016,8 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG Activated",
-            "message": "AmneziaWG Activated",
+            "id": "WireGate Activated",
+            "message": "WireGate Activated",
             "translation": "ਵਾਇਰਗਾਰਡ ਸਰਗਰਮ ਕੀਤਾ",
             "translatorComment": "Copied from source."
         },
@@ -1038,8 +1038,8 @@
             ]
         },
         {
-            "id": "AmneziaWG Deactivated",
-            "message": "AmneziaWG Deactivated",
+            "id": "WireGate Deactivated",
+            "message": "WireGate Deactivated",
             "translation": "ਵਾਇਰਗਾਰਡ ਨਾ-ਸਰਗਰਮ ਕੀਤਾ",
             "translatorComment": "Copied from source."
         },
@@ -1060,14 +1060,14 @@
             ]
         },
         {
-            "id": "AmneziaWG Tunnel Error",
-            "message": "AmneziaWG Tunnel Error",
+            "id": "WireGate Tunnel Error",
+            "message": "WireGate Tunnel Error",
             "translation": "ਵਾਇਰਗਾਰਡ ਟਨਲ ਗਲਤੀ",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG: {TextForStateglobalState_true}",
-            "message": "AmneziaWG: {TextForStateglobalState_true}",
+            "id": "WireGate: {TextForStateglobalState_true}",
+            "message": "WireGate: {TextForStateglobalState_true}",
             "translation": "ਵਾਇਰਗਾਰਡ: {TextForStateglobalState_true}",
             "translatorComment": "Copied from source.",
             "placeholders": [
@@ -1120,14 +1120,14 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "AmneziaWG Update Available",
-            "message": "AmneziaWG Update Available",
+            "id": "WireGate Update Available",
+            "message": "WireGate Update Available",
             "translation": "ਵਾਇਰਗਾਰਡ ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
-            "message": "An update to AmneziaWG is now available. You are advised to update as soon as possible.",
+            "id": "An update to WireGate is now available. You are advised to update as soon as possible.",
+            "message": "An update to WireGate is now available. You are advised to update as soon as possible.",
             "translation": "ਵਾਇਰਗਾਰਡ ਲਈ ਅੱਪਡੇਟ ਹੁਣ ਮੌਜੂਦ ਹੈ। ਜਿੰਨਾ ਛੇਤੀ ਹੋ ਸਕੇ ਤੁਹਾਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਸਲਾਹ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ।",
             "translatorComment": "Copied from source."
         },
@@ -1420,15 +1420,15 @@
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Error Exiting AmneziaWG",
-            "message": "Error Exiting AmneziaWG",
-            "translation": "AmneziaWG ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਗ਼ਲਤੀ",
+            "id": "Error Exiting WireGate",
+            "message": "Error Exiting WireGate",
+            "translation": "WireGate ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਗ਼ਲਤੀ",
             "translatorComment": "Copied from source."
         },
         {
-            "id": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
-            "message": "Unable to exit service due to: {Err}. You may want to stop AmneziaWG from the service manager.",
-            "translation": "ਸੇਵਾ ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਅਸਮਰੱਥ, ਕਾਰਨ: {Err}। ਤੁਸੀਂ ਸੇਵਾ ਮੈਨੇਜਰ ਤੋਂ AmneziaWG ਨੂੰ ਰੋਕਣਾ ਚਾਹੋਗੇ।",
+            "id": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
+            "message": "Unable to exit service due to: {Err}. You may want to stop WireGate from the service manager.",
+            "translation": "ਸੇਵਾ ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਅਸਮਰੱਥ, ਕਾਰਨ: {Err}। ਤੁਸੀਂ ਸੇਵਾ ਮੈਨੇਜਰ ਤੋਂ WireGate ਨੂੰ ਰੋਕਣਾ ਚਾਹੋਗੇ।",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
@@ -1442,9 +1442,9 @@
             ]
         },
         {
-            "id": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
-            "message": "An update to AmneziaWG is available. It is highly advisable to update without delay.",
-            "translation": "AmneziaWG ਲਈ ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ। ਤੁਹਾਨੂੰ ਬਿਨਾਂ ਦੇਰ ਕੀਤਿਆਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਸਲਾਹ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ।",
+            "id": "An update to WireGate is available. It is highly advisable to update without delay.",
+            "message": "An update to WireGate is available. It is highly advisable to update without delay.",
+            "translation": "WireGate ਲਈ ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ। ਤੁਹਾਨੂੰ ਬਿਨਾਂ ਦੇਰ ਕੀਤਿਆਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ ਸਲਾਹ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ।",
             "translatorComment": "Copied from source."
         },
         {

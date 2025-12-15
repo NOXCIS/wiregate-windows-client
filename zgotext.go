@@ -117,7 +117,7 @@ var messageKeyToIndex = map[string]int{
 	"%v - UAPI: Updating endpoint":                                              289,
 	"%v - UAPI: Updating persistent keepalive interval":                         290,
 	"%v - UAPI: Updating preshared key":                                         288,
-	"&About AmneziaWG…":                                                         176,
+	"&About WireGate…":                                                         176,
 	"&Activate":                                                                 17,
 	"&Block untunneled traffic (kill-switch)":                                   47,
 	"&Configuration:":                                                           50,
@@ -138,7 +138,7 @@ var messageKeyToIndex = map[string]int{
 	"A name is required.":                                                       52,
 	"A tunnel was unable to be removed: %s":                                     121,
 	"ASec: Received message with unknown type":                                  202,
-	"About AmneziaWG":                                                           12,
+	"About WireGate":                                                           12,
 	"Activating":                                                                61,
 	"Active":                                                                    60,
 	"Add &empty tunnel…":                                                        98,
@@ -148,21 +148,21 @@ var messageKeyToIndex = map[string]int{
 	"Addresses: None":                                                           80,
 	"All peers must have public keys":                                           171,
 	"Allowed IPs:":                                                              25,
-	"AmneziaWG Activated":                                                       85,
-	"AmneziaWG Deactivated":                                                     87,
-	"AmneziaWG Detection Error":                                                 76,
-	"AmneziaWG Tunnel Error":                                                    89,
-	"AmneziaWG Update Available":                                                94,
-	"AmneziaWG is running, but the UI is only accessible from desktops of the Builtin %s group.": 8,
-	"AmneziaWG logo image": 13,
-	"AmneziaWG may only be used by users who are a member of the Builtin %s group.": 7,
-	"AmneziaWG system tray icon did not appear after 30 seconds.":                   9,
-	"AmneziaWG: %s":                        90,
-	"AmneziaWG: Deactivated":               78,
+	"WireGate Activated":                                                       85,
+	"WireGate Deactivated":                                                     87,
+	"WireGate Detection Error":                                                 76,
+	"WireGate Tunnel Error":                                                    89,
+	"WireGate Update Available":                                                94,
+	"WireGate is running, but the UI is only accessible from desktops of the Builtin %s group.": 8,
+	"WireGate logo image": 13,
+	"WireGate may only be used by users who are a member of the Builtin %s group.": 7,
+	"WireGate system tray icon did not appear after 30 seconds.":                   9,
+	"WireGate: %s":                        90,
+	"WireGate: Deactivated":               78,
 	"An Update is Available!":              93,
 	"An interface must have a private key": 169,
-	"An update to AmneziaWG is available. It is highly advisable to update without delay.":        131,
-	"An update to AmneziaWG is now available. You are advised to update as soon as possible.":     95,
+	"An update to WireGate is available. It is highly advisable to update without delay.":        131,
+	"An update to WireGate is now available. You are advised to update as soon as possible.":     95,
 	"Another tunnel already exists with the name ‘%s’":                                            109,
 	"Another tunnel already exists with the name ‘%s’.":                                           56,
 	"App version: %s\nWintun version: %s\nGo version: %s\nOperating system: %s\nArchitecture: %s": 294,
@@ -193,7 +193,7 @@ var messageKeyToIndex = map[string]int{
 	"Endpoint:":              26,
 	"Ensure that you obtained the configuration file from a trusted source.": 298,
 	"Error":                                                     0,
-	"Error Exiting AmneziaWG":                                   129,
+	"Error Exiting WireGate":                                   129,
 	"Error in getting configuration":                            172,
 	"Error: ":                                                   177,
 	"Error: %v. Please try again.":                              135,
@@ -325,18 +325,18 @@ var messageKeyToIndex = map[string]int{
 	"Unable to delete tunnel":                                            120,
 	"Unable to delete tunnels":                                           122,
 	"Unable to determine whether the process is running under WOW64: %v": 4,
-	"Unable to exit service due to: %v. You may want to stop AmneziaWG from the service manager.": 130,
+	"Unable to exit service due to: %v. You may want to stop WireGate from the service manager.": 130,
 	"Unable to import configuration: %v":                110,
 	"Unable to list existing tunnels":                   54,
 	"Unable to open current process token: %v":          6,
 	"Unable to update bind: %v":                         180,
-	"Unable to wait for AmneziaWG window to appear: %v": 77,
+	"Unable to wait for WireGate window to appear: %v": 77,
 	"Unknown state":                                     64,
 	"Update Now":                                        133,
 	"Usage: %s [\n%s]":                                  2,
 	"When a configuration has exactly one peer, and that peer has an allowed IPs containing at least one of 0.0.0.0/0 or ::/0, and the interface does not have table off, then the tunnel service engages a firewall ruleset to block all traffic that is neither to nor from the tunnel interface or is to the wrong DNS server, with special exceptions for DHCP and NDP.": 297,
 	"Writing file failed": 58,
-	"You must use the native version of AmneziaWG on this computer.": 5,
+	"You must use the native version of WireGate on this computer.": 5,
 	"[EnumerationSeparator]":            10,
 	"[UnitSeparator]":                   11,
 	"[none specified]":                  170,
@@ -463,13 +463,13 @@ const caData string = "" + // Size: 5447 bytes
 	"\x02Error\x02(sense argument): eleva i instala el servei d'administrador" +
 	"\x02Ús: %[1]s [\x0a%[2]s]\x02Opcions de línia d'ordres\x02No s'ha pogut " +
 	"determinar si el procés corre sota WOW64: %[1]v\x02Heu de fer servir la " +
-	"versio nativa de AmneziaWG en aquest ordinador.\x02No s'ha pogut obrir e" +
-	"l token del procés actual: %[1]v\x02AmneziaWG només es pot fer servir pe" +
-	"r els usuaris que són membres del grup del sistema %[1]s.\x02AmneziaWG s" +
+	"versio nativa de WireGate en aquest ordinador.\x02No s'ha pogut obrir e" +
+	"l token del procés actual: %[1]v\x02WireGate només es pot fer servir pe" +
+	"r els usuaris que són membres del grup del sistema %[1]s.\x02WireGate s" +
 	"'està executsnt, pero la interfície gràfica només és accessible als usua" +
-	"ris que són membres del grup del sistema %[1]s.\x02La icona de AmneziaWG" +
+	"ris que són membres del grup del sistema %[1]s.\x02La icona de WireGate" +
 	" de la safata del sistema no ha aparegut després de 30 segons.\x02, \x02" +
-	", \x02Sobre AmneziaWG\x02Logo de AmneziaWG\x02Tanca\x02Estat:\x02&Desact" +
+	", \x02Sobre WireGate\x02Logo de WireGate\x02Tanca\x02Estat:\x02&Desact" +
 	"iva\x02&Activa\x02Clau pública:\x02Port d'escolta:\x02MTU:\x02Adreces:" +
 	"\x02Servidors DNS:\x02Scripts:\x02Clau precompartida:\x02IPs permeses:" +
 	"\x02Extrem:\x02Missatge de persistència:\x02Últim handshake:\x02Transfer" +
@@ -489,15 +489,15 @@ const caData string = "" + // Size: 5447 bytes
 	"iu…\x02Temps\x02Missatge de registre\x02Fitxers de text (*.txt)|*.txt|To" +
 	"ts els fitxers (*.*)|*.*\x02Exporta registre a fitxer\x02Error de túnel" +
 	"\x02%[1]s\x0a\x0aSi us plau, consulteu el registre per més informació." +
-	"\x02%[1]s (desactualitzat)\x02Error en detectar AmneziaWG\x02No ha estat" +
-	" possible esperar que aparegui la finestra de AmneziaWG: %[1]v\x02Amnezi" +
+	"\x02%[1]s (desactualitzat)\x02Error en detectar WireGate\x02No ha estat" +
+	" possible esperar que aparegui la finestra de WireGate: %[1]v\x02Amnezi" +
 	"aWG: Desactivat\x02Estat: Desconegut\x02Adreces: Cap\x02&Administrar tún" +
 	"els…\x02&Importar túnel(s) des d'un fitxer…\x02&Surt\x02&Túnels\x02Amnez" +
-	"iaWG Activat\x02El túnel %[1]s ha estat activat.\x02AmneziaWG Desactivat" +
+	"iaWG Activat\x02El túnel %[1]s ha estat activat.\x02WireGate Desactivat" +
 	"\x02El túnel %[1]s ha estat desactivat.\x02Error en el túnel de AmneziaW" +
-	"G\x02AmneziaWG: %[1]s\x02Estat: %[1]s\x02Adreces: %[1]s\x02Hi ha una act" +
-	"ualització disponible!\x02Actualització de AmneziaWG disponible\x02Hi ha" +
-	" una actualització de AmneziaWG. Es recomana actualitzar el més aviat mi" +
+	"G\x02WireGate: %[1]s\x02Estat: %[1]s\x02Adreces: %[1]s\x02Hi ha una act" +
+	"ualització disponible!\x02Actualització de WireGate disponible\x02Hi ha" +
+	" una actualització de WireGate. Es recomana actualitzar el més aviat mi" +
 	"llor.\x02Túnels\x02&Editar\x02Afegir &túnel buit…\x02Afegir túnel\x02Eli" +
 	"minar túnel(s) seleccionats\x02Exportar túnels a zip\x02&Alterna\x02Expo" +
 	"rtar tots els túnels a &zip…\x02Editar túnels &seleccionats…\x02&Elimina" +
@@ -519,10 +519,10 @@ const caData string = "" + // Size: 5447 bytes
 	"s.\x02Fitxers de configuració (*.zip, *.conf)|*.zip;*.conf|Tots els fitx" +
 	"ers (*.*)|*.*\x02Importar túnel(s) des d'un fitxer\x02Fitxers ZIP de con" +
 	"figuració (*.zip)|*.zip\x02Exportar túnels a zip\x02%[1]s (compilació no" +
-	" signada, sense actualitzacions)\x02Error al sortir de AmneziaWG\x02No s" +
+	" signada, sense actualitzacions)\x02Error al sortir de WireGate\x02No s" +
 	"'ha pogut sortir del servei a causa de l'error: %[1]v. Pot intentar atur" +
-	"ar AmneziaWG des de l'administrador de serveis.\x02Una actualització per" +
-	" AmneziaWG està disponible. Es recomana actualitzar immediatament.\x02Es" +
+	"ar WireGate des de l'administrador de serveis.\x02Una actualització per" +
+	" WireGate està disponible. Es recomana actualitzar immediatament.\x02Es" +
 	"tat: Esperant a l'usuari\x02Actualitza ara\x02Estat: Esperant el servei " +
 	"d'actualitzacions\x02Error: %[1]v. Si us plau, torneu-ho a provar.\x02Es" +
 	"tat: Completat!\x02Ara\x02El rellotge del sistema s'ha atraçat!\x14\x01" +
@@ -640,12 +640,12 @@ const csData string = "" + // Size: 5648 bytes
 	"\x02Chyba\x02(žádný argument): Zvýšit oprávnění a instalovat službu sprá" +
 	"vce\x02Použití: %[1]s [\x0a%[2]s]\x02Možnosti příkazového řádku\x02Nelze" +
 	" zjistit, zda proces běží pod WOW64: %[1]v\x02Musíte použít nativní verz" +
-	"i aplikace AmneziaWG na tomto počítači.\x02Nelze otevřít token aktuálníh" +
-	"o procesu: %[1]v\x02AmneziaWG můžou používat pouze uživatelé, kteří jsou" +
-	" členy Builtin skupiny %[1]s.\x02AmneziaWG je spuštěn, ale uživatelské r" +
+	"i aplikace WireGate na tomto počítači.\x02Nelze otevřít token aktuálníh" +
+	"o procesu: %[1]v\x02WireGate můžou používat pouze uživatelé, kteří jsou" +
+	" členy Builtin skupiny %[1]s.\x02WireGate je spuštěn, ale uživatelské r" +
 	"ozhraní je přístupné pouze uživatelům Builtin skupiny %[1]s.\x02Ikona Am" +
 	"neziaWG se ani po 30 sekundách nezobrazila na systémové liště.\x02, \x02" +
-	", \x02O aplikaci AmneziaWG\x02Obrázek loga AmneziaWG\x02Zavřít\x02Stav:" +
+	", \x02O aplikaci WireGate\x02Obrázek loga WireGate\x02Zavřít\x02Stav:" +
 	"\x02&Deaktivovat\x02&Aktivovat\x02Veřejný klíč:\x02Port pro naslouchání:" +
 	"\x02MTU:\x02Adresy:\x02DNS servery:\x02Skripty:\x02Předsdílený klíč:\x02" +
 	"Povolené IP:\x02Endpoint:\x02Persistent keepalive:\x02Poslední handshake" +
@@ -664,14 +664,14 @@ const csData string = "" + // Size: 5648 bytes
 	"&at vše\x02&Uložit do souboru…\x02Čas\x02Zpráva logu\x02Textové soubory " +
 	"(*.txt)|*.txt|Všechny soubory (*.*)|*.*\x02Exportovat záznam do souboru" +
 	"\x02Chyba tunelu\x02%[1]s\x0a\x0aPro více informací se prosím podívejte " +
-	"do logu.\x02%[1]s (neaktuální)\x02Chyba při detekci AmneziaWG\x02Nelze č" +
-	"ekat na zobrazení okna AmneziaWG: %[1]v\x02AmneziaWG: Deaktivován\x02Sta" +
+	"do logu.\x02%[1]s (neaktuální)\x02Chyba při detekci WireGate\x02Nelze č" +
+	"ekat na zobrazení okna WireGate: %[1]v\x02WireGate: Deaktivován\x02Sta" +
 	"v: Neznámý\x02Adresy: žádné\x02Spravovat tunely…\x02&Importovat tunel(y)" +
-	" ze souboru…\x02U&končit\x02&Tunely\x02AmneziaWG aktivován\x02Tunel %[1]" +
-	"s byl aktivován.\x02AmneziaWG deaktivován\x02Tunel %[1]s byl deaktivován" +
-	".\x02AmneziaWG Chyba Tunelu\x02AmneziaWG: %[1]s\x02Stav: %[1]s\x02Adresy" +
-	": %[1]s\x02Aktualizace je k dispozici!\x02Aktualizace AmneziaWG je k dis" +
-	"pozici\x02Aktualizace aplikace AmneziaWG je nyní k dispozici. Doporučuje" +
+	" ze souboru…\x02U&končit\x02&Tunely\x02WireGate aktivován\x02Tunel %[1]" +
+	"s byl aktivován.\x02WireGate deaktivován\x02Tunel %[1]s byl deaktivován" +
+	".\x02WireGate Chyba Tunelu\x02WireGate: %[1]s\x02Stav: %[1]s\x02Adresy" +
+	": %[1]s\x02Aktualizace je k dispozici!\x02Aktualizace WireGate je k dis" +
+	"pozici\x02Aktualizace aplikace WireGate je nyní k dispozici. Doporučuje" +
 	"me ji aktualizovat co nejdříve.\x02Tunely\x02&Upravit\x02Přidat &prázdný" +
 	" tunel…\x02Přidat tunel\x02Odstranit vybrané tunely\x02Exportovat všechn" +
 	"y tunely do zip\x02&Přepnout\x02Exportovat všechny tunely do &zip…\x02Up" +
@@ -698,9 +698,9 @@ const csData string = "" + // Size: 5648 bytes
 	".\x02Konfigurace souborů (*.zip, *.conf)|*.zip; *.conf|Všechny soubory (" +
 	"*.*)|*.*\x02Importovat tunel(y) ze souboru\x02Konfigurace souborů ZIP (*" +
 	".zip)|*.zip\x02Exportovat tunely do zip\x02%[1]s (nepodepsaná verze, žád" +
-	"né aktualizace)\x02Chyba při ukončování aplikace AmneziaWG\x02Nelze ukon" +
-	"čit službu z důvodu: %[1]v. AmneziaWG můžete zastavit ve správci služeb" +
-	".\x02Aktualizace aplikace AmneziaWG je nyní k dispozici. Silně doporučuj" +
+	"né aktualizace)\x02Chyba při ukončování aplikace WireGate\x02Nelze ukon" +
+	"čit službu z důvodu: %[1]v. WireGate můžete zastavit ve správci služeb" +
+	".\x02Aktualizace aplikace WireGate je nyní k dispozici. Silně doporučuj" +
 	"eme ji aktualizovat co nejdříve.\x02Stav: Čekání na uživatele\x02Aktuali" +
 	"zovat nyní\x02Stav: Čeká se na službu aktualizací\x02Chyba: %[1]v. Zkust" +
 	"e to znovu.\x02Stav: Dokončeno!\x02Teď\x02Systémové hodiny byly posunuty" +
@@ -725,7 +725,7 @@ const csData string = "" + // Size: 5648 bytes
 	"vat soukromý klíč\x02[není specifikováno]\x02Všichni peeři musí mít veře" +
 	"jné klíče\x02Chyba při načítání konfigurace\x02Neplatný klíč pro sekci r" +
 	"ozhraní\x02Verze protokolu musí být 1\x02Neplatný klíč v sekci peer\x02&" +
-	"O aplikaci AmneziaWG…"
+	"O aplikaci WireGate…"
 
 var deIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -820,13 +820,13 @@ const deData string = "" + // Size: 5779 bytes
 	"\x02Fehler\x02(kein Argument): Als Administrator ausführen und den Manag" +
 	"er-Dienst installieren\x02Verwendung: %[1]s [\x0a%[2]s]\x02Kommandozeile" +
 	"noptionen\x02Es kann nicht festgestellt werden, ob der Prozess unter WOW" +
-	"64 ausgeführt wird: %[1]v\x02Sie müssen die Version von AmneziaWG benutz" +
+	"64 ausgeführt wird: %[1]v\x02Sie müssen die Version von WireGate benutz" +
 	"en, die für ihren Computer bestimmt ist.\x02Konnte aktuellen Prozess-Tok" +
-	"en nicht öffnen: %[1]v\x02AmneziaWG kann nur von Benutzern verwendet wer" +
-	"den, die Mitglied der Gruppe %[1]s sind.\x02AmneziaWG wird ausgeführt, a" +
+	"en nicht öffnen: %[1]v\x02WireGate kann nur von Benutzern verwendet wer" +
+	"den, die Mitglied der Gruppe %[1]s sind.\x02WireGate wird ausgeführt, a" +
 	"ber auf die Benutzeroberfläche kann nur von Desktops der Gruppe %[1]s zu" +
-	"gegriffen werden.\x02Das AmneziaWG-Taskleistensymbol ist nicht innerhalb" +
-	" von 30 Sekunden erschienen.\x02, \x02, \x02Über AmneziaWG\x02AmneziaWG " +
+	"gegriffen werden.\x02Das WireGate-Taskleistensymbol ist nicht innerhalb" +
+	" von 30 Sekunden erschienen.\x02, \x02, \x02Über WireGate\x02WireGate " +
 	"Logo\x02Schließen\x02Status:\x02&Deaktivieren\x02&Aktivieren\x02Öffentli" +
 	"cher Schlüssel:\x02Eingangsport:\x02MTU:\x02Adressen:\x02DNS-Server:\x02" +
 	"Skripte:\x02Geteilter Schlüssel:\x02Erlaubte IPs:\x02Endpunkt:\x02Erhalt" +
@@ -848,15 +848,15 @@ const deData string = "" + // Size: 5779 bytes
 	"\x02&Alles markieren\x02&In Datei Speichern…\x02Zeit\x02Protokolleintrag" +
 	"\x02Textdateien (*.txt)|*.txt|Alle Dateien (*.*)|*.*\x02Exportiere Proto" +
 	"koll in Datei\x02Tunnel Fehler\x02%[1]s\x0a\x0aBitte lesen Sie das Proto" +
-	"koll für weitere Informationen.\x02%[1]s (veraltet)\x02AmneziaWG Erkennu" +
-	"ngsfehler\x02Warten auf das Erscheinen des AmneziaWG Fensters nicht mögl" +
-	"ich: %[1]v \x02AmneziaWG: Deaktiviert\x02Status: Unbekannt\x02Adressen: " +
+	"koll für weitere Informationen.\x02%[1]s (veraltet)\x02WireGate Erkennu" +
+	"ngsfehler\x02Warten auf das Erscheinen des WireGate Fensters nicht mögl" +
+	"ich: %[1]v \x02WireGate: Deaktiviert\x02Status: Unbekannt\x02Adressen: " +
 	"Keine\x02Tunnel &verwalten…\x02Tunnel aus Datei &importieren…\x02&Beende" +
-	"n\x02&Tunnel\x02AmneziaWG aktiviert\x02Der Tunnel %[1]s wurde aktiviert." +
-	"\x02AmneziaWG deaktiviert\x02Der Tunnel %[1]s wurde deaktiviert.\x02Amne" +
-	"ziaWG Tunnel Fehler\x02AmneziaWG: %[1]s\x02Status: %[1]s\x02Adressen: %[" +
-	"1]s\x02Eine Aktualisierung ist verfügbar!\x02AmneziaWG Aktualisierung ve" +
-	"rfügbar\x02Eine Aktualisierung für AmneziaWG ist jetzt verfügbar. Es wir" +
+	"n\x02&Tunnel\x02WireGate aktiviert\x02Der Tunnel %[1]s wurde aktiviert." +
+	"\x02WireGate deaktiviert\x02Der Tunnel %[1]s wurde deaktiviert.\x02Amne" +
+	"ziaWG Tunnel Fehler\x02WireGate: %[1]s\x02Status: %[1]s\x02Adressen: %[" +
+	"1]s\x02Eine Aktualisierung ist verfügbar!\x02WireGate Aktualisierung ve" +
+	"rfügbar\x02Eine Aktualisierung für WireGate ist jetzt verfügbar. Es wir" +
 	"d empfohlen diese schnellstmöglich durchzuführen.\x02Tunnel\x02&Bearbeit" +
 	"en\x02Einen &leeren Tunnel hinzufügen…\x02Tunnel hinzufügen\x02Markierte" +
 	"(n) Tunnel entfernen\x02Alle Tunnel in eine Zip-Datei exportieren\x02&Um" +
@@ -881,9 +881,9 @@ const deData string = "" + // Size: 5779 bytes
 	"|*.zip;*.conf|Alle Dateien (*.*)|*.*\x02Importiere Tunnel aus Datei\x02K" +
 	"onfigurations-ZIP-Dateien (*.zip)|*.zip\x02Exportiere Tunnel in Zip-Date" +
 	"i\x02%[1]s (unsigniert, keine Aktualisierungen)\x02Fehler beim Beenden v" +
-	"on AmneziaWG\x02Der Dienst konnte nicht gestoppt werden: %[1]v. Versuche" +
-	"n Sie AmneziaWG in der Dienstverwaltung zu beenden.\x02Eine Aktualisieru" +
-	"ng für AmneziaWG ist verfügbar. Es ist höchst empfehlenswert diese sofor" +
+	"on WireGate\x02Der Dienst konnte nicht gestoppt werden: %[1]v. Versuche" +
+	"n Sie WireGate in der Dienstverwaltung zu beenden.\x02Eine Aktualisieru" +
+	"ng für WireGate ist verfügbar. Es ist höchst empfehlenswert diese sofor" +
 	"t durchzuführen.\x02Status: Auf Nutzer warten\x02Jetzt aktualisieren\x02" +
 	"Status: Auf Aktualisierungsdienst warten\x02Fehler: %[1]v. Bitte versuch" +
 	"en Sie es erneut.\x02Status: Fertig!\x02Jetzt\x02Die Systemuhr wurde zur" +
@@ -907,7 +907,7 @@ const deData string = "" + // Size: 5779 bytes
 	"enthalten\x02[nicht spezifiziert]\x02Alle Teilnehmer (peers) müssen öffe" +
 	"ntliche Schlüssel haben\x02Fehler beim Abrufen der Konfiguration\x02Ungü" +
 	"ltiger Eintrag im Abschnitt [interface]\x02Die Protokollversion muss 1 s" +
-	"ein\x02Ungültiger Eintrag im Abschnitt [peer]\x02&Über AmneziaWG…"
+	"ein\x02Ungültiger Eintrag im Abschnitt [peer]\x02&Über WireGate…"
 
 var enIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -1002,12 +1002,12 @@ const enData string = "" + // Size: 9513 bytes
 	"\x02Error\x02(no argument): elevate and install manager service\x02Usage" +
 	": %[1]s [\x0a%[2]s]\x02Command Line Options\x02Unable to determine wheth" +
 	"er the process is running under WOW64: %[1]v\x02You must use the native " +
-	"version of AmneziaWG on this computer.\x02Unable to open current process" +
-	" token: %[1]v\x02AmneziaWG may only be used by users who are a member of" +
-	" the Builtin %[1]s group.\x02AmneziaWG is running, but the UI is only ac" +
-	"cessible from desktops of the Builtin %[1]s group.\x02AmneziaWG system t" +
-	"ray icon did not appear after 30 seconds.\x02, \x02, \x02About AmneziaWG" +
-	"\x02AmneziaWG logo image\x02Close\x02Status:\x02&Deactivate\x02&Activate" +
+	"version of WireGate on this computer.\x02Unable to open current process" +
+	" token: %[1]v\x02WireGate may only be used by users who are a member of" +
+	" the Builtin %[1]s group.\x02WireGate is running, but the UI is only ac" +
+	"cessible from desktops of the Builtin %[1]s group.\x02WireGate system t" +
+	"ray icon did not appear after 30 seconds.\x02, \x02, \x02About WireGate" +
+	"\x02WireGate logo image\x02Close\x02Status:\x02&Deactivate\x02&Activate" +
 	"\x02Public key:\x02Listen port:\x02MTU:\x02Addresses:\x02DNS servers:" +
 	"\x02Scripts:\x02Preshared key:\x02Allowed IPs:\x02Endpoint:\x02Persisten" +
 	"t keepalive:\x02Latest handshake:\x02Transfer:\x02pre-up\x02post-up\x02p" +
@@ -1024,14 +1024,14 @@ const enData string = "" + // Size: 9513 bytes
 	"\x02Deactivating\x02Unknown state\x02Log\x02&Copy\x02Select &all\x02&Sav" +
 	"e to file…\x02Time\x02Log message\x02Text Files (*.txt)|*.txt|All Files " +
 	"(*.*)|*.*\x02Export log to file\x02Tunnel Error\x02%[1]s\x0a\x0aPlease c" +
-	"onsult the log for more information.\x02%[1]s (out of date)\x02AmneziaWG" +
-	" Detection Error\x02Unable to wait for AmneziaWG window to appear: %[1]v" +
-	"\x02AmneziaWG: Deactivated\x02Status: Unknown\x02Addresses: None\x02&Man" +
+	"onsult the log for more information.\x02%[1]s (out of date)\x02WireGate" +
+	" Detection Error\x02Unable to wait for WireGate window to appear: %[1]v" +
+	"\x02WireGate: Deactivated\x02Status: Unknown\x02Addresses: None\x02&Man" +
 	"age tunnels…\x02&Import tunnel(s) from file…\x02E&xit\x02&Tunnels\x02Amn" +
-	"eziaWG Activated\x02The %[1]s tunnel has been activated.\x02AmneziaWG De" +
-	"activated\x02The %[1]s tunnel has been deactivated.\x02AmneziaWG Tunnel " +
-	"Error\x02AmneziaWG: %[1]s\x02Status: %[1]s\x02Addresses: %[1]s\x02An Upd" +
-	"ate is Available!\x02AmneziaWG Update Available\x02An update to AmneziaW" +
+	"eziaWG Activated\x02The %[1]s tunnel has been activated.\x02WireGate De" +
+	"activated\x02The %[1]s tunnel has been deactivated.\x02WireGate Tunnel " +
+	"Error\x02WireGate: %[1]s\x02Status: %[1]s\x02Addresses: %[1]s\x02An Upd" +
+	"ate is Available!\x02WireGate Update Available\x02An update to AmneziaW" +
 	"G is now available. You are advised to update as soon as possible.\x02Tu" +
 	"nnels\x02&Edit\x02Add &empty tunnel…\x02Add Tunnel\x02Remove selected tu" +
 	"nnel(s)\x02Export all tunnels to zip\x02&Toggle\x02Export all tunnels to" +
@@ -1053,8 +1053,8 @@ const enData string = "" + // Size: 9513 bytes
 	"ved.\x02Configuration Files (*.zip, *.conf)|*.zip;*.conf|All Files (*.*)" +
 	"|*.*\x02Import tunnel(s) from file\x02Configuration ZIP Files (*.zip)|*." +
 	"zip\x02Export tunnels to zip\x02%[1]s (unsigned build, no updates)\x02Er" +
-	"ror Exiting AmneziaWG\x02Unable to exit service due to: %[1]v. You may w" +
-	"ant to stop AmneziaWG from the service manager.\x02An update to AmneziaW" +
+	"ror Exiting WireGate\x02Unable to exit service due to: %[1]v. You may w" +
+	"ant to stop WireGate from the service manager.\x02An update to AmneziaW" +
 	"G is available. It is highly advisable to update without delay.\x02Statu" +
 	"s: Waiting for user\x02Update Now\x02Status: Waiting for updater service" +
 	"\x02Error: %[1]v. Please try again.\x02Status: Complete!\x02Now\x02Syste" +
@@ -1075,7 +1075,7 @@ const enData string = "" + // Size: 9513 bytes
 	"ection\x02Invalid key for [Peer] section\x02An interface must have a pri" +
 	"vate key\x02[none specified]\x02All peers must have public keys\x02Error" +
 	" in getting configuration\x02Invalid key for interface section\x02Protoc" +
-	"ol version must be 1\x02Invalid key for peer section\x02&About AmneziaWG" +
+	"ol version must be 1\x02Invalid key for peer section\x02&About WireGate" +
 	"…\x04\x00\x01 \x07\x02Error:\x02Interface closed, ignored requested st" +
 	"ate %[1]s\x02Interface state was %[1]s, requested %[2]s, now %[3]s\x02Un" +
 	"able to update bind: %[1]v\x02Bind close failed: %[1]v\x02Trouble determ" +
@@ -1243,13 +1243,13 @@ const es_ESData string = "" + // Size: 5697 bytes
 	"\x02Error\x02(sin argumento): eleve e instale el servicio de administrad" +
 	"or\x02Uso: %[1]s [\x0a%[2]s]\x02Opciones de línea de comandos\x02No fue " +
 	"posible determinar si el proceso se está ejecutando bajo WOW64: %[1]v" +
-	"\x02Debe usar la versión nativa de AmneziaWG en este equipo.\x02No fue p" +
-	"osible abrir el token del proceso actual: %[1]v\x02AmneziaWG solo puede " +
+	"\x02Debe usar la versión nativa de WireGate en este equipo.\x02No fue p" +
+	"osible abrir el token del proceso actual: %[1]v\x02WireGate solo puede " +
 	"ser usado por usuarios que sean miembros del grupo integrado %[1]s.\x02A" +
 	"mneziaWG se está ejecutando, pero la interfaz de usuario solo es accesib" +
-	"le desde escritorios del grupo integrado %[1]s.\x02El icono AmneziaWG de" +
+	"le desde escritorios del grupo integrado %[1]s.\x02El icono WireGate de" +
 	" la bandeja del sistema no apareció después de 30 segundos.\x02, \x02, " +
-	"\x02Acerca de AmneziaWG\x02Logotipo de AmneziaWG\x02Cerrar\x02Estado:" +
+	"\x02Acerca de WireGate\x02Logotipo de WireGate\x02Cerrar\x02Estado:" +
 	"\x02&Desactivar\x02&Activar\x02Clave pública:\x02Puerto de escucha:\x02M" +
 	"TU:\x02Direcciones:\x02Servidores DNS:\x02Secuencias de comandos:\x02Cla" +
 	"ve compartida:\x02IPs permitidas:\x02Endpoint:\x02Keepalive persistente:" +
@@ -1271,14 +1271,14 @@ const es_ESData string = "" + // Size: 5697 bytes
 	"txt)|*.txt|Todos los archivos (*.*)|*.*\x02Exportar registro a archivo" +
 	"\x02Error en el túnel\x02%[1]s\x0a\x0aPor favor, consulte el registro pa" +
 	"ra más información.\x02%[1]s (desactualizado)\x02Error al detectar Amnez" +
-	"iaWG\x02No fue posible esperar a que aparezca la ventana de AmneziaWG: %" +
-	"[1]v\x02AmneziaWG: Desactivado\x02Estado: Desconocido\x02Direcciones: Ni" +
+	"iaWG\x02No fue posible esperar a que aparezca la ventana de WireGate: %" +
+	"[1]v\x02WireGate: Desactivado\x02Estado: Desconocido\x02Direcciones: Ni" +
 	"nguna\x02&Administrar túneles…\x02&Importar túnel(es) desde archivo…\x02" +
-	"&Salir\x02&Túneles\x02AmneziaWG Activado\x02El túnel %[1]s ha sido activ" +
-	"ado.\x02AmneziaWG Desactivado\x02El túnel %[1]s ha sido desactivado.\x02" +
-	"Error en el túnel de AmneziaWG\x02AmneziaWG: %[1]s\x02Estado: %[1]s\x02D" +
+	"&Salir\x02&Túneles\x02WireGate Activado\x02El túnel %[1]s ha sido activ" +
+	"ado.\x02WireGate Desactivado\x02El túnel %[1]s ha sido desactivado.\x02" +
+	"Error en el túnel de WireGate\x02WireGate: %[1]s\x02Estado: %[1]s\x02D" +
 	"irecciones: %[1]s\x02¡Hay una actualización disponible!\x02Actualización" +
-	" de AmneziaWG disponible\x02Está disponible una actualización de Amnezia" +
+	" de WireGate disponible\x02Está disponible una actualización de Amnezia" +
 	"WG. Se recomienda actualizar lo antes posible.\x02Túneles\x02&Editar\x02" +
 	"Agregar &túnel vacío…\x02Agregar túnel\x02Eliminar túnel(es) seleccionad" +
 	"os\x02Exportar todos los túneles a ZIP\x02&Cambiar estado\x02Exportar to" +
@@ -1302,9 +1302,9 @@ const es_ESData string = "" + // Size: 5697 bytes
 	"zip;*.conf|All Files (*.*)|*.*\x02Importar túnel(es) desde archivo\x02Ar" +
 	"chivos ZIP de configuración (*.zip)|*.zip\x02Exportar túneles a ZIP\x02%" +
 	"[1]s (compilación no firmada, sin actualizaciones)\x02Error al salir de " +
-	"AmneziaWG\x02No fue posible terminar el servicio debido a: %[1]v. Puede " +
-	"intentar detener AmneziaWG desde el administrador de servicios.\x02Hay u" +
-	"na actualización de AmneziaWG disponible. Es muy recomendable actualizar" +
+	"WireGate\x02No fue posible terminar el servicio debido a: %[1]v. Puede " +
+	"intentar detener WireGate desde el administrador de servicios.\x02Hay u" +
+	"na actualización de WireGate disponible. Es muy recomendable actualizar" +
 	" de inmediato.\x02Estado: Esperando al usuario\x02Actualizar ahora\x02Es" +
 	"tado: Esperando al servicio de actualización\x02Error: %[1]v. Por favor," +
 	" intente de nuevo.\x02Estado: ¡Completo!\x02Ahora\x02¡El reloj del siste" +
@@ -1328,7 +1328,7 @@ const es_ESData string = "" + // Size: 5697 bytes
 	"da\x02[ninguno especificado]\x02Todos los pares deben tener claves públi" +
 	"cas\x02Error al obtener la configuración\x02La clave no es válida para s" +
 	"ección de interfaz\x02La versión del protocolo debe ser 1\x02La clave no" +
-	" es válida para la sección de par\x02&Acerca de AmneziaWG…"
+	" es válida para la sección de par\x02&Acerca de WireGate…"
 
 var etIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -1423,12 +1423,12 @@ const etData string = "" + // Size: 5138 bytes
 	"\x02Viga\x02(tühi muutuja): paigalda haldusteenus ülemõigustega\x02Kasut" +
 	"us: %[1]s [ \x0a%[2]s]\x02Käsurea valikud\x02Pole võimalik tuvastada, ka" +
 	"s protsess töötab WOW64 kontekstis: %[1]v\x02Peate kasutama antud arvuti" +
-	"ga sobivat AmneziaWG'i versiooni.\x02Praeguse protsessi tähist ei saa av" +
-	"ada: %[1]v\x02AmneziaWG'i võivad kasutada ainult kasutajad, kes on sisse" +
-	"ehitatud %[1]s grupi liikmed.\x02AmneziaWG töötab, aga kasutajaliides on" +
+	"ga sobivat WireGate'i versiooni.\x02Praeguse protsessi tähist ei saa av" +
+	"ada: %[1]v\x02WireGate'i võivad kasutada ainult kasutajad, kes on sisse" +
+	"ehitatud %[1]s grupi liikmed.\x02WireGate töötab, aga kasutajaliides on" +
 	" ainult ligipääsetav sisseehitatud %[1]s grupi töölaudadest.\x02AmneziaW" +
 	"G'i süsteemisalve ikoon ei ilmunud 30 sekundi jooksul.\x02, \x02, \x02Am" +
-	"neziaWG'ist\x02AmneziaWG logo pilt\x02Sulge\x02Staatus:\x02&Ühendu lahti" +
+	"neziaWG'ist\x02WireGate logo pilt\x02Sulge\x02Staatus:\x02&Ühendu lahti" +
 	"\x02&Ühenda\x02Avalik võti:\x02Kuulamisport:\x02MTU:\x02Aadressid:\x02DN" +
 	"S-serverid:\x02Skriptid:\x02Eeljagatud võti:\x02Lubatud IP-aadressid:" +
 	"\x02Lõpp-punkt:\x02Kestev ühendushoidik:\x02Värskeim kätlus:\x02Ülekande" +
@@ -1448,13 +1448,13 @@ const etData string = "" + // Size: 5138 bytes
 	"sta faili…\x02Aeg\x02Logisõnum\x02Tekstifailid (*.txt)|*.txt|Kõik failid" +
 	" (*.*)|*.*\x02Ekspordi logid faili\x02Tunneli viga\x02%[1]s\x0a\x0aLisai" +
 	"nformatsiooni saamiseks palun vaadake logisid.\x02%[1]s (uuendamata)\x02" +
-	"AmneziaWG'i tuvastusviga\x02AmneziaWG'i akna ilmumise ootamine ebaõnnest" +
-	"us: %[1]v\x02AmneziaWG: Lahti ühendatud\x02Staatus: Tundmatu olek\x02Aad" +
+	"WireGate'i tuvastusviga\x02WireGate'i akna ilmumise ootamine ebaõnnest" +
+	"us: %[1]v\x02WireGate: Lahti ühendatud\x02Staatus: Tundmatu olek\x02Aad" +
 	"ressid: Pole\x02&Halda tunneleid…\x02&Impordi tunnel(id) failist…\x02Sul" +
-	"&e\x02&Tunnelid\x02AmneziaWG ühendatud\x02Tunnel '%[1]s' on ühendatud." +
-	"\x02AmneziaWG lahti ühendatud\x02Tunnel '%[1]s' on lahti ühendatud.\x02A" +
-	"mneziaWG tunneli viga\x02AmneziaWG: %[1]s\x02Staatus: %[1]s\x02Aadressid" +
-	": %[1]s\x02Uuendus on saadaval!\x02AmneziaWG uuendus saadaval\x02Amnezia" +
+	"&e\x02&Tunnelid\x02WireGate ühendatud\x02Tunnel '%[1]s' on ühendatud." +
+	"\x02WireGate lahti ühendatud\x02Tunnel '%[1]s' on lahti ühendatud.\x02A" +
+	"mneziaWG tunneli viga\x02WireGate: %[1]s\x02Staatus: %[1]s\x02Aadressid" +
+	": %[1]s\x02Uuendus on saadaval!\x02WireGate uuendus saadaval\x02Amnezia" +
 	"WG'i uuendus on nüüd saadaval. Soovitame teil esimesel võimalusel uuenda" +
 	"da.\x02Tunnelid\x02&Muuda\x02Lisa tühi tunn&el…\x02Lisa tunnel\x02Eemald" +
 	"a valitud tunnel(id)\x02Ekspordi kõik tunnelid zip-faili\x02Lüli&tu ümbe" +
@@ -1477,9 +1477,9 @@ const etData string = "" + // Size: 5138 bytes
 	"tusfailid (*.zip, *.conf)|*.zip;*.conf|Kõik failid (*.*)|*.*\x02Impordi " +
 	"tunnel(id) failist\x02Pakendatud seadistusfailid (*.zip)|*.zip\x02Ekspor" +
 	"di tunnelid zip-faili\x02%[1]s (allkirjastamata kompilatsioon, uuendusi " +
-	"pole)\x02Viga AmneziaWG'i sulgemisel\x02Teenuse lõpetamine ebaõnnestus j" +
-	"ärgneva tõttu: %[1]v. Võid proovida AmneziaWG'i lõpetada teenusehalduri" +
-	"st.\x02AmneziaWG'ile on uuendus saadaval. Sügavalt soovitame uuendada ni" +
+	"pole)\x02Viga WireGate'i sulgemisel\x02Teenuse lõpetamine ebaõnnestus j" +
+	"ärgneva tõttu: %[1]v. Võid proovida WireGate'i lõpetada teenusehalduri" +
+	"st.\x02WireGate'ile on uuendus saadaval. Sügavalt soovitame uuendada ni" +
 	"ipea kui võimalik.\x02Staatus: Ootan kasutaja järel\x02Uuenda nüüd\x02St" +
 	"aatus: Ootan uuendusteenuse järel\x02Viga: %[1]v. Palun proovige uuesti." +
 	"\x02Staatus: Valmis!\x02Nüüd\x02Süsteemi kella on tagasi keritud!\x14" +
@@ -1501,7 +1501,7 @@ const etData string = "" + // Size: 5138 bytes
 	"us\x02Liides peab omama privaatvõtit\x02[pole määratud]\x02Kõik partneri" +
 	"d peavad omama avalikke võtmeid\x02Seadistuste saamisel ilmnes viga\x02S" +
 	"obimatu võti liidese lõigus\x02Protokolli versioon peab olema 1\x02Sobim" +
-	"atu võti partneri lõigus\x02&AmneziaWG'ist…"
+	"atu võti partneri lõigus\x02&WireGate'ist…"
 
 var faIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -1600,7 +1600,7 @@ const faData string = "" + // Size: 6665 bytes
 	"ارد فقط توسط کاربرانی که عضو گروه %[1]s هستند ممکن است استفاده شود.\x02" +
 	"وایرگارد در حال اجرا است، اما رابط کاربری فقط از دسکتاپ های گروه %[1]s " +
 	"قابل دسترسی است.\x02ایکون وایرگارد در سینی سیستم ،بعد از 30 ثانیه ظاهر " +
-	"نشد.\x02، \x02، \x02درباره AmneziaWG\x02تصویر لوگوی AmneziaWG\x02بستن" +
+	"نشد.\x02، \x02، \x02درباره WireGate\x02تصویر لوگوی WireGate\x02بستن" +
 	"\x02وضعیت:\x02&غیرفعال\u200cسازی\x02&فعال\u200cسازی\x02کلید عمومی:\x02پو" +
 	"رت شنود:\x02MTU:\x02نشانی\u200cها:\x02سرورهای DNS:\x02اسکریپت\u200cها:" +
 	"\x02کلید از پیش تقسیم شده:\x02IPهای مجاز:\x02نقطه پایان:\x02زنده نگه" +
@@ -1621,14 +1621,14 @@ const faData string = "" + // Size: 6665 bytes
 	"txt|همه پرونده\u200cها (*.*)|*.*\x02برون\u200cبرد گزارش رویداد به پرونده" +
 	"\x02خطالی تونل\x02%[1]s\x0a\x0aلطفا برای اطلاعات بیشتر به گزارش رویداد م" +
 	"راجعه کنید.\x02%[1]s (قدیمی)\x02وقوع اشکال در وایرگارد\x02نمی\u200cتوان" +
-	" منتظر ماند تا پنجره AmneziaWG ظاهر شود: %[1]v\x02AmneziaWG: غیر فعال شد" +
+	" منتظر ماند تا پنجره WireGate ظاهر شود: %[1]v\x02WireGate: غیر فعال شد" +
 	"ه است\x02وضعیت: ناشناخته\x02نشانی\u200cها: هیچ\x02&مدیریت تونل\u200cها…" +
-	"\x02&وارد کردن تونل(ها) از پرونده…\x02خروج\x02&تونل\u200cها\x02AmneziaWG" +
-	" فعال\u200c شد\x02تونل %[1]s فعال\u200c شده است.\x02AmneziaWG غیرفعال شد" +
-	"\x02تونل %[1]s غیرفعال شده است.\x02خطای تونل AmneziaWG\x02AmneziaWG: %[1" +
+	"\x02&وارد کردن تونل(ها) از پرونده…\x02خروج\x02&تونل\u200cها\x02WireGate" +
+	" فعال\u200c شد\x02تونل %[1]s فعال\u200c شده است.\x02WireGate غیرفعال شد" +
+	"\x02تونل %[1]s غیرفعال شده است.\x02خطای تونل WireGate\x02WireGate: %[1" +
 	"]s\x02وضعیت: %[1]s\x02نشانی\u200cها: %[1]s\x02یک به\u200cروزرسانی در دست" +
-	"رس است!\x02به\u200cروزرسانی AmneziaWG در دسترس است\x02به\u200cروزرسانی " +
-	"AmneziaWG اکنون در دسترس است. به شما توصیه می\u200cشود در اسرع وقت به" +
+	"رس است!\x02به\u200cروزرسانی WireGate در دسترس است\x02به\u200cروزرسانی " +
+	"WireGate اکنون در دسترس است. به شما توصیه می\u200cشود در اسرع وقت به" +
 	"\u200cروزرسانی کنید.\x02تونل\u200cها\x02&ویرایش\x02افزودن &خالی\u200cکرد" +
 	"ن تونل…\x02افزودن تونل\x02حذف تونل(ها) انتخابی\x02برون\u200cبری همه تون" +
 	"ل\u200cها به زیپ\x02تغییر وضعیت\x02برون\u200cبری همه تونل\u200cها به &ز" +
@@ -1641,7 +1641,7 @@ const faData string = "" + // Size: 6665 bytes
 	"تونل\x02حذف تونل ‘%[1]s’\x02حذف تونل\u200c امکان\u200cپذیر نیست\x02نمی" +
 	"\u200cتوان تونل\u200cها را حذف کرد\x02وارد کردن تونل(ها) از پرونده\x02پر" +
 	"ونده\u200cهای پیکربندی زیپ (*.zip)|*.zip\x02برون\u200cبری تونل\u200cها " +
-	"به زیپ\x02خطا در هنگام خارج شدن از AmneziaWG\x02وضعیت: درانتظار برای کا" +
+	"به زیپ\x02خطا در هنگام خارج شدن از WireGate\x02وضعیت: درانتظار برای کا" +
 	"ربر\x02اکنون به\u200cروز رسانی کن\x02وضعیت: درانتظار برای سرویس به" +
 	"\u200cروزرسان\x02خطا: %[1]v. لطفا دوباره تلاش کنید.\x02وضعیت: کامل شد!" +
 	"\x02هم اکنون\x02زمان سیستم شما عقب است!\x14\x01\x81\x01\x00\x02\x0d\x02%" +
@@ -1662,7 +1662,7 @@ const faData string = "" + // Size: 6665 bytes
 	"تبر است\x02یک رابط باید یک کلید خصوصی داشته باشد\x02[مشخص نشده]\x02همه " +
 	"همتاها باید کلید\u200cهای عمومی داشته باشند\x02خطا در دریافت پیکربندی" +
 	"\x02کلید برای بخش [Interface] نامعتبر است\x02نسخه پروتکل باید 1 باشد\x02" +
-	"کلید برای بخش طرفین نامعتبر است\x02&درباره AmneziaWG…"
+	"کلید برای بخش طرفین نامعتبر است\x02&درباره WireGate…"
 
 var fiIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -1760,10 +1760,10 @@ const fiData string = "" + // Size: 4796 bytes
 	"män alaisuudessa: %[1]v\x02Tällä tietokoneella voi käyttää vain AmneziaW" +
 	"Gin natiivia versiota.\x02Ei voida avata tämänhetkisen prosessin tokenia" +
 	": %[1]v\x02Ainoastaan sisäänrakennetun ryhmän %[1]s jäsenet voivat käytt" +
-	"ää AmneziaWGia.\x02AmneziaWG on käynnissä, mutta käyttöliittymä on vain" +
-	" sisäänrakennetun ryhmän %[1]s käytettävissä.\x02AmneziaWGin ilmoitusalu" +
+	"ää WireGateia.\x02WireGate on käynnissä, mutta käyttöliittymä on vain" +
+	" sisäänrakennetun ryhmän %[1]s käytettävissä.\x02WireGatein ilmoitusalu" +
 	"een kuvake ei ilmestynyt 30 sekunnin jälkeen.\x02, \x02, \x02Tietoa Amne" +
-	"ziaWGista\x02AmneziaWG logon kuva\x02Sulje\x02Tila:\x02&Deaktivoi\x02&Ak" +
+	"ziaWGista\x02WireGate logon kuva\x02Sulje\x02Tila:\x02&Deaktivoi\x02&Ak" +
 	"tivoi\x02Julkinen avain:\x02Kuuntele porttia:\x02MTU:\x02Osoitteet:\x02D" +
 	"NS palvelimet:\x02Komentosarjat:\x02Jaettu avain:\x02Sallitut IP-osoitte" +
 	"et:\x02Päätepiste:\x02Jatkuva keepalive:\x02Viimeisin kättely:\x02Siirro" +
@@ -1783,13 +1783,13 @@ const fiData string = "" + // Size: 4796 bytes
 	"iedostoon…\x02Aika\x02Lokiviesti\x02Tekstitiedostot (*.txt)|*.txt|Kaikki" +
 	" tiedostot (*.*)|*.*\x02Vie loki tiedostoon\x02Tunnelivirhe\x02%[1]s\x0a" +
 	"\x0aLue lisää lokista saadaksesi lisätietoja.\x02%[1]s (ei ajantasalla)" +
-	"\x02AmneziaWGin tunnistusvirhe\x02Ei voida odottaa AmneziaWGin ikkunan i" +
-	"lmestymistä: %[1]v\x02AmneziaWG: deaktivoitu\x02Tila: tuntematon\x02Osoi" +
+	"\x02WireGatein tunnistusvirhe\x02Ei voida odottaa WireGatein ikkunan i" +
+	"lmestymistä: %[1]v\x02WireGate: deaktivoitu\x02Tila: tuntematon\x02Osoi" +
 	"tteet: ei mitään\x02&Hallitse tunneleita…\x02Tuo tunnele&ita tiedostosta" +
-	"…\x02Lo&peta\x02&Tunnelit\x02AmneziaWG aktivoitu\x02Tunneli %[1]s on a" +
-	"ktivoitu.\x02AmneziaWG deaktivoitu\x02Tunneli %[1]s on deaktivoitu.\x02A" +
-	"mneziaWG tunnelivirhe\x02AmneziaWG: %[1]s\x02Tila: %[1]s\x02Osoitteet: %" +
-	"[1]s\x02Päivitys on saatavilla!\x02AmneziaWG päivitys saatavilla\x02Amne" +
+	"…\x02Lo&peta\x02&Tunnelit\x02WireGate aktivoitu\x02Tunneli %[1]s on a" +
+	"ktivoitu.\x02WireGate deaktivoitu\x02Tunneli %[1]s on deaktivoitu.\x02A" +
+	"mneziaWG tunnelivirhe\x02WireGate: %[1]s\x02Tila: %[1]s\x02Osoitteet: %" +
+	"[1]s\x02Päivitys on saatavilla!\x02WireGate päivitys saatavilla\x02Amne" +
 	"ziaWGin päivitys on nyt saatavilla. Sinua kehotetaan päivittämään mahdol" +
 	"lisimman pian.\x02Tunneli\x02&Muokkaa\x02Lisää tyhjä tunn&eli…\x02Lisää " +
 	"tunneli\x02Poista valitut tunneli(t)\x02Vie kaikki tunnelit zip-tiedosto" +
@@ -1808,7 +1808,7 @@ const fiData string = "" + // Size: 4796 bytes
 	"in ‘%[1]s’?\x02%[1]s Tätä toimintoa ei voi peruuttaa.\x02Tunnelia ei voi" +
 	"tu poistaa\x02Tunnelia ei voitu poistaa: %[1]s\x02Tunnelia ei voitu pois" +
 	"taa\x02Tuo tunneli(t) tiedostosta\x02Vie tunnelit zip-tiedostoon\x02Virh" +
-	"e AmneziaWGista poistuttaessa\x02Tila: Odotetaan käyttäjää\x02Päivitä ny" +
+	"e WireGateista poistuttaessa\x02Tila: Odotetaan käyttäjää\x02Päivitä ny" +
 	"t\x02Tila: Valmis!\x02Nyt\x02Järjestelmän kello jättää!\x14\x01\x81\x01" +
 	"\x00\x02\x0c\x02%[1]d vuosi\x00\x0d\x02%[1]d vuotta\x14\x01\x81\x01\x00" +
 	"\x02\x0e\x02%[1]d päivä\x00\x10\x02%[1]d päivää\x14\x01\x81\x01\x00\x02" +
@@ -1829,7 +1829,7 @@ const fiData string = "" + // Size: 4796 bytes
 	"riteltynä]\x02Kaikilla osapuolilla pitää olla julkinen avain\x02Virhe lu" +
 	"ettaessa määritystä\x02Virheellinen avain liitäntä-osiossa\x02Protokolla" +
 	"n version pitää olla 1\x02Virheellinen avain osapuoli-osiossa\x02Tietoja" +
-	" &AmneziaWGista…"
+	" &WireGateista…"
 
 var frIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -1924,13 +1924,13 @@ const frData string = "" + // Size: 5910 bytes
 	"\x02Erreur\x02(sans argument) : élever et installer service du gestionna" +
 	"ire\x02Utilisation : %[1]s [\x0a%[2]s]\x02Options de la ligne de command" +
 	"e\x02Impossible de détecter si le processus s’exécute sous WOW64 : %[1]v" +
-	"\x02Vous devez utiliser la version native de AmneziaWG sur cet ordinateu" +
+	"\x02Vous devez utiliser la version native de WireGate sur cet ordinateu" +
 	"r.\x02Impossible d'ouvrir le jeton du processus actuel : %[1]v\x02Seulem" +
 	"ent les utilisateurs qui sont membres du groupe intégré %[1]s peuvent ut" +
-	"iliser AmneziaWG.\x02AmneziaWG est en cours d'exécution, mais l'IU est a" +
+	"iliser WireGate.\x02WireGate est en cours d'exécution, mais l'IU est a" +
 	"ccessible seulement à partir des bureaux du group intégré %[1]s.\x02L’ic" +
-	"ône de la barre d’état système du AmneziaWG n'est pas apparue après 30 " +
-	"secondes.\x02, \x02 \x02À propos du AmneziaWG\x02Image du logo du Amnezi" +
+	"ône de la barre d’état système du WireGate n'est pas apparue après 30 " +
+	"secondes.\x02, \x02 \x02À propos du WireGate\x02Image du logo du Amnezi" +
 	"aWG\x02Fermer\x02État :\x02&Désactiver\x02&Activer\x02Clé publique :\x02" +
 	"Port d'écoute :\x02MTU :\x02Adresses :\x02Serveurs DNS :\x02Scripts :" +
 	"\x02Clé pré-partagée :\x02Adresses IP autorisées :\x02Point de terminais" +
@@ -1953,15 +1953,15 @@ const frData string = "" + // Size: 5910 bytes
 	"\x02Message du journal\x02Fichiers texte (*.txt)|*.txt|Tous les fichiers" +
 	" (*.*)|*.*\x02Exporter le journal vers le fichier\x02Erreur du tunnel" +
 	"\x02%[1]s\x0a\x0aConsultez le journal pour plus d’informations, s'il vou" +
-	"s plaît.\x02%[1]s (obsolète)\x02Erreur de détection du AmneziaWG\x02Impo" +
-	"ssible d’attendre l'affichage du fenêtre AmneziaWG : %[1]v\x02AmneziaWG:" +
+	"s plaît.\x02%[1]s (obsolète)\x02Erreur de détection du WireGate\x02Impo" +
+	"ssible d’attendre l'affichage du fenêtre WireGate : %[1]v\x02WireGate:" +
 	" Désactivé\x02État : Inconnu\x02Adresses : Aucune\x02&Gestion des tunnel" +
 	"s…\x02&Importer le(s) tunnel(s) à partir du fichier…\x02Q&uitter\x02& Tu" +
-	"nnels\x02AmneziaWG activé\x02Tunnel %[1]s a été activé.\x02AmneziaWG dés" +
-	"activé\x02Tunnel %[1]s a été désactivé.\x02Erreur du tunnel AmneziaWG" +
-	"\x02AmneziaWG : %[1]s\x02État : %[1]s\x02Adresses : %[1]s\x02Mise à jour" +
-	" disponible!\x02AmneziaWG mise à jour est disponible\x02Une mise à jour " +
-	"du AmneziaWG est disponible. Il est conseillé de mettre votre AmneziaWG " +
+	"nnels\x02WireGate activé\x02Tunnel %[1]s a été activé.\x02WireGate dés" +
+	"activé\x02Tunnel %[1]s a été désactivé.\x02Erreur du tunnel WireGate" +
+	"\x02WireGate : %[1]s\x02État : %[1]s\x02Adresses : %[1]s\x02Mise à jour" +
+	" disponible!\x02WireGate mise à jour est disponible\x02Une mise à jour " +
+	"du WireGate est disponible. Il est conseillé de mettre votre WireGate " +
 	"à jour dès que possible.\x02Tunnels\x02&Modifier\x02Ajouter un &tunnel " +
 	"vide…\x02Ajouter le tunnel\x02Supprimer le(s) tunnel(s) sélectionné(s)" +
 	"\x02Exporter tous les tunnels vers zip\x02&Basculer\x02Exporter tous les" +
@@ -1985,10 +1985,10 @@ const frData string = "" + // Size: 5910 bytes
 	"guration (*.zip, *.conf)|*.zip;*.conf|Tous les fichiers (*.*)|*.*\x02Imp" +
 	"orter le(s) tunnel(s) à partir du fichier\x02Fichiers de configuration Z" +
 	"IP (*.zip)|*.zip\x02Exporter les tunnels vers zip\x02%[1]s (version non " +
-	"signée, aucune mise à jour)\x02Erreur de sortie du AmneziaWG\x02Impossib" +
+	"signée, aucune mise à jour)\x02Erreur de sortie du WireGate\x02Impossib" +
 	"le de quitter le service en raison de : %[1]v. Essayez d'arrêter Amnezia" +
-	"WG à partir du gestionnair des services.\x02Une mise à jour du AmneziaWG" +
-	" est disponible. Il est fortement conseillé de metter votre AmneziaWG à " +
+	"WG à partir du gestionnair des services.\x02Une mise à jour du WireGate" +
+	" est disponible. Il est fortement conseillé de metter votre WireGate à " +
 	"jour sans délai.\x02État: En attente de l’utilisateur\x02Mettre à jour m" +
 	"aintenant\x02État: En attente du programme de mise à jour\x02Erreur : %[" +
 	"1]v. Veuillez réessayer.\x02État: Terminé!\x02Maintenant\x02L’horloge sy" +
@@ -2012,7 +2012,7 @@ const frData string = "" + // Size: 5910 bytes
 	"\x02Toutes les pairs doivent contenir une clé publique\x02Erreur d'obten" +
 	"tion de la configuration\x02Clé non valide pour la section d'interface" +
 	"\x02Version du protocole doit être 1\x02Clé non valide pour la section d" +
-	"'homologue\x02&À propos AmneziaWG…"
+	"'homologue\x02&À propos WireGate…"
 
 var idIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -2107,12 +2107,12 @@ const idData string = "" + // Size: 2448 bytes
 	"\x02Kesalahan\x02(tidak ada argumen): naikkan akses dan instal servis ma" +
 	"najer\x02Penggunaan: %[1]s [\x0a%[2]s]\x02Opsi Command Line\x02Tidak dap" +
 	"at menentukan apakah proses sedang berjalan di bawah WOW64: %[1]v\x02And" +
-	"a harus menggunakan AmneziaWG versi asli pada komputer ini.\x02Tidak dap" +
-	"at membuka token proses saat ini: %[1]v\x02AmneziaWG hanya dapat digunak" +
-	"an oleh pengguna yang merupakan anggota grup Bawaan %[1]s.\x02AmneziaWG " +
+	"a harus menggunakan WireGate versi asli pada komputer ini.\x02Tidak dap" +
+	"at membuka token proses saat ini: %[1]v\x02WireGate hanya dapat digunak" +
+	"an oleh pengguna yang merupakan anggota grup Bawaan %[1]s.\x02WireGate " +
 	"sedang berjalan, tetapi UI hanya dapat diakses dari desktop grup Bawaan " +
-	"%[1]s.\x02Ikon sistem AmneziaWG tidak muncul setelah 30 detik.\x02, \x02" +
-	", \x02Tentang AmneziaWG\x02Gambar logo AmneziaWG\x02Tutup\x02Status:\x02" +
+	"%[1]s.\x02Ikon sistem WireGate tidak muncul setelah 30 detik.\x02, \x02" +
+	", \x02Tentang WireGate\x02Gambar logo WireGate\x02Tutup\x02Status:\x02" +
 	"&Nonaktifkan\x02&Aktifkan\x02Kunci publik:\x02Port Pendengar:\x02MTU:" +
 	"\x02Alamat:\x02Server DNS:\x02Skrip:\x02Preshared key:\x02IP yang diperb" +
 	"olehkan:\x02Endpoint:\x02Aktif\x02Mengaktifkan\x02Nonaktif\x02Menonaktif" +
@@ -2120,10 +2120,10 @@ const idData string = "" + // Size: 2448 bytes
 	"impan ke dalam berkas…\x02Waktu\x02Pesan log\x02Berkas Txt (*.Txt)|*.Txt" +
 	"|Semua berkas (*.*)|*.*\x02Ekspor log kedalam file\x02Tunnel eror\x02%[1" +
 	"]s\x0a\x0aSilakan baca log untuk informasi lebih lanjut.\x02%[1]s (kadal" +
-	"uarsa)\x02Deteksi eror AmneziaWG\x02Tidak dapat menunggu jendela Amnezia" +
-	"WG muncul: %[1]v\x02AmneziaWG: Dinonaktifkan\x02Status: Tidak diketahui" +
+	"uarsa)\x02Deteksi eror WireGate\x02Tidak dapat menunggu jendela Amnezia" +
+	"WG muncul: %[1]v\x02WireGate: Dinonaktifkan\x02Status: Tidak diketahui" +
 	"\x02Alamat: Kosong\x02&Manajer Tunnel…\x02&Impor tunnel dari file…\x02&K" +
-	"eluar\x02AmneziaWG Tunnel Eror\x02AmneziaWG: %[1]s\x02Status: %[1]s\x02E" +
+	"eluar\x02WireGate Tunnel Eror\x02WireGate: %[1]s\x02Status: %[1]s\x02E" +
 	"kspor semua tunnel ke &zip…\x02Ubah tunnel &terpilih…\x02&Hapus tunnel t" +
 	"erpilih\x02Tidak dapat mengimpor konfigurasi yang dipilih: %[1]v\x02Seka" +
 	"rang\x02Jam sistem mundur!\x14\x01\x81\x01\x00\x00\x18\x02%[1]d tahun" +
@@ -2143,7 +2143,7 @@ const idData string = "" + // Size: 2448 bytes
 	"ce harus memiliki Private Key\x02Tidak Ditetapkan\x02Semua peers harus m" +
 	"emiliki kunci publik\x02Eror ketika mendapatkan konfigurasi\x02Kunci tid" +
 	"ak valid pada bagian [Interface]\x02Versi protokol harus 1\x02Kunci tida" +
-	"k valid pada bagian [Peer]\x02&Tentang AmneziaWG…"
+	"k valid pada bagian [Peer]\x02&Tentang WireGate…"
 
 var itIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -2238,13 +2238,13 @@ const itData string = "" + // Size: 5469 bytes
 	"\x02Errore\x02(nessun argomento): eleva e installa il servizio di gestio" +
 	"ne\x02Utilizzo: %[1]s [\x0a%[2]s]\x02Opzioni riga di comando\x02Impossib" +
 	"ile determinare se il processo è in esecuzione in WOW64: %[1]v\x02Devi u" +
-	"tilizzare la versione nativa di AmneziaWG su questo computer.\x02Impossi" +
-	"bile aprire il token del processo corrente: %[1]v\x02AmneziaWG può esser" +
+	"tilizzare la versione nativa di WireGate su questo computer.\x02Impossi" +
+	"bile aprire il token del processo corrente: %[1]v\x02WireGate può esser" +
 	"e utilizzato solo dagli utenti membri del gruppo %[1]s di sistema.\x02Am" +
 	"neziaWG è in esecuzione, ma l'interfaccia utente è accessibile solo dai " +
 	"desktop del gruppo %[1]s di sistema.\x02L'icona della barra delle applic" +
-	"azioni di AmneziaWG non è apparsa dopo 30 secondi.\x02, \x02 \x02Informa" +
-	"zioni su AmneziaWG\x02Immagine del logo di AmneziaWG\x02Chiudi\x02Stato:" +
+	"azioni di WireGate non è apparsa dopo 30 secondi.\x02, \x02 \x02Informa" +
+	"zioni su WireGate\x02Immagine del logo di WireGate\x02Chiudi\x02Stato:" +
 	"\x02&Disattiva\x02&Attiva\x02Chiave pubblica:\x02Porta in ascolto:\x02MT" +
 	"U:\x02Indirizzi:\x02Server DNS:\x02Script:\x02Chiave pre-condivisa:\x02I" +
 	"P consentiti:\x02Endpoint:\x02Keepalive permanente:\x02Ultima negoziazio" +
@@ -2264,15 +2264,15 @@ const itData string = "" + // Size: 5469 bytes
 	"a tutto\x02&Salva su file…\x02Tempo\x02Messaggio di log\x02File di testo" +
 	" (*.txt)|*.txt|Tutti i file (*.*)|*.*\x02Esporta log su file\x02Errore d" +
 	"el tunnel\x02%[1]s\x0a\x0aConsulta il log per ulteriori Informazioni." +
-	"\x02%[1]s (obsoleto)\x02Errore di rilevamento di AmneziaWG\x02Impossibil" +
-	"e attendere la comparsa della finestra di AmneziaWG: %[1]v\x02AmneziaWG:" +
+	"\x02%[1]s (obsoleto)\x02Errore di rilevamento di WireGate\x02Impossibil" +
+	"e attendere la comparsa della finestra di WireGate: %[1]v\x02WireGate:" +
 	" disattivato\x02Stato: sconosciuto\x02Indirizzi: nessuno\x02&Gestisci i " +
-	"tunnel…\x02&Importa tunnel da file…\x02E&sci\x02&Tunnel\x02AmneziaWG att" +
-	"ivato\x02Il tunnel %[1]s è stato attivato.\x02AmneziaWG disattivato\x02I" +
-	"l tunnel %[1]s è stato disattivato.\x02Errore tunnel di AmneziaWG\x02Amn" +
+	"tunnel…\x02&Importa tunnel da file…\x02E&sci\x02&Tunnel\x02WireGate att" +
+	"ivato\x02Il tunnel %[1]s è stato attivato.\x02WireGate disattivato\x02I" +
+	"l tunnel %[1]s è stato disattivato.\x02Errore tunnel di WireGate\x02Amn" +
 	"eziaWG: %[1]s\x02Stato: %[1]s\x02Indirizzi: %[1]s\x02Un aggiornamento è " +
-	"disponibile!\x02Aggiornamento di AmneziaWG disponibile\x02Un aggiornamen" +
-	"to di AmneziaWG è disponibile. Ti consigliamo di aggiornare il prima pos" +
+	"disponibile!\x02Aggiornamento di WireGate disponibile\x02Un aggiornamen" +
+	"to di WireGate è disponibile. Ti consigliamo di aggiornare il prima pos" +
 	"sibile.\x02Tunnel\x02&Modifica\x02Aggiungi tunn&el vuoto...\x02Aggiungi " +
 	"tunnel\x02Rimuovi tunnel selezionati\x02Esporta tutti i tunnel in zip" +
 	"\x02Commu&ta\x02Esporta tutti i tunnel in &zip...\x02Modifica il tunnel " +
@@ -2295,9 +2295,9 @@ const itData string = "" + // Size: 5469 bytes
 	"*.zip, *.conf)|*.zip;*.conf|Tutti i file (*.*)|*.*\x02Importa tunnel da " +
 	"file\x02File di configurazione ZIP (*.zip)|*.zip\x02Esporta tunnel in zi" +
 	"p\x02%[1]s (versione non firmata, nessun aggiornamento)\x02Errore durant" +
-	"e la chiusura di AmneziaWG\x02Impossibile uscire dal servizio a causa di" +
-	": %[1]v. Potresti voler interrompere AmneziaWG dal gestore dei servizi." +
-	"\x02Un aggiornamento di AmneziaWG è disponibile. Ti consigliamo vivament" +
+	"e la chiusura di WireGate\x02Impossibile uscire dal servizio a causa di" +
+	": %[1]v. Potresti voler interrompere WireGate dal gestore dei servizi." +
+	"\x02Un aggiornamento di WireGate è disponibile. Ti consigliamo vivament" +
 	"e di aggiornare immediatamente.\x02Stato: in attesa dell'utente\x02Aggio" +
 	"rna ora\x02Stato: in attesa del servizio di aggiornamento\x02Errore: %[1" +
 	"]v. Prova ancora.\x02Stato: Completo!\x02Ora\x02L'orologio di sistema va" +
@@ -2322,7 +2322,7 @@ const itData string = "" + // Size: 5469 bytes
 	"ave pubblica\x02Errore durante il recupero della configurazione\x02Chiav" +
 	"e non valida per la sezione dell'interfaccia\x02La versione del protocol" +
 	"lo deve essere 1\x02Chiave non valida per la sezione peer\x02Inform&azio" +
-	"ni su AmneziaWG…"
+	"ni su WireGate…"
 
 var jaIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -2416,10 +2416,10 @@ var jaIndex = []uint32{ // 304 elements
 const jaData string = "" + // Size: 6277 bytes
 	"\x02エラー\x02(引数なし): 管理者権限でmanagerサービスをインストールする\x02使い方: %[1]s [\x0a%[2]s]" +
 	"\x02コマンドラインオプション\x02プロセスがWOW64下で動作しているか確認できません: %[1]v\x02このコンピュータではネイティブ" +
-	"版の AmneziaWG を使ってください。\x02現在のプロセスのトークンを開けません: %[1]v\x02AmneziaWG は組み込み" +
-	"の %[1]s グループのメンバーだけが使えます。\x02AmneziaWG は実行中ですが、UI画面は組み込みの %[1]s グループのデ" +
-	"スクトップからしか開けません。\x02AmneziaWG システムトレイアイコンは30秒後に非表示になります。\x02, \x02 \x02" +
-	"AmneziaWG について\x02AmneziaWG ロゴ画像\x02閉じる\x02状態:\x02無効化(&D)\x02有効化(&A)\x02" +
+	"版の WireGate を使ってください。\x02現在のプロセスのトークンを開けません: %[1]v\x02WireGate は組み込み" +
+	"の %[1]s グループのメンバーだけが使えます。\x02WireGate は実行中ですが、UI画面は組み込みの %[1]s グループのデ" +
+	"スクトップからしか開けません。\x02WireGate システムトレイアイコンは30秒後に非表示になります。\x02, \x02 \x02" +
+	"WireGate について\x02WireGate ロゴ画像\x02閉じる\x02状態:\x02無効化(&D)\x02有効化(&A)\x02" +
 	"公開鍵:\x02待受ポート番号:\x02MTU:\x02アドレス:\x02DNS サーバ:\x02スクリプト:\x02事前共有鍵:\x02A" +
 	"llowed IPs:\x02エンドポイント:\x02持続的キープアライブ:\x02直近のハンドシェイク:\x02転送:\x02pre-up" +
 	"\x02post-up\x02pre-down\x02post-down\x02ポリシーにより無効です\x02有効\x02%[1]s 受信済み、" +
@@ -2432,12 +2432,12 @@ const jaData string = "" + // Size: 6277 bytes
 	"\x02無効\x02無効化中\x02不明な状態\x02ログ\x02コピー(&C)\x02すべて選択(&A)\x02ファイルに保存…(&S)" +
 	"\x02時刻\x02ログ メッセージ\x02テキストファイル (*.txt)|*.txt|すべてのファイル (*.*)|*.*\x02ログをファ" +
 	"イルにエクスポート\x02トンネルエラー\x02%[1]s\x0a\x0a詳細はログを参照してください。\x02%[1]s (更新あり)" +
-	"\x02AmneziaWG 検出エラー\x02AmneziaWG ウィンドウが表示できませんでした: %[1]v\x02AmneziaWG: 無" +
+	"\x02WireGate 検出エラー\x02WireGate ウィンドウが表示できませんでした: %[1]v\x02WireGate: 無" +
 	"効化済み\x02状態: 不明\x02アドレス: なし\x02トンネルの管理…(&M)\x02トンネルをファイルからインポート…(&I)" +
-	"\x02終了(&X)\x02トンネル(&T)\x02AmneziaWG 有効化済み\x02トンネル %[1]s は有効になりました。\x02Am" +
-	"neziaWG 無効化済み\x02トンネル %[1]s は無効になりました。\x02AmneziaWG トンネルエラー\x02AmneziaWG" +
-	": %[1]s\x02状態: %[1]s\x02アドレス: %[1]s\x02更新が利用できます！\x02AmneziaWG の更新が利用可能で" +
-	"す\x02AmneziaWG の更新が利用可能になりました。できるだけ早く更新してください。\x02トンネル\x02編集(&E)\x02空の" +
+	"\x02終了(&X)\x02トンネル(&T)\x02WireGate 有効化済み\x02トンネル %[1]s は有効になりました。\x02Am" +
+	"neziaWG 無効化済み\x02トンネル %[1]s は無効になりました。\x02WireGate トンネルエラー\x02WireGate" +
+	": %[1]s\x02状態: %[1]s\x02アドレス: %[1]s\x02更新が利用できます！\x02WireGate の更新が利用可能で" +
+	"す\x02WireGate の更新が利用可能になりました。できるだけ早く更新してください。\x02トンネル\x02編集(&E)\x02空の" +
 	"トンネルを追加…(&E)\x02トンネルの追加\x02選択したトンネルの削除\x02すべてのトンネルをzipにエクスポート\x02切り替え(" +
 	"&T)\x02すべてのトンネルをzipにエクスポート…(&Z)\x02選択したトンネルの編集…(&S)\x02選択したトンネルの削除(&R)" +
 	"\x02設定ファイルが見つかりません\x02選択したファイルからインポートできませんでした: %[1]v\x02既存のトンネルを表示できませんで" +
@@ -2450,8 +2450,8 @@ const jaData string = "" + // Size: 6277 bytes
 	"ネルを削除できません\x14\x01\x81\x01\x00\x004\x02%[1]d トンネルを削除できませんでした\x02設定ファイル" +
 	" (*.zip, *.conf)|*.zip;*.conf|すべてのファイル (*.*)|*.*\x02ファイルからトンネルをインポート\x02" +
 	"ZIP形式設定ファイル (*.zip)|*.zip\x02トンネルをZIPにエクスポート\x02%[1]s (未署名のビルド、更新の提供なし)" +
-	"\x02AmneziaWG 終了エラー\x02%[1]v のためサービスを終了できませんでした。サービスマネージャから AmneziaWG を停" +
-	"止できます。\x02AmneziaWG の更新が利用可能です。速やかに更新することを強く推奨します。\x02状態: ユーザーからの応答待ち" +
+	"\x02WireGate 終了エラー\x02%[1]v のためサービスを終了できませんでした。サービスマネージャから WireGate を停" +
+	"止できます。\x02WireGate の更新が利用可能です。速やかに更新することを強く推奨します。\x02状態: ユーザーからの応答待ち" +
 	"\x02今すぐ更新\x02状態: アップデータサービスを待機中\x02エラー: %[1]v。再度実行してください。\x02状態: 完了！\x02" +
 	"今\x02システム時刻が巻き戻った！\x14\x01\x81\x01\x00\x00\x0a\x02%[1]d 年\x14\x01\x81" +
 	"\x01\x00\x00\x0a\x02%[1]d 日\x14\x01\x81\x01\x00\x00\x0d\x02%[1]d 時間\x14" +
@@ -2465,7 +2465,7 @@ const jaData string = "" + // Size: 6277 bytes
 	"りません\x02無効な [Interface] セクションのキー項目\x02無効な [Peer] セクションのキー項目\x02インターフェー" +
 	"スには秘密鍵が必須です\x02[指定なし]\x02すべてのピアには公開鍵が必須です\x02設定の読込中にエラーが発生しました\x02無効な " +
 	"Interface セクションのキー項目\x02プロトコルバージョンは 1 でなければなりません\x02無効な Peer セクションのキー項目" +
-	"\x02AmneziaWGについて…(&A)"
+	"\x02WireGateについて…(&A)"
 
 var koIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -2558,11 +2558,11 @@ var koIndex = []uint32{ // 304 elements
 
 const koData string = "" + // Size: 5470 bytes
 	"\x02오류\x02(인수 없음): 관리자 서비스 상승 및 설치\x02사용: %[1]s [\x0a%[2]s]\x02커맨드 라인 옵션" +
-	"\x02WOW64에서 프로세스가 실행 중인지 확인할 수 없음: %[1]v\x02이 컴퓨터에서는 기본 버전의 AmneziaWG를 사" +
-	"용해야 합니다.\x02현재 프로세스 토큰을 열 수 없음: %[1]v\x02AmneziaWG는 Builtin %[1]s 그룹의 " +
-	"구성원인 사용자만 사용할 수 있습니다.\x02AmneziaWG가 실행 중이나 UI는 Builtin의 데스크톱에서만 액세스할 수" +
-	" 있습니다%[1]s 그룹.\x02AmneziaWG 시스템 트레이 아이콘이 30초 후에 나타나지 않았습니다.\x02, \x02, " +
-	"\x02AmneziaWG에 관하여\x02AmneziaWG 로고 이미지\x02닫기\x02상태:\x02&비활성화하기\x02&활성화하기" +
+	"\x02WOW64에서 프로세스가 실행 중인지 확인할 수 없음: %[1]v\x02이 컴퓨터에서는 기본 버전의 WireGate를 사" +
+	"용해야 합니다.\x02현재 프로세스 토큰을 열 수 없음: %[1]v\x02WireGate는 Builtin %[1]s 그룹의 " +
+	"구성원인 사용자만 사용할 수 있습니다.\x02WireGate가 실행 중이나 UI는 Builtin의 데스크톱에서만 액세스할 수" +
+	" 있습니다%[1]s 그룹.\x02WireGate 시스템 트레이 아이콘이 30초 후에 나타나지 않았습니다.\x02, \x02, " +
+	"\x02WireGate에 관하여\x02WireGate 로고 이미지\x02닫기\x02상태:\x02&비활성화하기\x02&활성화하기" +
 	"\x02공개 키:\x02수신 포트:\x02MTU:\x02주소:\x02DNS 서버:\x02스크립트:\x02사전 공유 키:\x02허용" +
 	"된 IP:\x02엔드포인트:\x02지속적 연결 유지:\x02마지막 정보교환:\x02전송:\x02사전-준비\x02게시-하기" +
 	"\x02준비-해제\x02게시-중단\x02비활성화됨, 정책에 따라\x02활성화됨\x02%[1]s 받음, %[2]s 보내기\x02터널" +
@@ -2574,12 +2574,12 @@ const koData string = "" + // Size: 5470 bytes
 	"want to overwrite it?\x02활성화\x02활성화 중\x02비활성\x02비활성화 중\x02알 수 없는 상태\x02로" +
 	"그\x02&복사\x02전체 &선택\x02&파일에 저장…\x02시간\x02로그 메시지\x02텍스트 파일 (*.txt)|*.txt" +
 	"|모든 파일 (*.*)|*.*\x02로그 파일 내보내기\x02터널 오류\x02%[1]s\x0a\x0a자세한 내용은 로그를 참조하세" +
-	"요.\x02%[1]s (구식)\x02AmneziaWG 감지 오류\x02AmneziaWG 창이 나타날 때까지 기다릴 수 없음: " +
-	"%[1]v\x02AmneziaWG: 비활성화됨\x02상태: 알 수 없음\x02주소: 없음\x02&터널 관리…\x02&파일에서 터널" +
-	"(s) 불러오기…\x02종료&\x02&터널\x02AmneziaWG 활성화됨\x02다음 %[1]s 터널이 활성화되었습니다.\x02A" +
-	"mneziaWG 비활성화됨\x02다음 %[1]s 터널이 비활성화되었습니다.\x02AmneziaWG 터널 오류\x02와이어가드: %" +
-	"[1]s\x02상태: %[1]s\x02주소: %[1]s\x02업데이트를 사용할 수 있습니다!\x02AmneziaWG 업데이트 가능" +
-	"\x02이제 AmneziaWG 업데이트를 사용할 수 있습니다. 최대한 빨리 업데이트하는 것이 좋습니다.\x02터널\x02&편집" +
+	"요.\x02%[1]s (구식)\x02WireGate 감지 오류\x02WireGate 창이 나타날 때까지 기다릴 수 없음: " +
+	"%[1]v\x02WireGate: 비활성화됨\x02상태: 알 수 없음\x02주소: 없음\x02&터널 관리…\x02&파일에서 터널" +
+	"(s) 불러오기…\x02종료&\x02&터널\x02WireGate 활성화됨\x02다음 %[1]s 터널이 활성화되었습니다.\x02A" +
+	"mneziaWG 비활성화됨\x02다음 %[1]s 터널이 비활성화되었습니다.\x02WireGate 터널 오류\x02와이어가드: %" +
+	"[1]s\x02상태: %[1]s\x02주소: %[1]s\x02업데이트를 사용할 수 있습니다!\x02WireGate 업데이트 가능" +
+	"\x02이제 WireGate 업데이트를 사용할 수 있습니다. 최대한 빨리 업데이트하는 것이 좋습니다.\x02터널\x02&편집" +
 	"\x02&빈 터널 추가…\x02터널 추가\x02선택한 터널(s) 제거\x02터널들을 Zip 파일에 내보내기\x02&토글\x02모든" +
 	" 터널을 &zip으로 내보내기…\x02편집 &선택한 터널…\x02&선택한 터널(s) 제거\x02구성 파일을 찾을 수 없음\x02선" +
 	"택한 구성을 가져올 수 없음: %[1]v\x02기존 터널을 열거할 수 없음: %[1]v\x02이름과 함께 또 다른 터널이 이미" +
@@ -2591,8 +2591,8 @@ const koData string = "" + // Size: 5470 bytes
 	"음: %[1]s\x02터널을 삭제할 수 없음\x14\x01\x81\x01\x00\x00/\x02%[1]d 터널을 제거할 수 없" +
 	"었습니다.\x02구성 파일 (*.zip, *.conf)|*.zip;*.conf|All Files (*.*)|*.*\x02파일에" +
 	"서 터널(s) 불러오기\x02형상 ZIP 파일 (*.zip)|*.zip\x02터널들을 Zip 파일에 내보내기\x02%[1]s " +
-	"(서명되지 않은 빌드, 업데이트 없음)\x02AmneziaWG 오류로 종료중\x02다음 원인으로 인해 서비스를 종료할 수 없: %" +
-	"[1]v. 서비스 관리자에서 AmneziaWG를 중지할 수 있습니다.\x02AmneziaWG에 대한 업데이트가 가능합니다. 지체 " +
+	"(서명되지 않은 빌드, 업데이트 없음)\x02WireGate 오류로 종료중\x02다음 원인으로 인해 서비스를 종료할 수 없: %" +
+	"[1]v. 서비스 관리자에서 WireGate를 중지할 수 있습니다.\x02WireGate에 대한 업데이트가 가능합니다. 지체 " +
 	"없이 업데이트하는 것이 좋습니다.\x02상태: 사용자를 기다리는 중\x02지금 업데이트\x02상태: 업데이터 서비스를 기다리는" +
 	" 중\x02오류: %[1]v. 다시 시도해 주세요.\x02상태: 완료!\x02지금\x02시스템 시간이 되돌려짐!\x14\x01" +
 	"\x81\x01\x00\x00\x0a\x02%[1]d 년\x14\x01\x81\x01\x00\x00\x0a\x02%[1]d 일" +
@@ -2606,7 +2606,7 @@ const koData string = "" + // Size: 5470 bytes
 	" 유효하지 않음\x02행은 섹션에 있어야 함\x02구성 키에 등호 구분 기호가 없음\x02키에는 값이 있어야 합니다\x02[Int" +
 	"erface] 구간에 대한 잘못된 키\x02[Peer] 구간에 대한 잘못된 키\x02인터페이스에는 개인 키가 있어야 함\x02[특" +
 	"정되지 않음]\x02모든 피어에는 공개 키가 있어야 함\x02구성을 가져오는 중 오류가 발생\x02인터페이스 섹션의 키가 잘못" +
-	"됨\x02프로토콜 버전은 1이어야 합니다.\x02피어 섹션의 키가 잘못됨\x02&AmneziaWG에 관하여…"
+	"됨\x02프로토콜 버전은 1이어야 합니다.\x02피어 섹션의 키가 잘못됨\x02&WireGate에 관하여…"
 
 var nlIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -2701,13 +2701,13 @@ const nlData string = "" + // Size: 5082 bytes
 	"\x02Foutmelding\x02(geen argumenten): Verhoog rechten en installeer behe" +
 	"erder-service\x02Gebruikswijze: %[1]s [\x0a%[2]s]\x02Opdracht-prompt Opt" +
 	"ies\x02Kan niet bepalen of het proces wordt uitgevoerd onder WOW64: %[1]" +
-	"v\x02Je moet de native versie van AmneziaWG gebruiken op deze computer." +
-	"\x02Kan de huidige proces-token niet openen: %[1]v\x02AmneziaWG mag alle" +
+	"v\x02Je moet de native versie van WireGate gebruiken op deze computer." +
+	"\x02Kan de huidige proces-token niet openen: %[1]v\x02WireGate mag alle" +
 	"en gebruikt worden door gebruikers die deel uitmaken van de ingebouwde %" +
-	"[1]s groep.\x02AmneziaWG is actief, maar de gebruikersinterface is allee" +
+	"[1]s groep.\x02WireGate is actief, maar de gebruikersinterface is allee" +
 	"n toegankelijk via de desktops van de Ingebouwde %[1]s groep.\x02Amnezia" +
 	"WG systeem tray icoon is niet weergegeven na 30 seconden.\x02, \x02 \x02" +
-	"Over AmneziaWG\x02AmneziaWG logo-afbeelding\x02Sluiten\x02Status:\x02&De" +
+	"Over WireGate\x02WireGate logo-afbeelding\x02Sluiten\x02Status:\x02&De" +
 	"activeer\x02&Activeer\x02Publieke sleutel:\x02Luister op poort:\x02MTU:" +
 	"\x02Adressen:\x02DNS-servers:\x02Scripts:\x02Gedeelde sleutel:\x02Toeges" +
 	"tane IP-adressen:\x02Eindpunt:\x02Recentste uitwisseling:\x02Overdracht:" +
@@ -2725,14 +2725,14 @@ const nlData string = "" + // Size: 5082 bytes
 	"er &alles\x02&Opslaan naar bestand…\x02Tijd\x02Logbericht\x02Tekstbestan" +
 	"den (*.txt)|*.txt|Alle bestanden (*. *)|*.*\x02Exporteer logboek naar be" +
 	"stand\x02Tunnel-fout\x02%[1]s\x0a\x0aRaadpleeg het logboek voor meer inf" +
-	"ormatie.\x02%[1]s (out-of-date)\x02AmneziaWG Detection Fout\x02Kan niet " +
-	"wachten op het AmneziaWG-window: %[1]v\x02AmneziaWG: Gedeactiveerd\x02St" +
+	"ormatie.\x02%[1]s (out-of-date)\x02WireGate Detection Fout\x02Kan niet " +
+	"wachten op het WireGate-window: %[1]v\x02WireGate: Gedeactiveerd\x02St" +
 	"atus: Onbekend\x02Addressen: Geen\x02&Tunnels beheren…\x02&Importeer tun" +
-	"nel(s) van bestand…\x02&Afsluiten\x02&Tunnels\x02AmneziaWG Geactiveerd" +
-	"\x02De %[1]s tunnel is geactiveerd.\x02AmneziaWG Gedeactiveerd\x02De %[1" +
-	"]s tunnel is gedeactiveerd.\x02AmneziaWG Tunnel Fout\x02AmneziaWG: %[1]s" +
+	"nel(s) van bestand…\x02&Afsluiten\x02&Tunnels\x02WireGate Geactiveerd" +
+	"\x02De %[1]s tunnel is geactiveerd.\x02WireGate Gedeactiveerd\x02De %[1" +
+	"]s tunnel is gedeactiveerd.\x02WireGate Tunnel Fout\x02WireGate: %[1]s" +
 	"\x02Status: %[1]s\x02Addressen: %[1]s\x02Een Update is Beschikbaar!\x02A" +
-	"mneziaWG update beschikbaar\x02Een update voor AmneziaWG is beschikbaar." +
+	"mneziaWG update beschikbaar\x02Een update voor WireGate is beschikbaar." +
 	" Het wordt aangeraden zo snel mogelijk bij te werken.\x02Tunnels\x02B&ew" +
 	"erken\x02Voeg l&ege tunnel toe…\x02Tunnel toevoegen\x02Geselecteerde tun" +
 	"nel(s) verwijderen\x02Alle tunnels naar een zip-bestand exporteren\x02In" +
@@ -2756,8 +2756,8 @@ const nlData string = "" + // Size: 5082 bytes
 	"konden niet worden verwijderd.\x02Configuratiebestanden (*.zip, *.conf)|" +
 	"*.zip;*.conf|Alle bestanden (*.*)|*.*\x02Importeer tunnel(s) uit bestand" +
 	"\x02Configuratiebestanden ZIP (*.zip)|*.zip\x02Alle tunnels naar zip-bes" +
-	"tand exporteren\x02Fout bij afsluiten AmneziaWG\x02Er is een update voor" +
-	" AmneziaWG beschikbaar. Het wordt ten sterkste aangeraden deze zo snel m" +
+	"tand exporteren\x02Fout bij afsluiten WireGate\x02Er is een update voor" +
+	" WireGate beschikbaar. Het wordt ten sterkste aangeraden deze zo snel m" +
 	"ogelijk te installeren.\x02Status: Wachten op gebruiker\x02Nu Bijwerken" +
 	"\x02Fout: %[1]v. Probeer het opnieuw.\x02Status: Voltooid!\x02Nu\x02Syst" +
 	"eemklok is achteruit gezet!\x14\x01\x81\x01\x00\x02\x0b\x02%[1]d jaar" +
@@ -2779,7 +2779,7 @@ const nlData string = "" + // Size: 5082 bytes
 	" privé sleutel hebben\x02[Niets opgegeven]\x02Alle peers moeten publieke" +
 	" sleutels hebben\x02Fout bij het lezen van de configuratie\x02Ongeldige " +
 	"sleutel voor interface-gedeelte\x02Protocol-versie moet 1 zijn\x02Ongeld" +
-	"ige sleutel voor peer-gedeelte\x02Over &AmneziaWG…"
+	"ige sleutel voor peer-gedeelte\x02Over &WireGate…"
 
 var pa_INIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -2873,11 +2873,11 @@ var pa_INIndex = []uint32{ // 304 elements
 const pa_INData string = "" + // Size: 8530 bytes
 	"\x02ਗ਼ਲਤੀ\x02ਵਰਤੋਂ: %[1]s [\x0a%[2]s]\x02ਕਮਾਂਡ ਲਾਈਨ ਚੋਣਾਂ\x02ਪਤਾ ਲਗਾਉਣ ਲ" +
 	"ਈ ਅਸਮਰੱਥ ਹੈ ਕਿ ਪਰੋਸੈਸ WOW64 ਅਧੀਨ ਚੱਲ ਰਿਹਾ ਹੈ: %[1]v\x02ਤੁਹਾਨੂੰ ਇਸ ਕੰਪਿ" +
-	"ਊਟਰ ਉੱਤੇ AmneziaWG ਦਾ ਮੂਲ ਵਰਜ਼ਨ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।\x02ਮੌਜੂਦਾ ਪਰੋਸੈਸ ਟੋਕਨ " +
-	"ਖੋਲ੍ਹਣ ਲਈ ਅਸਮਰੱਥ: %[1]v\x02AmneziaWG ਨੂੰ ਸਿਰਫ਼ ਉਹੀ ਵਰਤੋਂਕਾਰ ਵਰਤ ਸਕਦੇ ਹ" +
-	"ਨ, ਜੋ ਕਿ ਪਹਿਲਾਂ ਮੌਜੂਦ %[1]s ਗਰੁੱਪ ਦੇ ਮੈਂਬਰ ਹਨ।\x02AmneziaWG ਚੱਲ ਰਿਹਾ ਹ" +
+	"ਊਟਰ ਉੱਤੇ WireGate ਦਾ ਮੂਲ ਵਰਜ਼ਨ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ।\x02ਮੌਜੂਦਾ ਪਰੋਸੈਸ ਟੋਕਨ " +
+	"ਖੋਲ੍ਹਣ ਲਈ ਅਸਮਰੱਥ: %[1]v\x02WireGate ਨੂੰ ਸਿਰਫ਼ ਉਹੀ ਵਰਤੋਂਕਾਰ ਵਰਤ ਸਕਦੇ ਹ" +
+	"ਨ, ਜੋ ਕਿ ਪਹਿਲਾਂ ਮੌਜੂਦ %[1]s ਗਰੁੱਪ ਦੇ ਮੈਂਬਰ ਹਨ।\x02WireGate ਚੱਲ ਰਿਹਾ ਹ" +
 	"ੈ, ਪਰ UI ਨੂੰ ਸਿਰਫ਼ ਪਹਿਲਾਂ ਮੌਜੂਦ %[1]s ਗਰੁੱਪ ਦੇ ਡੈਸਕਟਾਪ ਰਾਹੀਂ ਹੀ ਵਰਤਿਆ " +
-	"ਜਾ ਸਕਦਾ ਹੈ।\x02AmneziaWG ਸਿਸਟਮ ਟਰੇ ਆਈਕਾਨ 30 ਸਕਿੰਟਾਂ ਬਾਅਦ ਦਿਖਾਈ ਨਹੀਂ ਦਿ" +
+	"ਜਾ ਸਕਦਾ ਹੈ।\x02WireGate ਸਿਸਟਮ ਟਰੇ ਆਈਕਾਨ 30 ਸਕਿੰਟਾਂ ਬਾਅਦ ਦਿਖਾਈ ਨਹੀਂ ਦਿ" +
 	"ੱਤਾ ਹੈ।\x02, \x02, \x02ਵਾਇਰਗਾਰਡ ਬਾਰੇ\x02ਬੰਦ ਕਰੋ\x02ਸਥਿਤੀ:\x02ਨਾ-ਸਰਗਰਮ " +
 	"ਕਰੋ(&D)\x02ਸਰਗਰਮ ਕਰੋ(&A)\x02ਪਬਲਿਕ ਕੁੰਜੀ:\x02ਸੁਣਨ ਵਾਲੀ ਪੋਰਟ:\x02MTU:" +
 	"\x02ਸਿਰਨਾਵੇ:\x02DNS ਸਰਵਰ:\x02ਸਕ੍ਰਿਪਟਾਂ:\x02ਪਹਿਲਾਂ-ਸਾਂਝੀ ਕੀਤੀ ਕੁੰਜੀ:\x02ਮ" +
@@ -2895,7 +2895,7 @@ const pa_INData string = "" + // Size: 8530 bytes
 	"ੂ\x02ਕਾਪੀ ਕਰੋ(&C)\x02ਸਾਰੇ ਚੁਣੋ(&a)\x02ਫ਼ਾਇਲ ਵਿੱਚ ਸੰਭਾਲੋ(&S)…\x02ਸਮਾਂ" +
 	"\x02ਲਾਗ ਸੁਨੇਹਾ\x02ਲਿਖਤ ਫ਼ਾਇਲਾਂ (*.txt)|*.txt|ਸਾਰੀਆਂ ਫ਼ਾਇਲਾਂ (*.*)|*.*" +
 	"\x02ਲਾਗ ਫ਼ਾਇਲ ਵਿੱਚ ਬਰਾਮਦ ਕਰੋ\x02ਟਨਲ ਗਲਤੀ\x02%[1]s\x0a\x0aPlease consult " +
-	"the log for more information.\x02%[1]s (out of date)\x02AmneziaWG ਖੋਜ ਗ਼" +
+	"the log for more information.\x02%[1]s (out of date)\x02WireGate ਖੋਜ ਗ਼" +
 	"ਲਤੀ\x02ਵਾਇਰਗਾਰਡ: ਨਾ-ਸਰਗਰਮ ਕੀਤਾ\x02ਸਥਿਤੀ: ਅਣਪਛਾਤੀ\x02ਸਿਰਨਾਵੇਂ: ਕੋਈ ਨਹੀਂ" +
 	"\x02ਟਨਲਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ(&M)…\x02ਫ਼ਾਇਲ ਤੋਂ ਟਨਲਾਂ ਦਰਾਮਦ ਕਰੋ(&I)…\x02ਬਾਹਰ(&" +
 	"x)\x02ਟਨਲ(&T)\x02ਵਾਇਰਗਾਰਡ ਸਰਗਰਮ ਕੀਤਾ\x02%[1]s ਟਨਲ ਸਰਗਰਮ ਕੀਤੀ ਗਈ ਹੈ।\x02ਵ" +
@@ -2917,9 +2917,9 @@ const pa_INData string = "" + // Size: 8530 bytes
 	"ਹੋ।\x02ਟਨਲ ਹਟਾਉਣ ਲਈ ਅਸਮਰੱਥ\x02ਟਨਲ ਹਟਾਉਣ ਲਈ ਅਸਮਰੱਥ ਹੈ: %[1]s\x02ਟਨਲਾਂ ਹ" +
 	"ਟਾਉਣ ਲਈ ਅਸਮਰੱਥ\x02ਸੰਰਚਨਾ ਫ਼ਾਇਲਾਂ (*.zip, *.conf)|*.zip;*.conf|ਸਾਰੀਆਂ ਫ" +
 	"਼ਾਇਲਾਂ (*.*)|*.*\x02ਫ਼ਾਇਲ ਤੋਂ ਟਨਲਾਂ ਦਰਾਮਦ ਕਰੋ\x02ਸੰਰਚਨਾ ਜ਼ਿੱਪ ਫਾਇਲਾਂ (*" +
-	".zip)|*.zip\x02AmneziaWG ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਗ਼ਲਤੀ\x02ਸੇਵਾ ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਅ" +
-	"ਸਮਰੱਥ, ਕਾਰਨ: %[1]v। ਤੁਸੀਂ ਸੇਵਾ ਮੈਨੇਜਰ ਤੋਂ AmneziaWG ਨੂੰ ਰੋਕਣਾ ਚਾਹੋਗੇ।" +
-	"\x02AmneziaWG ਲਈ ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ। ਤੁਹਾਨੂੰ ਬਿਨਾਂ ਦੇਰ ਕੀਤਿਆਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ" +
+	".zip)|*.zip\x02WireGate ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਗ਼ਲਤੀ\x02ਸੇਵਾ ਤੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਅ" +
+	"ਸਮਰੱਥ, ਕਾਰਨ: %[1]v। ਤੁਸੀਂ ਸੇਵਾ ਮੈਨੇਜਰ ਤੋਂ WireGate ਨੂੰ ਰੋਕਣਾ ਚਾਹੋਗੇ।" +
+	"\x02WireGate ਲਈ ਅੱਪਡੇਟ ਮੌਜੂਦ ਹੈ। ਤੁਹਾਨੂੰ ਬਿਨਾਂ ਦੇਰ ਕੀਤਿਆਂ ਅੱਪਡੇਟ ਕਰਨ ਦੀ" +
 	" ਸਲਾਹ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ।\x02ਹਾਲਤ: ਵਰਤੋਂਕਾਰ ਲਈ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ\x02ਹੁਣੇ ਅ" +
 	"ੱਪਡੇਟ ਕਰੋ\x02ਹਾਲਤ: ਅੱਪਡੇਟਰ ਸੇਵਾ ਦੀ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ\x02ਗ਼ਲਤੀ: %[1]v" +
 	"। ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।\x02ਸਥਿਤੀ: ਪੂਰਾ!\x02ਹੁਣ\x02ਸਿਸਟਮ ਘੜੀ ਪੁ਼ੱਠੀ ਮੋੜੀ ਗਈ!" +
@@ -3029,13 +3029,13 @@ const plData string = "" + // Size: 5957 bytes
 	"\x02Błąd\x02(brak argumentu): Podnieś uprawnienia i zainstaluj usługę me" +
 	"nedżera\x02Użycie: %[1]s [\x0a%[2]s]\x02Opcje wiersza poleceń\x02Nie moż" +
 	"na określić, czy proces jest uruchomiony w środowisku WOW64: %[1]v\x02Na" +
-	"leży użyć natywnej wersji AmneziaWG na tym komputerze.\x02Nie można otwo" +
-	"rzyć bieżącego tokenu procesu: %[1]v\x02AmneziaWG może być używany tylko" +
+	"leży użyć natywnej wersji WireGate na tym komputerze.\x02Nie można otwo" +
+	"rzyć bieżącego tokenu procesu: %[1]v\x02WireGate może być używany tylko" +
 	" przez użytkowników, którzy są członkami wbudowanej grupy %[1]s.\x02Amne" +
 	"ziaWG jest uruchomiony, ale interfejs jest dostępny tylko z poziomu użyt" +
-	"kowników należących do wbudowanej grupy %[1]s.\x02Ikona AmneziaWG nie po" +
+	"kowników należących do wbudowanej grupy %[1]s.\x02Ikona WireGate nie po" +
 	"jawiła się po 30 sekundach w zasobniku systemowym.\x02, \x02, \x02Inform" +
-	"acje o AmneziaWG\x02Logo AmneziaWG\x02Zamknij\x02Status:\x02&Dezaktywuj" +
+	"acje o WireGate\x02Logo WireGate\x02Zamknij\x02Status:\x02&Dezaktywuj" +
 	"\x02&Aktywuj\x02Klucz publiczny:\x02Port nasłuchu:\x02MTU:\x02Adresy:" +
 	"\x02Serwery DNS:\x02Skrypty:\x02PSK:\x02Dozwolone adresy IP:\x02Urządzen" +
 	"ie końcowe:\x02Utrzymanie połączenia:\x02Ostatni uścisk dłoni (handshake" +
@@ -3055,14 +3055,14 @@ const plData string = "" + // Size: 5957 bytes
 	"\x02&Zapisz do pliku…\x02Czas\x02Wiadomości dziennika\x02Pliki tekstowe " +
 	"(*.txt)|*.txt|Wszystkie pliki (*.*)|*.*\x02Eksportuj dziennik do pliku" +
 	"\x02Błąd tunelu\x02%[1]s\x0a\x0aAby uzyskać więcej informacji, zapoznaj " +
-	"się z dziennikiem.\x02%[1]s (nieaktualny)\x02Błąd detekcji AmneziaWG\x02" +
-	"Nie można poczekać na pojawienie się okna AmneziaWG: %[1]v\x02AmneziaWG:" +
+	"się z dziennikiem.\x02%[1]s (nieaktualny)\x02Błąd detekcji WireGate\x02" +
+	"Nie można poczekać na pojawienie się okna WireGate: %[1]v\x02WireGate:" +
 	" Dezaktywowany\x02Status: Nieznany\x02Adresy: Brak\x02&Zarządzaj tunelam" +
-	"i…\x02&Importuj tunel(e) z pliku…\x02W&yjście\x02&Tunele\x02AmneziaWG Ak" +
-	"tywny\x02Tunel %[1]s został aktywowany.\x02AmneziaWG dezaktywowany\x02Tu" +
-	"nel %[1]s został dezaktywowany.\x02Błąd tunelu AmneziaWG\x02AmneziaWG: %" +
+	"i…\x02&Importuj tunel(e) z pliku…\x02W&yjście\x02&Tunele\x02WireGate Ak" +
+	"tywny\x02Tunel %[1]s został aktywowany.\x02WireGate dezaktywowany\x02Tu" +
+	"nel %[1]s został dezaktywowany.\x02Błąd tunelu WireGate\x02WireGate: %" +
 	"[1]s\x02Status: %[1]s\x02Adresy: %[1]s\x02Dostępna nowa aktualizacja!" +
-	"\x02Aktualizacja AmneziaWG jest dostępna\x02Aktualizacja AmneziaWG jest " +
+	"\x02Aktualizacja WireGate jest dostępna\x02Aktualizacja WireGate jest " +
 	"już dostępna. Zaleca się jak najszybszą aktualizację.\x02Tunele\x02&Edyt" +
 	"uj\x02Dodaj &pusty tunel…\x02Dodaj tunel\x02Usuń wybrany(-e) tunel(e)" +
 	"\x02Eksportuj wszystkie tunele do archiwum ZIP\x02&Przełącz\x02Eksportuj" +
@@ -3090,9 +3090,9 @@ const plData string = "" + // Size: 5957 bytes
 	"zip, *.conf)|*.zip;*.conf|Wszystkie pliki (*.*)|*.*\x02Importuj tunel(e)" +
 	" z pliku\x02Pliki ZIP konfiguracji (*.zip)|*.zip\x02Eksportuj tunele do " +
 	"archiwum ZIP\x02%[1]s (wersja niepodpisana, brak aktualizacji)\x02Błąd p" +
-	"odczas zamykania AmneziaWG\x02Nie można wyłączyć usługi ze względu na: %" +
-	"[1]v. Jeśli chcesz wyłączyć AmneziaWG, możesz to zrobić z poziomu menedż" +
-	"era usług.\x02Aktualizacja AmneziaWG jest dostępna. Zaleca się natychmia" +
+	"odczas zamykania WireGate\x02Nie można wyłączyć usługi ze względu na: %" +
+	"[1]v. Jeśli chcesz wyłączyć WireGate, możesz to zrobić z poziomu menedż" +
+	"era usług.\x02Aktualizacja WireGate jest dostępna. Zaleca się natychmia" +
 	"stową aktualizację.\x02Status: Czekam na użytkownika\x02Uaktualnij teraz" +
 	"\x02Status: Czekam na usługę aktualizacji\x02Błąd: %[1]v. Spróbuj ponown" +
 	"ie.\x02Status: Ukończone!\x02Teraz\x02Zegar systemowy został cofnięty!" +
@@ -3119,7 +3119,7 @@ const plData string = "" + // Size: 5957 bytes
 	"o]\x02Wszyscy uczestnicy muszą mieć klucze publiczne\x02Błąd podczas pob" +
 	"ierania konfiguracji\x02Nieprawidłowy klucz dla sekcji interface\x02Wers" +
 	"ja protokołu musi być 1\x02Nieprawidłowy klucz dla sekcji peer\x02&Infor" +
-	"macje o AmneziaWG…"
+	"macje o WireGate…"
 
 var pt_BRIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -3214,13 +3214,13 @@ const pt_BRData string = "" + // Size: 5477 bytes
 	"\x02Erro\x02(sem argumento): elevar e instalar o serviço gerenciador\x02" +
 	"Uso: %[1]s [\x0a%[2]s]\x02Opções de linha de comando\x02Não foi possível" +
 	" determinar se o processo está sendo executado em WOW64: %[1]v\x02Você d" +
-	"eve usar a versão nativa do AmneziaWG neste computador.\x02Não foi possí" +
-	"vel abrir o token do processo atual: %[1]v\x02O AmneziaWG só pode ser us" +
+	"eve usar a versão nativa do WireGate neste computador.\x02Não foi possí" +
+	"vel abrir o token do processo atual: %[1]v\x02O WireGate só pode ser us" +
 	"ado por usuários que são membros do grupo incorporado %[1]s.\x02O Amnezi" +
 	"aWG está funcionando, mas a interface do usuário só é acessível em deskt" +
 	"ops do grupo incorporado %[1]s.\x02O ícone do sistema da barra do Amnezi" +
-	"aWG não apareceu após 30 segundos.\x02, \x02, \x02Sobre o AmneziaWG\x02I" +
-	"magem do logotipo AmneziaWG\x02Fechar\x02Status:\x02Desativado\x02&Ativa" +
+	"aWG não apareceu após 30 segundos.\x02, \x02, \x02Sobre o WireGate\x02I" +
+	"magem do logotipo WireGate\x02Fechar\x02Status:\x02Desativado\x02&Ativa" +
 	"r\x02Chaves públicas:\x02Porta de escuta:\x02MTU:\x02Endereços:\x02Servi" +
 	"dores DNS:\x02Scripts:\x02Tecla Pressionada:\x02IPs Permitidos:\x02Ponto" +
 	" Final:\x02Mensagem persistente:\x02Shake mais recente:\x02Transferir:" +
@@ -3240,14 +3240,14 @@ const pt_BRData string = "" + // Size: 5477 bytes
 	"\x02Arquivos de texto (*.txt)|*.txt|Todos os arquivos (*.*)|*.*\x02Expor" +
 	"tar arquivo de log\x02Erro de túnel\x02%[1]s\x0a\x0aPor favor, consulte " +
 	"o log para obter mais informações.\x02%[1]s (desatualizado)\x02Erro de D" +
-	"etecção do AmneziaWG\x02Não foi possível esperar a janela do AmneziaWG a" +
-	"parecer: %[1]v\x02AmneziaWG: Desativado\x02Status desconhecido\x02Endere" +
+	"etecção do WireGate\x02Não foi possível esperar a janela do WireGate a" +
+	"parecer: %[1]v\x02WireGate: Desativado\x02Status desconhecido\x02Endere" +
 	"ços: Nenhum\x02&Gerenciar túneis…\x02&Importar túnel(s) do arquivo…\x02" +
-	"Sai&r\x02&Túneis\x02AmneziaWG ativado\x02O túnel %[1]s foi ativado.\x02A" +
+	"Sai&r\x02&Túneis\x02WireGate ativado\x02O túnel %[1]s foi ativado.\x02A" +
 	"mneziaWG: Desativado\x02O túnel %[1]s foi desativado.\x02Erro no Túnel A" +
-	"mneziaWG\x02AmneziaWG: %[1]s\x02Status: %[1]s\x02Endereços: %[1]s\x02Uma" +
-	" atualização está disponível!\x02Atualização do AmneziaWG disponível\x02" +
-	"Uma atualização para o AmneziaWG está agora disponível. Recomenda-se atu" +
+	"mneziaWG\x02WireGate: %[1]s\x02Status: %[1]s\x02Endereços: %[1]s\x02Uma" +
+	" atualização está disponível!\x02Atualização do WireGate disponível\x02" +
+	"Uma atualização para o WireGate está agora disponível. Recomenda-se atu" +
 	"alizar o mais rápido possível.\x02Túneis\x02&Editar\x02Adicionar &túnel " +
 	"vazio…\x02Adicionar um túnel\x02Remover túneis selecionados\x02Exportar " +
 	"todos os túneis para zip\x02&Alternancia\x02Exportar todos os túneis par" +
@@ -3270,9 +3270,9 @@ const pt_BRData string = "" + // Size: 5477 bytes
 	"\x02Arquivos de configuração (*.zip, *.conf)|*.zip;*.conf|Todos os arqui" +
 	"vos (*.*)|*.*\x02Importar túnel(es) do arquivo\x02Arquivos ZIP de config" +
 	"uração (*.zip)|*.zip\x02Exportar túneis para zip\x02%[1]s (versão não as" +
-	"sinada, sem atualizações)\x02Erro ao sair do AmneziaWG\x02Não é possível" +
-	" sair do serviço devido a: %[1]v. Você pode querer parar o AmneziaWG do " +
-	"gerenciador de serviços.\x02Uma atualização para o AmneziaWG está dispon" +
+	"sinada, sem atualizações)\x02Erro ao sair do WireGate\x02Não é possível" +
+	" sair do serviço devido a: %[1]v. Você pode querer parar o WireGate do " +
+	"gerenciador de serviços.\x02Uma atualização para o WireGate está dispon" +
 	"ível. É altamente aconselhável atualizar sem demora.\x02Status: Aguarda" +
 	"ndo o usuário\x02Atualizar agora\x02Estado: Aguardando o serviço do atua" +
 	"lizador\x02Erro: %[1]v. Por favor, tente novamente.\x02Status da tarefa:" +
@@ -3295,7 +3295,7 @@ const pt_BRData string = "" + // Size: 5477 bytes
 	"uma chave privada\x02[nenhum especificado]\x02Todos os pares devem ter c" +
 	"haves públicas\x02Erro ao atualizar configuração\x02Chave inválida para " +
 	"a seção da interface\x02A versão do protocolo deve ser 1\x02Chave inváli" +
-	"da para a seção do par\x02Sobre o &AmneziaWG…"
+	"da para a seção do par\x02Sobre o &WireGate…"
 
 var roIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -3390,13 +3390,13 @@ const roData string = "" + // Size: 5907 bytes
 	"\x02Eroare\x02(fără argument): obținere drept administrativ și instalare" +
 	" serviciu de gestionare\x02Utilizare: %[1]s [\x0a%[2]s]\x02Opțiuni linie" +
 	" de comandă\x02Nu se poate determina dacă procesul rulează sub WOW64: %[" +
-	"1]v\x02Trebuie să utilizezi versiunea nativă a AmneziaWG pe acest calcul" +
+	"1]v\x02Trebuie să utilizezi versiunea nativă a WireGate pe acest calcul" +
 	"ator.\x02Nu poate fi deschis tokenul actual de proces: %[1]v\x02AmneziaW" +
 	"G poate fi utilizat doar de către utilizatorii care sunt membri ai grupu" +
-	"lui Builtin %[1]s.\x02AmneziaWG rulează, dar interfața cu utilizatorul e" +
+	"lui Builtin %[1]s.\x02WireGate rulează, dar interfața cu utilizatorul e" +
 	"ste accesibilă doar din spațiile de lucru ale grupului Builtin %[1]s." +
-	"\x02Pictograma AmneziaWG din bara de sistem nu a apărut după 30 de secun" +
-	"de.\x02, \x02, \x02Despre AmneziaWG\x02Imagine siglă AmneziaWG\x02Închid" +
+	"\x02Pictograma WireGate din bara de sistem nu a apărut după 30 de secun" +
+	"de.\x02, \x02, \x02Despre WireGate\x02Imagine siglă WireGate\x02Închid" +
 	"ere\x02Stare:\x02&Dezactivare\x02&Activare\x02Cheie publică:\x02Port de " +
 	"ascultare:\x02MTU:\x02Adrese:\x02Servere DNS:\x02Scripturi:\x02Cheie pre" +
 	"distribuită:\x02IP-uri permise:\x02Punct final:\x02Mesaj keepalive persi" +
@@ -3417,14 +3417,14 @@ const roData string = "" + // Size: 5907 bytes
 	" în fișier…\x02Timp\x02Mesaj de jurnal\x02Fișiere text (*.txt)|*.txt|Toa" +
 	"te fișierele (*.*)|*.*\x02Exportare jurnal în fișier\x02Eroare de tunel" +
 	"\x02%[1]s\x0a\x0aConsultă jurnalul pentru mai multe informații.\x02%[1]s" +
-	" (neactualizat)\x02Eroare de detectare AmneziaWG\x02Nu se poate aștepta " +
-	"ca fereastra AmneziaWG să apară: %[1]v\x02AmneziaWG: dezactivat\x02Stare" +
+	" (neactualizat)\x02Eroare de detectare WireGate\x02Nu se poate aștepta " +
+	"ca fereastra WireGate să apară: %[1]v\x02WireGate: dezactivat\x02Stare" +
 	": necunoscută\x02Adrese: niciuna\x02&Gestionare tuneluri…\x02&Importare " +
-	"tunel(uri) din fișier…\x02Ie&șire\x02&Tuneluri\x02AmneziaWG activat\x02T" +
-	"unelul %[1]s a fost activat.\x02AmneziaWG dezactivat\x02Tunelul %[1]s a " +
-	"fost dezactivat.\x02Eroare de tunel AmneziaWG\x02AmneziaWG: %[1]s\x02Sta" +
+	"tunel(uri) din fișier…\x02Ie&șire\x02&Tuneluri\x02WireGate activat\x02T" +
+	"unelul %[1]s a fost activat.\x02WireGate dezactivat\x02Tunelul %[1]s a " +
+	"fost dezactivat.\x02Eroare de tunel WireGate\x02WireGate: %[1]s\x02Sta" +
 	"re: %[1]s\x02Adrese: %[1]s\x02Este disponibilă o actualizare!\x02Actuali" +
-	"zare disponibilă pentru AmneziaWG\x02O actualizare pentru AmneziaWG este" +
+	"zare disponibilă pentru WireGate\x02O actualizare pentru WireGate este" +
 	" acum disponibilă. Se recomandă efectuarea actualizării cât mai rapid po" +
 	"sibil.\x02Tuneluri\x02&Editare\x02Adăugare tunel &gol…\x02Adăugare tunel" +
 	"\x02Eliminare tunel(uri) selectat(e)\x02Exportă toate tunelurile în zip" +
@@ -3451,9 +3451,9 @@ const roData string = "" + // Size: 5907 bytes
 	"p;*.conf|Toate fișierele (*.*)|*.*\x02Importare tunel(uri) din fișier" +
 	"\x02Fișiere ZIP de configurare (*.zip)|*.zip\x02Exportare tuneluri în zi" +
 	"p\x02%[1]s (versiune nesemnată, fără actualizări)\x02Eroare la ieșirea d" +
-	"in AmneziaWG\x02Nu se poate ieși din serviciu din cauza: %[1]v. Poți opr" +
-	"i AmneziaWG din managerul de servicii.\x02Este disponibilă o actualizare" +
-	" pentru AmneziaWG. Se recomandă ferm actualizarea imediată.\x02Stare: se" +
+	"in WireGate\x02Nu se poate ieși din serviciu din cauza: %[1]v. Poți opr" +
+	"i WireGate din managerul de servicii.\x02Este disponibilă o actualizare" +
+	" pentru WireGate. Se recomandă ferm actualizarea imediată.\x02Stare: se" +
 	" așteaptă utilizatorul\x02Actualizează acum\x02Stare: se așteaptă servic" +
 	"iul de actualizare\x02Eroare: %[1]v. Încearcă din nou.\x02Stare: finaliz" +
 	"ată!\x02Acum\x02Ceasul de sistem a fost dat în spate!\x14\x01\x81\x01" +
@@ -3479,7 +3479,7 @@ const roData string = "" + // Size: 5907 bytes
 	"Toate perechile trebuie să aibă chei publice\x02Eroare la obținerea conf" +
 	"igurației\x02Cheie invalidă pentru secțiunea interfeței\x02Versiunea de " +
 	"protocol trebuie să fie 1\x02Cheie invalidă pentru secțiunea perechii" +
-	"\x02&Despre AmneziaWG…"
+	"\x02&Despre WireGate…"
 
 var ruIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -3574,12 +3574,12 @@ const ruData string = "" + // Size: 9554 bytes
 	"\x02Ошибка\x02(нет аргумента): получить права администратора и установит" +
 	"ь административную службу\x02Использование: %[1]s [\x0a%[2]s]\x02Параме" +
 	"тры командной строки\x02Ошибка определения или процесс работает как WOW" +
-	"64: %[1]v\x02Используйте нативную версию AmneziaWG на этом компьютере." +
-	"\x02Не удается открыть токен текущего процесса: %[1]v\x02AmneziaWG может" +
+	"64: %[1]v\x02Используйте нативную версию WireGate на этом компьютере." +
+	"\x02Не удается открыть токен текущего процесса: %[1]v\x02WireGate может" +
 	" использоваться только пользователями, входящими во встроенную группу %[" +
-	"1]s.\x02AmneziaWG запущен, но пользовательский интерфейс доступен только" +
-	" с рабочих столов группы %[1]s.\x02Значок в системном трее AmneziaWG не " +
-	"появился после 30 секунд.\x02, \x02, \x02О AmneziaWG\x02Логотип Amnezia" +
+	"1]s.\x02WireGate запущен, но пользовательский интерфейс доступен только" +
+	" с рабочих столов группы %[1]s.\x02Значок в системном трее WireGate не " +
+	"появился после 30 секунд.\x02, \x02, \x02О WireGate\x02Логотип Amnezia" +
 	"WG\x02Закрыть\x02Статус:\x02&Отключить\x02&Подключить\x02Публичный ключ:" +
 	"\x02Порт:\x02MTU:\x02IP-адреса:\x02DNS-серверы:\x02Скрипты:\x02Общий клю" +
 	"ч:\x02Разрешенные IP-адреса:\x02IP-адрес сервера:\x02Поддерживание соед" +
@@ -3600,14 +3600,14 @@ const ruData string = "" + // Size: 9554 bytes
 	"ремя\x02Сообщение журнала\x02Текстовые файлы (*.txt)|*.txt|Все файлы (*" +
 	".*)|*.*\x02Экспорт журнала в файл\x02Ошибка туннеля\x02%[1]s\x0a\x0aОбра" +
 	"титесь к журналу для получения дополнительной информации.\x02%[1]s (уст" +
-	"арел)\x02Ошибка обнаружения AmneziaWG\x02Не удалось дождаться появления" +
-	" окна AmneziaWG: %[1]v\x02AmneziaWG: деактивирован\x02Статус: неизвестен" +
+	"арел)\x02Ошибка обнаружения WireGate\x02Не удалось дождаться появления" +
+	" окна WireGate: %[1]v\x02WireGate: деактивирован\x02Статус: неизвестен" +
 	"\x02Адреса: нет\x02&Управление туннелями…\x02&Импорт туннелей из файла…" +
-	"\x02Вы&ход\x02&Туннели\x02AmneziaWG включен\x02Туннель %[1]s подключен." +
-	"\x02AmneziaWG выключен\x02Туннель %[1]s отключен.\x02Ошибка туннеля Amne" +
-	"ziaWG\x02AmneziaWG: %[1]s\x02Статус: %[1]s\x02Адреса: %[1]s\x02Доступно " +
-	"обновление!\x02Доступно обновление AmneziaWG\x02Доступно обновление для" +
-	" AmneziaWG. Рекомендуется обновить его как можно скорее.\x02Туннели\x02&" +
+	"\x02Вы&ход\x02&Туннели\x02WireGate включен\x02Туннель %[1]s подключен." +
+	"\x02WireGate выключен\x02Туннель %[1]s отключен.\x02Ошибка туннеля Amne" +
+	"ziaWG\x02WireGate: %[1]s\x02Статус: %[1]s\x02Адреса: %[1]s\x02Доступно " +
+	"обновление!\x02Доступно обновление WireGate\x02Доступно обновление для" +
+	" WireGate. Рекомендуется обновить его как можно скорее.\x02Туннели\x02&" +
 	"Редактировать\x02Добавить &пустой туннель…\x02Добавить туннель\x02Удали" +
 	"ть выбранные туннели\x02Экспорт всех туннелей в zip-архив\x02&Переключи" +
 	"ть\x02Экспорт всех туннелей в &zip-архив…\x02Редактировать &выбранный т" +
@@ -3635,9 +3635,9 @@ const ruData string = "" + // Size: 9554 bytes
 	"нфигурации (*.zip, *.conf)|*.zip;*.conf|Все файлы (*.*)|*.*\x02Импорт т" +
 	"уннелей из файла\x02ZIP-файлы конфигурации (*.zip)|*.zip\x02Экспорт тун" +
 	"нелей в zip-архив\x02%[1]s (неподписанная сборка, нет обновлений)\x02Ош" +
-	"ибка при завершении AmneziaWG\x02Не удалось завершить службу: %[1]v. Вы" +
-	" можете остановить AmneziaWG вручную из оснастки Службы.\x02Доступно обн" +
-	"овление AmneziaWG. Настоятельно рекомендуем обновить приложение.\x02Ста" +
+	"ибка при завершении WireGate\x02Не удалось завершить службу: %[1]v. Вы" +
+	" можете остановить WireGate вручную из оснастки Службы.\x02Доступно обн" +
+	"овление WireGate. Настоятельно рекомендуем обновить приложение.\x02Ста" +
 	"тус: ожидание пользователя\x02Обновить сейчас\x02Статус: ожидание обнов" +
 	"ления\x02Ошибка: %[1]v. Попробуйте еще раз.\x02Статус: завершено!\x02Се" +
 	"йчас\x02Системные часы переведены назад!\x14\x01\x81\x01\x00\x04\x0f" +
@@ -3758,12 +3758,12 @@ const si_LKData string = "" + // Size: 11108 bytes
 	"\x02දෝෂයකි\x02(තර්කයක් නැත): කළමනාකරු සේවාව ඉහළ නැංවීම සහ ස්ථාපනය කිරීම" +
 	"\x02භාවිතය: %[1]s [\x0a%[2]s]\x02විධාන රේඛා විකල්ප\x02ක්\u200dරියාවලිය W" +
 	"OW64: %[1]vයටතේ ක්\u200dරියාත්මක වේද යන්න තීරණය කළ නොහැක\x02ඔබ මෙම පරිගණ" +
-	"කයේ AmneziaWG හි දේශීය අනුවාදය භාවිතා කළ යුතුය.\x02වත්මන් ක්\u200dරියා" +
-	"වලි ටෝකනය විවෘත කළ නොහැක: %[1]v\x02AmneziaWG භාවිතා කළ හැක්කේ Builtin " +
-	"%[1]s කණ්ඩායමේ සාමාජිකයෙකු වන පරිශීලකයින් විසින් පමණි.\x02AmneziaWG ක්" +
+	"කයේ WireGate හි දේශීය අනුවාදය භාවිතා කළ යුතුය.\x02වත්මන් ක්\u200dරියා" +
+	"වලි ටෝකනය විවෘත කළ නොහැක: %[1]v\x02WireGate භාවිතා කළ හැක්කේ Builtin " +
+	"%[1]s කණ්ඩායමේ සාමාජිකයෙකු වන පරිශීලකයින් විසින් පමණි.\x02WireGate ක්" +
 	"\u200dරියාත්මක වේ, නමුත් UI ප්\u200dරවේශ විය හැක්කේ Builtin %[1]s කාණ්ඩය" +
-	"ේ ඩෙස්ක්ටොප් වලින් පමණි.\x02AmneziaWG පද්ධති තැටි නිරූපකය තත්පර 30කට ප" +
-	"සුව දිස් නොවීය.\x02, \x02, \x02වයර්ගාඩ් ගැන\x02AmneziaWG ලාංඡන රූපය" +
+	"ේ ඩෙස්ක්ටොප් වලින් පමණි.\x02WireGate පද්ධති තැටි නිරූපකය තත්පර 30කට ප" +
+	"සුව දිස් නොවීය.\x02, \x02, \x02වයර්ගාඩ් ගැන\x02WireGate ලාංඡන රූපය" +
 	"\x02වසන්න\x02තත්\u200dවය:\x02&අක්\u200dරිය කරන්න\x02&සක්රිය කරන්න\x02පොද" +
 	"ු යතුර:\x02සවන්දීමේ තොට:\x02MTU:\x02ලිපින:\x02ව.නා.ප. සේවාදායක:\x02ස්ක" +
 	"්\u200dරිප්ට්:\x02පෙර බෙදාගත් යතුර:\x02ඉඩදුන් අ.ජා.කෙ.:\x02අන්ත ලක්ෂ්" +
@@ -3783,14 +3783,14 @@ const si_LKData string = "" + // Size: 11108 bytes
 	"\x02&සියල්ල තෝරන්න\x02&ගොනුවකට සුරකින්න…\x02වේලාව\x02ලොග් පණිවිඩය\x02පෙළ" +
 	" ගොනු (*.txt)|*.txt|සියලු ගොනු (*.*)|*.*\x02ලොගය ගොනුවට අපනයනය කරන්න\x02" +
 	"උමං දෝෂය\x02%[1]s\x0a\x0aවැඩි විස්තර සඳහා කරුණාකර ලඝු-සටහන බලන්න.\x02%" +
-	"[1]s (ඉකුත් වී ඇත)\x02AmneziaWG හඳුනාගැනීමේ දෝෂය\x02වයර්ගාඩ් කවුළුව පෙනෙ" +
-	"න තෙක් බලා සිටීමට බලාපොරොත්තු වේ: %[1]v\x02AmneziaWG: අක්\u200dරිය කර " +
+	"[1]s (ඉකුත් වී ඇත)\x02WireGate හඳුනාගැනීමේ දෝෂය\x02වයර්ගාඩ් කවුළුව පෙනෙ" +
+	"න තෙක් බලා සිටීමට බලාපොරොත්තු වේ: %[1]v\x02WireGate: අක්\u200dරිය කර " +
 	"ඇත\x02තත්\u200dවය: නොදනී\x02ලිපින: කිසිත් නැත\x02&උමං…කළමනාකරණය කරන්න" +
 	"\x02…ගොනුවෙන් උමං(ය) &ආයාත කරන්න\x02පි&ටවන්න\x02&උමං මාර්ග\x02වයර්ගාඩ් ක" +
-	"්\u200dරියාත්මකයි\x02%[1]s උමග සක්රිය කර ඇත.\x02AmneziaWG අක්රිය කර ඇත" +
-	"\x02%[1]s උමං මාර්ගය අක්\u200dරිය කර ඇත.\x02AmneziaWG උමං දෝෂය\x02තත්" +
-	"\u200dවය: %[1]s\x02ලිපින: %[1]s\x02යාවත්කාලීනයක් තිබේ!\x02AmneziaWG යාවත" +
-	"්කාලීනය තිබේ\x02AmneziaWG වෙත යාවත්කාලීනයක් දැන් තිබේ. හැකි ඉක්මනින් ය" +
+	"්\u200dරියාත්මකයි\x02%[1]s උමග සක්රිය කර ඇත.\x02WireGate අක්රිය කර ඇත" +
+	"\x02%[1]s උමං මාර්ගය අක්\u200dරිය කර ඇත.\x02WireGate උමං දෝෂය\x02තත්" +
+	"\u200dවය: %[1]s\x02ලිපින: %[1]s\x02යාවත්කාලීනයක් තිබේ!\x02WireGate යාවත" +
+	"්කාලීනය තිබේ\x02WireGate වෙත යාවත්කාලීනයක් දැන් තිබේ. හැකි ඉක්මනින් ය" +
 	"ාවත්කාලීන කිරීමට ඔබට උපදෙස් දෙනු ලැබේ.\x02උමං මාර්ග\x02&සංස්කරණය\x02හි" +
 	"ස් උමං…එකතු කරන්න\x02උමග එකතු කරන්න\x02තෝරාගත් උමං(ය) ඉවත් කරන්න\x02සි" +
 	"යලුම උමං zip වෙත අපනයනය කරන්න\x02&ටොගල් කරන්න\x02සියලුම උමං &zip…වෙත අ" +
@@ -3812,8 +3812,8 @@ const si_LKData string = "" + // Size: 11108 bytes
 	"conf|සියලු ගොනු (*.*)|*.*\x02ගොනුවෙන් උමං(ය) ආයාත කරන්න\x02වින්\u200dයාස" +
 	" කිරීම ZIP ගොනු (*.zip)|*.zip\x02zip වෙත උමං අපනයනය කරන්න\x02%[1]s (අත්ස" +
 	"න් නොකළ ගොඩනැගීම, යාවත්කාලීන නැත)\x02වයර්ගාඩ් පිටවීමේදී දෝෂයකි\x02%[1]" +
-	"vනිසා සේවයෙන් ඉවත් විය නොහැක. ඔබට සේවා කළමනාකරුගෙන් AmneziaWG නැවැත්වීමට" +
-	" අවශ්\u200dය විය හැකිය.\x02AmneziaWG වෙත යාවත්කාලීනයක් තිබේ. ප්රමාදයකින්" +
+	"vනිසා සේවයෙන් ඉවත් විය නොහැක. ඔබට සේවා කළමනාකරුගෙන් WireGate නැවැත්වීමට" +
+	" අවශ්\u200dය විය හැකිය.\x02WireGate වෙත යාවත්කාලීනයක් තිබේ. ප්රමාදයකින්" +
 	" තොරව යාවත්කාලීන කිරීම ඉතා යෝග්ය වේ.\x02තත්\u200dවය: පරිශීලක සඳහා රැඳෙමි" +
 	"න්\x02යාවත්කාල කරන්න\x02තත්\u200dවය: යාවත්කාල සේවාව සඳහා රැඳෙමින්\x02ද" +
 	"ෝෂය: %[1]v. යළි උත්සාහ කරන්න.\x02තත්\u200dවය: සම්පූර්ණයි!\x02දැන්\x02ප" +
@@ -3931,12 +3931,12 @@ const skData string = "" + // Size: 6068 bytes
 	"\x02Chyba\x02(bez argumentu): získať administrátorské práva a nainštalov" +
 	"ať službu manažéra\x02Použitie: %[1]s [\x0a%[2]s]\x02Možnosti príkazovéh" +
 	"o riadku\x02Nepodarilo sa zistiť, či proces beží pod WOW64: %[1]v\x02V t" +
-	"omto počítači musíte používať pôvodnú verziu programu AmneziaWG.\x02Nepo" +
-	"darilo sa otvoriť token aktuálneho procesu: %[1]v\x02AmneziaWG môžu použ" +
-	"ívať iba členovia Builtin skupiny %[1]s.\x02AmneziaWG je spustený, ale " +
+	"omto počítači musíte používať pôvodnú verziu programu WireGate.\x02Nepo" +
+	"darilo sa otvoriť token aktuálneho procesu: %[1]v\x02WireGate môžu použ" +
+	"ívať iba členovia Builtin skupiny %[1]s.\x02WireGate je spustený, ale " +
 	"používateľské rozhranie je prístupné iba členom Builtin skupiny %[1]s." +
-	"\x02AmneziaWG ikona sa ani po 30 sekundách neobjavila na systémovej lišt" +
-	"e.\x02, \x02 \x02O AmneziaWG\x02Obrázok AmneziaWG loga\x02Zatvoriť\x02St" +
+	"\x02WireGate ikona sa ani po 30 sekundách neobjavila na systémovej lišt" +
+	"e.\x02, \x02 \x02O WireGate\x02Obrázok WireGate loga\x02Zatvoriť\x02St" +
 	"av:\x02&Deaktivovať\x02&Aktivovať\x02Verejný kľúč:\x02Otvorený port:\x02" +
 	"MTU:\x02Adresy:\x02Servery DNS:\x02Skripty:\x02Vopred zdieľaný kľúč:\x02" +
 	"Povolené IP adresy:\x02Koncový bod:\x02Perzistentný keepalive:\x02Posled" +
@@ -3956,15 +3956,15 @@ const skData string = "" + // Size: 6068 bytes
 	"šetko\x02Uložiť do &súboru…\x02Čas\x02Správa v denníku udalostí\x02Text" +
 	"ové súbory (*.txt)|*.txt|Všetky súbory (*.*)|*.*\x02Exportovať denník ud" +
 	"alostí do súboru\x02Chyba tunela\x02%[1]s\x0a\x0aViac informácií nájdete" +
-	" v denníku udalostí.\x02%[1]s (neaktuány)\x02Chyba detekcie AmneziaWG" +
-	"\x02Nie je možné čakať na zobrazenie AmneziaWG okna: %[1]v\x02AmneziaWG:" +
+	" v denníku udalostí.\x02%[1]s (neaktuány)\x02Chyba detekcie WireGate" +
+	"\x02Nie je možné čakať na zobrazenie WireGate okna: %[1]v\x02WireGate:" +
 	" deaktivovaný\x02Stav: Nezámy\x02Adresa: žiadna\x02&Spravovať tunely…" +
-	"\x02&Importovať tunel(y) zo súboru…\x02U&končiť\x02&Tunely\x02AmneziaWG " +
-	"je aktivovaný\x02Tunel %[1]s bol aktivovaný.\x02AmneziaWG je deaktivovan" +
-	"ý\x02Tunel %[1]s bol deaktivovaný.\x02Chyba AmneziaWG tunelu\x02Amnezia" +
+	"\x02&Importovať tunel(y) zo súboru…\x02U&končiť\x02&Tunely\x02WireGate " +
+	"je aktivovaný\x02Tunel %[1]s bol aktivovaný.\x02WireGate je deaktivovan" +
+	"ý\x02Tunel %[1]s bol deaktivovaný.\x02Chyba WireGate tunelu\x02Amnezia" +
 	"WG: %[1]s\x02Stav: %[1]s\x02Adresa: %[1]s\x02Je dostupná aktualizácia!" +
-	"\x02Dostupná aktualizácia pre AmneziaWG\x02Je k dispozícii aktualizácia " +
-	"programu AmneziaWG. Je odporúčané čo najskôr vykonať aktualizáciu.\x02Tu" +
+	"\x02Dostupná aktualizácia pre WireGate\x02Je k dispozícii aktualizácia " +
+	"programu WireGate. Je odporúčané čo najskôr vykonať aktualizáciu.\x02Tu" +
 	"nely\x02&Upraviť\x02Pridať &prázdny tunel…\x02Pridať tunel\x02Odstrániť " +
 	"označený(é) tunel(y)\x02Export všetkých tunelov do zip súboru\x02P&repnú" +
 	"ť\x02Export všetkých tunelov do &zip súboru…\x02Upraviť &označený tunel" +
@@ -3994,8 +3994,8 @@ const skData string = "" + // Size: 6068 bytes
 	"\x02Konfiguračné ZIP súbry (*.zip)|*.zip\x02Export tunelov do zip súboru" +
 	"\x02%[1]s (nepodpísaná verzia, žiadne aktualizácie)\x02Chyba ukončenia A" +
 	"mneziaWG\x02Nie je možné ukončiť služby z dôvodu: %[1]v. Skúste zastaviť" +
-	" AmneziaWG v správcovi služieb.\x02Je k dispozícii nová verzia programu " +
-	"AmneziaWG. Odporúčame bezodkladne vykonať aktualizáciu.\x02Stav: Čaká sa" +
+	" WireGate v správcovi služieb.\x02Je k dispozícii nová verzia programu " +
+	"WireGate. Odporúčame bezodkladne vykonať aktualizáciu.\x02Stav: Čaká sa" +
 	" na užívateľa\x02Aktualizovať teraz\x02Stav: Čaká sa na aktualizačnú slu" +
 	"žbu\x02Chyba: %[1]v. Skúste to znova.\x02Stav: Dokončené!\x02Teraz\x02S" +
 	"ystémové hodiny sa vrátili v čase!\x14\x01\x81\x01\x00\x04\x0b\x02%[1]d " +
@@ -4020,7 +4020,7 @@ const skData string = "" + // Size: 6068 bytes
 	"romný kľúč\x02[nešpecifikované]\x02Všetci peeri musia mať priradený vere" +
 	"jný kľúč\x02Chyba pri získavaní konfigurácie\x02Neplatný kľúč sekcie roz" +
 	"hrania\x02Verzia protokolu musí byť 1\x02Neplatný kľúč peer sekcie\x02&O" +
-	" AmneziaWG…"
+	" WireGate…"
 
 var slIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -4115,12 +4115,12 @@ const slData string = "" + // Size: 5591 bytes
 	"\x02Napaka\x02(brez argumenta): povzdigni na skrbniške pravice in namest" +
 	"i skrbniško storitev\x02Uporaba: %[1]s [\x0a%[2]s]\x02Možnosti ukazne vr" +
 	"stice\x02Napaka pri določanju ali proces teče kot WOW64: %[1]v\x02Na tem" +
-	"u računalniku morate uporabiti enako-arhitekturno različico AmneziaWGa." +
-	"\x02Napaka pri odpiranju žetona trenutnega procesa: %[1]v\x02AmneziaWG l" +
+	"u računalniku morate uporabiti enako-arhitekturno različico WireGatea." +
+	"\x02Napaka pri odpiranju žetona trenutnega procesa: %[1]v\x02WireGate l" +
 	"ahko uporabljajo samo uporabniki, ki so člani vgrajene skupine %[1]s." +
-	"\x02AmneziaWG je zagnan, vendar je up. vmesnik dostopen samo z namizij u" +
-	"porabnikov članov skupine %[1]s.\x02Ikona AmneziaWGa se po 30 sekundah n" +
-	"i pojavila v sistemski vrstici.\x02, \x02 \x02O AmneziaWGu\x02Slika Amne" +
+	"\x02WireGate je zagnan, vendar je up. vmesnik dostopen samo z namizij u" +
+	"porabnikov članov skupine %[1]s.\x02Ikona WireGatea se po 30 sekundah n" +
+	"i pojavila v sistemski vrstici.\x02, \x02 \x02O WireGateu\x02Slika Amne" +
 	"ziaWGovega logotipa\x02Zapri\x02Status:\x02&Dezaktiviraj\x02&Aktiviraj" +
 	"\x02Javni ključ:\x02Vrata poslušanja:\x02MTU:\x02Naslovi:\x02Strežniki D" +
 	"NS:\x02Skripta:\x02Ključ v skupni rabi:\x02Dovoljeni IP-ji:\x02Končna to" +
@@ -4141,13 +4141,13 @@ const slData string = "" + // Size: 5591 bytes
 	" dnevniku\x02Tekstovne datoteke (*.txt)|*.txt|Vse datoteke (*.*)|*.*\x02" +
 	"Izvozi dnevnik v datoteko\x02Napaka tunela\x02%[1]s\x0a\x0aDodatne infor" +
 	"macije najdete v dnevniku.\x02%[1]s (neposodobljen)\x02Napaka zaznavanja" +
-	" AmneziaWGa\x02Čakanje, da se pojavi AmneziaWGovo okno, ni možno: %[1]v" +
-	"\x02AmneziaWG: Dezaktiviran\x02Status: Neznan\x02Naslovi: Brez\x02&Uprav" +
+	" WireGatea\x02Čakanje, da se pojavi WireGateovo okno, ni možno: %[1]v" +
+	"\x02WireGate: Dezaktiviran\x02Status: Neznan\x02Naslovi: Brez\x02&Uprav" +
 	"ljaj tunele\u00a0…\x02&Uvozi tunel(e) iz datoteke…\x02I&zhod\x02&Tuneli" +
-	"\x02AmneziaWG aktiviran\x02Tunel %[1]s je bil aktiviran.\x02AmneziaWG de" +
+	"\x02WireGate aktiviran\x02Tunel %[1]s je bil aktiviran.\x02WireGate de" +
 	"zaktiviran\x02Tunel %[1]s je bil dezaktiviran.\x02Napaka tunela AmneziaW" +
-	"G\x02AmneziaWG: %[1]s\x02Status: %[1]s\x02Naslovi: %[1]s\x02Na voljo je " +
-	"posodobitev!\x02Posodobitev AmneziaWGa je na voljo\x02Posodobitev Amnezi" +
+	"G\x02WireGate: %[1]s\x02Status: %[1]s\x02Naslovi: %[1]s\x02Na voljo je " +
+	"posodobitev!\x02Posodobitev WireGatea je na voljo\x02Posodobitev Amnezi" +
 	"aWGa je na voljo. Svetujemo posodobitev čim prej.\x02Tuneli\x02&Uredi" +
 	"\x02Dodaj &prazen tunel\u00a0…\x02Dodaj tunel\x02Odstrani izbrane tunele" +
 	"\x02Izvozi vse tunele v zip\x02&Preklopi\x02Izvozi vse tunele v &zip" +
@@ -4175,9 +4175,9 @@ const slData string = "" + // Size: 5591 bytes
 	"oče odstraniti.\x02Konfiguracijske datoteke (*.zip, *.conf)|*.zip;*.conf" +
 	"|Vse datoteke (*.*)|*.*\x02Uvozi tunele iz datoteke\x02Konfiguracijske d" +
 	"atoteke ZIP (*.zip)|*.zip\x02Izvozi tunele v datoteko zip\x02%[1]s (nepo" +
-	"dpisane različice, brez posodobitev)\x02Napaka pri izhodu iz AmneziaWGa" +
+	"dpisane različice, brez posodobitev)\x02Napaka pri izhodu iz WireGatea" +
 	"\x02Storitve ni bilo mogoče zaustaviti, ker: %[1]v. Poskusite zaustaviti" +
-	" AmneziaWG z uporabo programa Storitve.\x02Posodobitev AmneziaWG je na v" +
+	" WireGate z uporabo programa Storitve.\x02Posodobitev WireGate je na v" +
 	"oljo. Zelo priporočamo posodobitev brez odlašanja.\x02Status: Čaka na up" +
 	"orabnika\x02Posodobi zdaj\x02Status: Čaka na servis za posodobitev\x02Na" +
 	"paka: %[1]v. Poskusite ponovno.\x02Status: Končano!\x02Zdaj\x02Sistemska" +
@@ -4202,7 +4202,7 @@ const slData string = "" + // Size: 5591 bytes
 	"dsek [Peer]\x02Vmesnik mora imeti zasebni ključ\x02[ni navedeno]\x02Vsi " +
 	"vrstniki morajo imeti javni ključ\x02Napaka pri branju konfiguracije\x02" +
 	"Napačen ključ za odsek vmesnika\x02Verzija protokola mora biti 1\x02Napa" +
-	"čen ključ za odsek vrstnika\x02O &AmneziaWGu\u00a0…"
+	"čen ključ za odsek vrstnika\x02O &WireGateu\u00a0…"
 
 var sv_SEIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -4297,12 +4297,12 @@ const sv_SEData string = "" + // Size: 5080 bytes
 	"\x02Fel\x02(inget argument): höj och installera hanterartjänsten\x02Anvä" +
 	"ndning: %[1]s [\x0a%[2]s]\x02Kommandoradsalternativ\x02Det går inte att " +
 	"avgöra om processen körs under WOW64: %[1]v\x02Du måste använda den inby" +
-	"ggda versionen av AmneziaWG på denna dator.\x02Det går inte att öppna nu" +
-	"varande process-token: %[1]v\x02AmneziaWG får endast användas av använda" +
-	"re som är medlemmar i gruppen Builtin %[1]s.\x02AmneziaWG körs, men grän" +
+	"ggda versionen av WireGate på denna dator.\x02Det går inte att öppna nu" +
+	"varande process-token: %[1]v\x02WireGate får endast användas av använda" +
+	"re som är medlemmar i gruppen Builtin %[1]s.\x02WireGate körs, men grän" +
 	"ssnittet är endast tillgängligt från skrivbordet i gruppen Builtin %[1]s" +
-	".\x02AmneziaWG systemfältet visades inte efter 30 sekunder.\x02, \x02, " +
-	"\x02Om AmneziaWG\x02AmneziaWG-logotyp bild\x02Stäng\x02Status:\x02&Avakt" +
+	".\x02WireGate systemfältet visades inte efter 30 sekunder.\x02, \x02, " +
+	"\x02Om WireGate\x02WireGate-logotyp bild\x02Stäng\x02Status:\x02&Avakt" +
 	"ivera\x02&Aktivera\x02Publik nyckel:\x02Lyssningsport:\x02MTU:\x02Adress" +
 	"er:\x02DNS-servrar:\x02Skript:\x02Fördelad nyckel:\x02Tillåtna IP: s:" +
 	"\x02Slutpunkt:\x02Beständig keepalive:\x02Senaste handskakning:\x02Överf" +
@@ -4321,14 +4321,14 @@ const sv_SEData string = "" + // Size: 5080 bytes
 	"kera &allt\x02&Spara till fil…\x02Tid\x02Loggmeddelande\x02Textfiler (*." +
 	"txt)|*.txt|Alla filer (*.*)|*.*\x02Exportera logg till fil\x02Tunnelfel" +
 	"\x02%[1]s\x0a\x0aVänligen inspektera loggen för mer information.\x02%[1]" +
-	"s (föråldrad)\x02AmneziaWG Vaktfel\x02Lyckas inte vänta på att AmneziaWG" +
-	" fönstret ska visas: %[1]v\x02AmneziaWG: inaktiverad\x02Status: Okänd" +
+	"s (föråldrad)\x02WireGate Vaktfel\x02Lyckas inte vänta på att WireGate" +
+	" fönstret ska visas: %[1]v\x02WireGate: inaktiverad\x02Status: Okänd" +
 	"\x02Adresser: Ingen\x02&Hantera tunnlar…\x02&Importera tunnlar från fil…" +
-	"\x02A&vsluta\x02&Tunnlar\x02AmneziaWG aktiverad\x02%[1]s tunneln har akt" +
-	"iverats.\x02AmneziaWG inaktiverad\x02%[1]s tunneln har inaktiverats.\x02" +
-	"AmneziaWG Tunnelfel\x02AmneziaWG: %[1]s\x02Status: %[1]s\x02Adresser: %[" +
-	"1]s\x02En uppdatering är tillgänglig!\x02AmneziaWG uppdatering tillgängl" +
-	"ig\x02En uppdatering till AmneziaWG är nu tillgänglig. Du rekommenderas " +
+	"\x02A&vsluta\x02&Tunnlar\x02WireGate aktiverad\x02%[1]s tunneln har akt" +
+	"iverats.\x02WireGate inaktiverad\x02%[1]s tunneln har inaktiverats.\x02" +
+	"WireGate Tunnelfel\x02WireGate: %[1]s\x02Status: %[1]s\x02Adresser: %[" +
+	"1]s\x02En uppdatering är tillgänglig!\x02WireGate uppdatering tillgängl" +
+	"ig\x02En uppdatering till WireGate är nu tillgänglig. Du rekommenderas " +
 	"att uppdatera så snart som möjligt.\x02Tunnlar\x02&Redigera\x02Lägg till" +
 	" &tom tunnel…\x02Skapa tunnel\x02Ta bort valda tunnlar\x02Exportera alla" +
 	" tunnlar till zip\x02&Växla\x02Exportera alla tunnlar till &zip…\x02Redi" +
@@ -4350,9 +4350,9 @@ const sv_SEData string = "" + // Size: 5080 bytes
 	"llningsfiler (*.zip, *.conf)|*.zip;*.conf|Alla filer (*.*)|*.*\x02Import" +
 	"era tunnlar från fil\x02Inställningsfiler ZIP (*.zip)|*.zip\x02Exportera" +
 	" tunnlar till zip\x02%[1]s (osignerat bygge, inga uppdateringar)\x02Fel " +
-	"när AmneziaWG avslutades\x02Det går inte att avsluta tjänsten på grund a" +
-	"v %[1]v. Du kanske vill stoppa AmneziaWG från servicehanteraren.\x02En u" +
-	"ppdatering av AmneziaWG finns tillgänglig. Uppdatering bör utföras snara" +
+	"när WireGate avslutades\x02Det går inte att avsluta tjänsten på grund a" +
+	"v %[1]v. Du kanske vill stoppa WireGate från servicehanteraren.\x02En u" +
+	"ppdatering av WireGate finns tillgänglig. Uppdatering bör utföras snara" +
 	"st möjligt.\x02Status: Väntar på användaren\x02Uppdatera nu\x02Status: V" +
 	"äntar på uppdateringstjänst\x02Fel: %[1]v. Vänligen försök igen.\x02Sta" +
 	"tus: Färdig!\x02Nu\x02Systemets klocka har ställts tillbaka!\x14\x01\x81" +
@@ -4374,7 +4374,7 @@ const sv_SEData string = "" + // Size: 5080 bytes
 	"la en privat nyckel\x02[ingen angiven]\x02Alla peers måste ha offentliga" +
 	" nycklar\x02Fel vid hämtning av konfiguration\x02Ogiltig nyckel för grän" +
 	"ssnittsavsnitt\x02Protokollversion måste vara 1\x02Ogiltig nyckel för pe" +
-	"er-avsnitt\x02Om &AmneziaWG…"
+	"er-avsnitt\x02Om &WireGate…"
 
 var trIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -4469,12 +4469,12 @@ const trData string = "" + // Size: 5303 bytes
 	"\x02Hata\x02(parametre belirtilmediyse): gerekli izinleri al ve yönetim " +
 	"hizmetini yükle\x02Kullanım: %[1]s [\x0a%[2]s]\x02Komut Satırı Seçenekle" +
 	"ri\x02İşlemin WOW64 altında çalıştığından emin olunamadı: %[1]v\x02Bu bi" +
-	"lgisayarda AmneziaWG'ın yerel sürümünü kullanmalısınız.\x02Geçerli işlem" +
-	" jetonu açılamadı: %[1]v\x02AmneziaWG'ı sadece yerleşik %[1]s grubunun ü" +
-	"yeleri kullanabilir.\x02AmneziaWG çalışıyor fakat kullanıcı arayüzüne sa" +
+	"lgisayarda WireGate'ın yerel sürümünü kullanmalısınız.\x02Geçerli işlem" +
+	" jetonu açılamadı: %[1]v\x02WireGate'ı sadece yerleşik %[1]s grubunun ü" +
+	"yeleri kullanabilir.\x02WireGate çalışıyor fakat kullanıcı arayüzüne sa" +
 	"dece yerleşik %[1]s grubunun bilgisayarlarından erişilebilir.\x02Amnezia" +
 	"WG sistem tepsisi simgesi 30 saniye sonunda belirmedi.\x02, \x02, \x02Am" +
-	"neziaWG Hakkında\x02AmneziaWG logosu\x02Kapat\x02Durum:\x02&Devre dışı b" +
+	"neziaWG Hakkında\x02WireGate logosu\x02Kapat\x02Durum:\x02&Devre dışı b" +
 	"ırak\x02&Etkinleştir\x02Ortak anahtar:\x02Dinlenen port:\x02MTU:\x02Adr" +
 	"esler:\x02DNS sunucuları:\x02Betikler:\x02Önceden paylaşılan anahtar:" +
 	"\x02İzin verilen IP’ler:\x02Uç nokta:\x02Sürekli keepalive:\x02En son el" +
@@ -4493,14 +4493,14 @@ const trData string = "" + // Size: 5303 bytes
 	"\x02Günlük\x02&Kopyala\x02&Tümünü seç\x02&Dosyaya kaydet…\x02Saat\x02Gün" +
 	"lük mesajı\x02Metin dosyaları (*.txt)|*.txt|Tüm dosyalar (*.*)|*.*\x02Gü" +
 	"nlüğü dosyaya aktar\x02Tünel Hatası\x02%[1]s\x0a\x0aDaha fazla bilgi içi" +
-	"n lütfen günlüğe göz atın.\x02%[1]s (eski sürüm)\x02AmneziaWG Tespit Hat" +
-	"ası\x02AmneziaWG penceresinin belirmesi beklenemedi: %[1]v\x02AmneziaWG:" +
+	"n lütfen günlüğe göz atın.\x02%[1]s (eski sürüm)\x02WireGate Tespit Hat" +
+	"ası\x02WireGate penceresinin belirmesi beklenemedi: %[1]v\x02WireGate:" +
 	" Devre dışı\x02Durum: Bilinmiyor\x02Adresler: Yok\x02&Tünelleri yönet…" +
-	"\x02Tünelleri dosyadan &içe aktar…\x02Çı&kış\x02&Tüneller\x02AmneziaWG E" +
-	"tkin\x02%[1]s tüneli etkinleştirildi.\x02AmneziaWG Devre Dışı Bırakıldı" +
-	"\x02%[1]s tüneli devre dışı bırakıldı.\x02AmneziaWG Tünel Hatası\x02Amne" +
+	"\x02Tünelleri dosyadan &içe aktar…\x02Çı&kış\x02&Tüneller\x02WireGate E" +
+	"tkin\x02%[1]s tüneli etkinleştirildi.\x02WireGate Devre Dışı Bırakıldı" +
+	"\x02%[1]s tüneli devre dışı bırakıldı.\x02WireGate Tünel Hatası\x02Amne" +
 	"ziaWG: %[1]s\x02Durum: %[1]s\x02Adresler: %[1]s\x02Güncelleme Mevcut!" +
-	"\x02AmneziaWG Güncellemesi Mevcut\x02Yeni bir AmneziaWG güncellemesi yay" +
+	"\x02WireGate Güncellemesi Mevcut\x02Yeni bir WireGate güncellemesi yay" +
 	"ımlandı. İlk fırsatta güncelleme yapmanız tavsiye edilir.\x02Tüneller" +
 	"\x02&Düzenle\x02Boş tünel &ekle…\x02Tünel ekle\x02Seçilen tünelleri kald" +
 	"ır\x02Tüm tünelleri zip olarak dışa aktar\x02&Aç/kapat\x02Tüm tünelleri" +
@@ -4521,9 +4521,9 @@ const trData string = "" + // Size: 5303 bytes
 	"tünel kaldırılamadı.\x02Yapılandırma dosyaları (*.zip, *.conf)|*.zip;*.c" +
 	"onf|Tüm dosyalar (*.*)|*.*\x02Tünelleri dosyadan içe aktar\x02Yapılandır" +
 	"ma ZIP dosyaları (*.zip)|*.zip\x02Tünelleri zip olarak dışa aktar\x02%[1" +
-	"]s (imzasız derleme, güncelleme yok)\x02AmneziaWG Çıkış Hatası\x02Şu ned" +
-	"enden dolayı hizmetten çıkılamadı: %[1]v. AmneziaWG'ı hizmet yöneticisin" +
-	"den durdurabilirsiniz.\x02Yeni bir AmneziaWG güncellemesi yayımlandı. Va" +
+	"]s (imzasız derleme, güncelleme yok)\x02WireGate Çıkış Hatası\x02Şu ned" +
+	"enden dolayı hizmetten çıkılamadı: %[1]v. WireGate'ı hizmet yöneticisin" +
+	"den durdurabilirsiniz.\x02Yeni bir WireGate güncellemesi yayımlandı. Va" +
 	"kit kaybetmeden güncelleme yapmanız tavsiye edilir.\x02Durum: Kullanıcı " +
 	"bekleniyor\x02Şimdi güncelle\x02Durum: Güncelleştirme hizmeti bekleniyor" +
 	"\x02Hata: %[1]v. Lütfen yeniden deneyin.\x02Durum: Tamamlandı!\x02Şimdi" +
@@ -4545,7 +4545,7 @@ const trData string = "" + // Size: 5303 bytes
 	"rimde gizli anahtar bulunmalıdır\x02[belirtilmedi]\x02Tüm eşlerin ortak " +
 	"anahtarları olmalıdır\x02Yapılandırma alınırken hata oluştu\x02Arabirim " +
 	"bölümünde geçersiz anahtar\x02Protokol sürümü 1 olmalıdır\x02Eş bölümünd" +
-	"e geçersiz anahtar\x02&AmneziaWG hakkında…"
+	"e geçersiz anahtar\x02&WireGate hakkında…"
 
 var ukIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -4640,12 +4640,12 @@ const ukData string = "" + // Size: 9007 bytes
 	"\x02Помилка\x02(немає аргумента): отримати права аднімістратора і встано" +
 	"вити службу\x02Використання: %[1]s [\x0a%[2]s]\x02Параметри командного " +
 	"рядка\x02Неможливо визначити, чи працює процес під WOW64: %[1]v\x02Ви п" +
-	"овинні використовувати нативну версію AmneziaWG на цьому комп'ютері." +
-	"\x02Не вдалося відкрити токен поточного процесу: %[1]v\x02AmneziaWG може" +
+	"овинні використовувати нативну версію WireGate на цьому комп'ютері." +
+	"\x02Не вдалося відкрити токен поточного процесу: %[1]v\x02WireGate може" +
 	" бути використаний тільки користувачами, які є членами вбудованих %[1]s " +
-	"груп.\x02AmneziaWG запущено, але UI доступний лише з комп\x22ютерів вбу" +
-	"дованої %[1]s групи.\x02Значок системи AmneziaWG не з'явився через 30 с" +
-	"екунд.\x02, \x02, \x02Про AmneziaWG\x02Зображення логотипу AmneziaWG" +
+	"груп.\x02WireGate запущено, але UI доступний лише з комп\x22ютерів вбу" +
+	"дованої %[1]s групи.\x02Значок системи WireGate не з'явився через 30 с" +
+	"екунд.\x02, \x02, \x02Про WireGate\x02Зображення логотипу WireGate" +
 	"\x02Закрити\x02Статус:\x02&Деактивувати\x02&Активувати\x02Відкритий ключ" +
 	":\x02Порт:\x02MTU:\x02Адреси:\x02DNS-сервери:\x02Скрипти:\x02Preshared к" +
 	"люч:\x02Дозволені IP адреси:\x02Endpoint:\x02Persistent keepalive:\x02О" +
@@ -4665,14 +4665,14 @@ const ukData string = "" + // Size: 9007 bytes
 	"айл…\x02Час\x02Повідомлення з логу\x02Текстові файли (*.txt)|*.txt|Усі " +
 	"файли (*.*)|*.*\x02Експортувати лог у файл\x02Помилка тунелю\x02%[1]s" +
 	"\x0a\x0aБудь ласка, зверніться до логу для отримання додаткової інформац" +
-	"ії.\x02%[1]s (застарілий)\x02Помилка виявлення AmneziaWG\x02Не вдалося " +
-	"дочекатися появи вікна AmneziaWG: %[1]v\x02AmneziaWG: Вимкнений\x02Стат" +
+	"ії.\x02%[1]s (застарілий)\x02Помилка виявлення WireGate\x02Не вдалося " +
+	"дочекатися появи вікна WireGate: %[1]v\x02WireGate: Вимкнений\x02Стат" +
 	"ус: Невідомий\x02Адреси: немає\x02&Керування тунелями…\x02&Імпортувати " +
-	"тунель з файлу…\x02Ви&йти\x02&Тунелі\x02AmneziaWG активовано\x02Тунель " +
-	"%[1]s активовано.\x02AmneziaWG деактивовано\x02Тунель %[1]s було деактив" +
-	"овано.\x02Помилка тунелю AmneziaWG\x02AmneziaWG: %[1]s\x02Статус: %[1]s" +
-	"\x02Адреси: %[1]s\x02Доступно оновлення!\x02Доступне оновлення AmneziaWG" +
-	"\x02Оновлення до AmneziaWG доступне. Рекомендуємо оновити якомога швидше" +
+	"тунель з файлу…\x02Ви&йти\x02&Тунелі\x02WireGate активовано\x02Тунель " +
+	"%[1]s активовано.\x02WireGate деактивовано\x02Тунель %[1]s було деактив" +
+	"овано.\x02Помилка тунелю WireGate\x02WireGate: %[1]s\x02Статус: %[1]s" +
+	"\x02Адреси: %[1]s\x02Доступно оновлення!\x02Доступне оновлення WireGate" +
+	"\x02Оновлення до WireGate доступне. Рекомендуємо оновити якомога швидше" +
 	".\x02Тунелі\x02&Редагувати\x02Додати &пустий тунель…\x02Додати тунель" +
 	"\x02Видалити обрані тунелі\x02Експортувати всі тунелі в zip\x02&Перемкну" +
 	"ти\x02Експортувати всі тунелі в &zip…\x02Редагувати &вибраний тунель…" +
@@ -4699,9 +4699,9 @@ const ukData string = "" + // Size: 9007 bytes
 	"\x02Файли конфігурації (*.zip, *.conf)|*.zip;*.conf|Всі файли (*.*)|*.*" +
 	"\x02Імпортувати тунелі з файлу\x02ZIP-файли конфігурації (*.zip) | *.zip" +
 	"\x02Експортувати тунелі в zip\x02%[1]s (непідписані збірки, немає оновле" +
-	"нь)\x02Помилка при виході з AmneziaWG\x02Не вдалося зупинити службу чер" +
+	"нь)\x02Помилка при виході з WireGate\x02Не вдалося зупинити службу чер" +
 	"ез: %[1]v. Ви можете зупинити її вручну через менеджер сервісів.\x02Дос" +
-	"тупне оновлення AmneziaWG, доцільне оновлення без затримок.\x02Статус: " +
+	"тупне оновлення WireGate, доцільне оновлення без затримок.\x02Статус: " +
 	"Очікування користувача\x02Оновити зараз\x02Статус: Очікування на службу" +
 	" оновлення\x02Помилка: %[1]v. Будь ласка, спробуйте ще раз.\x02Стан: Зав" +
 	"ершено\x02Зараз\x02Системний годинник налаштований некоректно!\x14\x01" +
@@ -4726,7 +4726,7 @@ const ukData string = "" + // Size: 9007 bytes
 	"тий ключ\x02[жодного не вказано]\x02Всі учасники повинні мати відкриті " +
 	"ключі\x02Помилка при отриманні конфігурації\x02Недійсний ключ для розді" +
 	"лу інтерфейсу\x02Версія протоколу повинна бути 1\x02Хибний ключ для [Pe" +
-	"er] розділу\x02Про &AmneziaWG…"
+	"er] розділу\x02Про &WireGate…"
 
 var viIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -4819,7 +4819,7 @@ var viIndex = []uint32{ // 304 elements
 
 const viData string = "" + // Size: 938 bytes
 	"\x02Lỗi\x02Sử dụng: %[1]s [\x0a%[2]s]\x02Tùy chọn dòng lệnh\x02,\x02," +
-	"\x02Thông tin về AmneziaWG\x02Logo AmneziaWG\x02Đóng\x02Trạng thái:\x02Đ" +
+	"\x02Thông tin về WireGate\x02Logo WireGate\x02Đóng\x02Trạng thái:\x02Đ" +
 	"ã hủy kích hoạt\x02Kích hoạt\x02Đầu cuối:\x02đã kích hoạt\x02Nhận %[1]s" +
 	", gứi %[2]s\x02Không thể xác định tình trạng VPN\x02Không thể kích hoạt " +
 	"VPN\x02Không thể vô hiệu hóa VPN\x02Mạng ngang hàng\x02Tạo VPN\x02Chỉnh " +
@@ -4925,9 +4925,9 @@ var zh_CNIndex = []uint32{ // 304 elements
 
 const zh_CNData string = "" + // Size: 4147 bytes
 	"\x02错误\x02(无参数): 提升并安装管理服务\x02用法: %[1]s [\x0a%[2]s]\x02命令行选项\x02无法确定该进程是" +
-	"否在WOW64下运行: %[1]v\x02您必须在此计算机上使用原生版本的 AmneziaWG。\x02无法打开当前进程令牌: %[1]v" +
-	"\x02AmneziaWG 可能只能被内建的 %[1]s 小组中的成员使用。\x02AmneziaWG 正在运行，但用户界面只能从内建的 %[1" +
-	"]s 小组的桌面访问。\x02AmneziaWG 系统托盘图标在30秒后没有出现。\x02、\x02 \x02关于 AmneziaWG\x02A" +
+	"否在WOW64下运行: %[1]v\x02您必须在此计算机上使用原生版本的 WireGate。\x02无法打开当前进程令牌: %[1]v" +
+	"\x02WireGate 可能只能被内建的 %[1]s 小组中的成员使用。\x02WireGate 正在运行，但用户界面只能从内建的 %[1" +
+	"]s 小组的桌面访问。\x02WireGate 系统托盘图标在30秒后没有出现。\x02、\x02 \x02关于 WireGate\x02A" +
 	"mneziaWG logo 图片\x02关闭\x02状态:\x02断开 (&D)\x02连接 (&A)\x02公钥:\x02监听端口:\x02M" +
 	"TU:\x02地址:\x02DNS 服务器:\x02脚本:\x02预共享密钥:\x02允许的 IP:\x02对端:\x02连接保活间隔:\x02" +
 	"上次握手时间:\x02流量:\x02连接前\x02连接后\x02断开前\x02断开后\x02已禁用（依管理策略）\x02已启用\x02接收 " +
@@ -4938,11 +4938,11 @@ const zh_CNData string = "" + // Size: 4147 bytes
 	"s」已存在。\x0a\x0a您确定要覆盖它吗？\x02已连接\x02正在连接\x02已断开\x02正在断开\x02未知\x02日志\x02复制 " +
 	"(&C)\x02全选 (&A)\x02导出… (&S)\x02时间\x02日志消息\x02文本文件 (*.txt)|*.txt|所有文件 (*." +
 	"*)|*.*\x02导出日志\x02隧道错误\x02%[1]s\x0a\x0a更多信息请查看日志。\x02%[1]s (已过时)\x02Amne" +
-	"ziaWG 检测错误\x02无法等待 AmneziaWG 窗口出现: %[1]v\x02AmneziaWG: 已断开\x02状态: 未知\x02" +
+	"ziaWG 检测错误\x02无法等待 WireGate 窗口出现: %[1]v\x02WireGate: 已断开\x02状态: 未知\x02" +
 	"地址: 无\x02管理隧道… (&M)\x02从文件导入隧道… (&I)\x02退出 (&E)\x02隧道 (&T)\x02AmneziaW" +
-	"G 已连接\x02隧道「%[1]s」已连接。\x02AmneziaWG 已断开\x02隧道「%[1]s」已断开连接。\x02AmneziaWG " +
-	"隧道错误\x02AmneziaWG: %[1]s\x02状态: %[1]s\x02地址: %[1]s\x02发现更新！\x02Amnezia" +
-	"WG 更新\x02新的 AmneziaWG 版本发布了。强烈建议您现在安装。\x02隧道\x02编辑 (&E)\x02新建空隧道… (&E)" +
+	"G 已连接\x02隧道「%[1]s」已连接。\x02WireGate 已断开\x02隧道「%[1]s」已断开连接。\x02WireGate " +
+	"隧道错误\x02WireGate: %[1]s\x02状态: %[1]s\x02地址: %[1]s\x02发现更新！\x02Amnezia" +
+	"WG 更新\x02新的 WireGate 版本发布了。强烈建议您现在安装。\x02隧道\x02编辑 (&E)\x02新建空隧道… (&E)" +
 	"\x02新建隧道\x02删除所选隧道\x02导出所有隧道 (ZIP 压缩包)\x02切换连接状态 (&T)\x02导出所有隧道 (ZIP 压缩包" +
 	")… (&Z)\x02编辑所选隧道… (&E)\x02删除所选隧道 (&R)\x02未找到配置文件\x02无法导入配置: %[1]v\x02无法" +
 	"列出现有隧道: %[1]v\x02另一个同名的隧道「%[1]s」已存在\x02无法导入配置: %[1]v\x02导入隧道\x14\x01" +
@@ -4952,8 +4952,8 @@ const zh_CNData string = "" + // Size: 4147 bytes
 	"除隧道「%[1]s」吗？\x02%[1]s此操作无法撤销。\x02无法删除隧道\x02无法删除隧道: %[1]s\x02无法删除隧道\x14" +
 	"\x01\x81\x01\x00\x00 \x02无法删除 %[1]d 个隧道。\x02配置文件 (*.zip, *.conf)|*.zip;*" +
 	".conf|所有文件 (*.*)|*.*\x02从文件导入隧道\x02配置文件 (*.zip)|*.zip\x02导出配置文件 (ZIP 压缩包" +
-	")\x02%[1]s (未签名版本，禁用自动更新)\x02退出 AmneziaWG 时出错\x02无法停止服务: %[1]v。您可能需要在服务管" +
-	"理器中手动停止 AmneziaWG 服务。\x02发现新版 AmneziaWG。强烈建议您现在安装。\x02状态: 等待用户\x02立即更新" +
+	")\x02%[1]s (未签名版本，禁用自动更新)\x02退出 WireGate 时出错\x02无法停止服务: %[1]v。您可能需要在服务管" +
+	"理器中手动停止 WireGate 服务。\x02发现新版 WireGate。强烈建议您现在安装。\x02状态: 等待用户\x02立即更新" +
 	"\x02状态: 等待更新服务\x02错误: %[1]v。请重试。\x02状态: 完成！\x02刚刚\x02系统时间倒退了！\x14\x01" +
 	"\x81\x01\x00\x00\x0a\x02%[1]d 年\x14\x01\x81\x01\x00\x00\x0a\x02%[1]d 天" +
 	"\x14\x01\x81\x01\x00\x00\x0d\x02%[1]d 小时\x14\x01\x81\x01\x00\x00\x0d\x02" +
@@ -4964,7 +4964,7 @@ const zh_CNData string = "" + // Size: 4147 bytes
 	"接保活间隔无效\x02无效的密钥：%[1]v\x02解码后的密钥长度必须为32字节\x02数值必须介于 0 至 2^64-1 之间: %[1" +
 	"]v\x02存在多余的逗号\x02隧道名称无效\x02行必须出现在段落中\x02配置项必须要有一个等于号\x02必须有一个值\x02[Inter" +
 	"face] 段落中的该键无效\x02[Peer] 段落中的该键无效\x02接口必须有一个私钥\x02[未指定]\x02每个节点都必须指定公钥" +
-	"\x02获取配置时出错\x02接口段落的键无效\x02协议版本必须为 1\x02节点段落的键无效\x02关于 AmneziaWG… (&A)"
+	"\x02获取配置时出错\x02接口段落的键无效\x02协议版本必须为 1\x02节点段落的键无效\x02关于 WireGate… (&A)"
 
 var zh_TWIndex = []uint32{ // 304 elements
 	// Entry 0 - 1F
@@ -5057,10 +5057,10 @@ var zh_TWIndex = []uint32{ // 304 elements
 
 const zh_TWData string = "" + // Size: 4317 bytes
 	"\x02錯誤\x02(無參數)：提升權限並安裝管理服務\x02使用方法： %[1]s [\x0a%[2]s]\x02命令列選項\x02無法確定該" +
-	"處理程序是否在 WOW64 下執行： %[1]v\x02您必須在此電腦上執行原生版本的 AmneziaWG。\x02無法開啓目前處理程序的權" +
-	"杖： %[1]v\x02AmneziaWG 可能只能被內建的「%[1]s」群組成員使用。\x02AmneziaWG 正在執行，但 UI 只能" +
-	"從內建的內建的「%[1]s」群組成員的桌面存取。\x02AmneziaWG 的工作列圖示在 30 秒後並沒有顯示。\x02、\x02 " +
-	"\x02關於 AmneziaWG\x02AmneziaWG logo 圖片\x02關閉\x02狀態\x02中斷連線 (&D)\x02連線 (&A" +
+	"處理程序是否在 WOW64 下執行： %[1]v\x02您必須在此電腦上執行原生版本的 WireGate。\x02無法開啓目前處理程序的權" +
+	"杖： %[1]v\x02WireGate 可能只能被內建的「%[1]s」群組成員使用。\x02WireGate 正在執行，但 UI 只能" +
+	"從內建的內建的「%[1]s」群組成員的桌面存取。\x02WireGate 的工作列圖示在 30 秒後並沒有顯示。\x02、\x02 " +
+	"\x02關於 WireGate\x02WireGate logo 圖片\x02關閉\x02狀態\x02中斷連線 (&D)\x02連線 (&A" +
 	")\x02公鑰\x02監聽埠\x02MTU\x02位址\x02DNS 伺服器\x02指令碼：\x02預交換金鑰\x02允許的位址\x02連接點" +
 	"\x02Keepalive 間隔\x02最後交握時間\x02流量\x02連接前\x02連接後\x02斷線前\x02斷線後\x02已關閉, 隨著策" +
 	"略\x02已啓用\x02已收到 %[1]s；已傳送 %[2]s\x02無法確認隧道狀態\x02無法連接隧道\x02無法斷開隧道連線\x02[" +
@@ -5070,12 +5070,12 @@ const zh_TWData string = "" + // Size: 4317 bytes
 	"新的隧道設定\x02檔案寫入失敗\x02檔案已存在： %[1]s\x0a\x0a您確定要覆蓋嗎？\x02已連線\x02正在連線…\x02已中" +
 	"斷連線\x02正在中斷…\x02未知\x02日誌\x02複製 (&C)\x02全選 (&A)\x02匯出… (&S)\x02時間\x02日誌" +
 	"訊息\x02純文字 (*.txt)|*.txt|所有檔案 (*.*)|*.*\x02匯出日誌…\x02隧道錯誤\x02%[1]s\x0a" +
-	"\x0a如需更多資訊，請查看日誌。\x02%[1]s（已過時）\x02偵測 AmneziaWG 錯誤\x02無法等待 AmneziaWG 視窗開" +
-	"啓： %[1]v\x02AmneziaWG - 未連線\x02[狀態] 未知\x02[位址] 無\x02管理隧道 (&M)\x02從檔案匯入" +
-	"… (&I)\x02離開 (&X)\x02隧道(&T)\x02AmneziaWG 已連線\x02已連線至隧道 - %[1]s\x02Amne" +
-	"ziaWG 已中斷連線\x02已中斷與隧道的連線 - %[1]s\x02AmneziaWG 隧道錯誤\x02AmneziaWG - %[1]s" +
-	"\x02[狀態] %[1]s\x02位址: %[1]s\x02更新\x02AmneziaWG 更新\x02更新的 AmneziaWG 已經為您準" +
-	"備好了。\x0a強烈建議您立即更新 AmneziaWG。\x02隧道\x02編輯 (&E)\x02新增隧道精靈 (&E)\x02新增隧道" +
+	"\x0a如需更多資訊，請查看日誌。\x02%[1]s（已過時）\x02偵測 WireGate 錯誤\x02無法等待 WireGate 視窗開" +
+	"啓： %[1]v\x02WireGate - 未連線\x02[狀態] 未知\x02[位址] 無\x02管理隧道 (&M)\x02從檔案匯入" +
+	"… (&I)\x02離開 (&X)\x02隧道(&T)\x02WireGate 已連線\x02已連線至隧道 - %[1]s\x02Amne" +
+	"ziaWG 已中斷連線\x02已中斷與隧道的連線 - %[1]s\x02WireGate 隧道錯誤\x02WireGate - %[1]s" +
+	"\x02[狀態] %[1]s\x02位址: %[1]s\x02更新\x02WireGate 更新\x02更新的 WireGate 已經為您準" +
+	"備好了。\x0a強烈建議您立即更新 WireGate。\x02隧道\x02編輯 (&E)\x02新增隧道精靈 (&E)\x02新增隧道" +
 	"\x02刪除選取隧道\x02匯出所有隧道（ZIP 格式）\x02切換連線狀態 (&T)\x02匯出所有隧道至 &ZIP 壓縮檔\x02編輯選取隧" +
 	"道 (&S)\x02刪除已選取隧道 (&R)\x02找不到設定檔\x02無法匯入設定： %[1]v\x02無法列出隧道： %[1]v\x02" +
 	"已有另一個同名的隧道「%[1]s」\x02無法匯入設定： %[1]v\x02已匯入隧道\x14\x01\x81\x01\x00\x00" +
@@ -5085,8 +5085,8 @@ const zh_TWData string = "" + // Size: 4317 bytes
 	"%[1]s\x0a\x0a您將無法復原此操作。\x02無法刪除隧道\x02無法刪除隧道： %[1]s\x02無法刪除隧道\x14\x01\x81" +
 	"\x01\x00\x00\x1d\x02無法刪除 %[1]d 個隧道\x02隧道設定檔 (*.zip, *.conf)|*.zip;*.conf" +
 	"|所有檔案 (*.*)|*.*\x02從檔案中匯入隧道…\x02隧道設定檔 (*.zip)|*.zip\x02匯出隧道設定至…\x02%[1]s" +
-	"（未簽署發行版本，無法自動更新）\x02離開 AmneziaWG 失敗\x02無法結束服務： %[1]v。\x0a您可能需要手動從服務管理中" +
-	"結束 AmneziaWG 服務。\x02更新的 AmneziaWG 已經為您準備好了。\x0a強烈建議您立即進行更新。\x02狀態：等待使用" +
+	"（未簽署發行版本，無法自動更新）\x02離開 WireGate 失敗\x02無法結束服務： %[1]v。\x0a您可能需要手動從服務管理中" +
+	"結束 WireGate 服務。\x02更新的 WireGate 已經為您準備好了。\x0a強烈建議您立即進行更新。\x02狀態：等待使用" +
 	"者\x02立即更新\x02狀態：等待更新服務\x02錯誤： %[1]v。請稍後再試。\x02狀態：已完成！\x02就是現在\x02系統時鐘倒" +
 	"退了！\x14\x01\x81\x01\x00\x00\x0a\x02%[1]d 年\x14\x01\x81\x01\x00\x00\x0a" +
 	"\x02%[1]d 天\x14\x01\x81\x01\x00\x00\x0d\x02%[1]d 小時\x14\x01\x81\x01\x00" +
@@ -5098,6 +5098,6 @@ const zh_TWData string = "" + // Size: 4317 bytes
 	" bytes\x02數值必須介於 0 到 2^64-1： %[1]v\x02一行中有兩個逗號\x02隧道名稱無效\x02行必須出現在段落中" +
 	"\x02設定的項目必須要有一個等號\x02必須要有一個值\x02[Interface] 中有無效選項\x02[Peer] 中有無效選項\x02I" +
 	"nterface 中必須要有一把私鑰\x02[未指定]\x02每個 Peer 都必須要有公鑰\x02讀取設定時發生錯誤\x02Interface" +
-	" 中的金鑰無效\x02協定版本必須為 1\x02Peer 中的金鑰無效\x02關於 AmneziaWG (&A)"
+	" 中的金鑰無效\x02協定版本必須為 1\x02Peer 中的金鑰無效\x02關於 WireGate (&A)"
 
 	// Total table size 201043 bytes (196KiB); checksum: 99D565D6
