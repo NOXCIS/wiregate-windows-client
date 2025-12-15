@@ -29,6 +29,22 @@ type EditDialog struct {
 	config                          conf.Config
 	lastPrivateKey                  string
 	blockUntunneledTraficCheckGuard bool
+	
+	// TLS Pipe controls (for first peer)
+	tlsPipeGroup                    *walk.GroupBox
+	tlsPipeEnabledCB               *walk.CheckBox
+	tlsPipePasswordEdit            *walk.LineEdit
+	tlsPipeServerNameEdit          *walk.LineEdit
+	tlsPipeSecureCB                *walk.CheckBox
+	tlsPipeProxyEdit               *walk.LineEdit
+	tlsPipeFingerprintCombo         *walk.ComboBox
+	
+	// Split Tunneling controls (for interface)
+	splitTunnelingGroup            *walk.GroupBox
+	splitTunnelingModeCombo         *walk.ComboBox
+	splitTunnelingSitesEdit        *walk.LineEdit
+	
+	updatingFromText               bool
 }
 
 func runEditDialog(owner walk.Form, tunnel *manager.Tunnel) *conf.Config {
@@ -113,16 +129,125 @@ func newEditDialog(owner walk.Form, tunnel *manager.Tunnel) (*EditDialog, error)
 	dlg.pubkeyEdit.SetText(l18n.Sprintf("(unknown)"))
 	dlg.pubkeyEdit.Accessibility().SetRole(walk.AccRoleStatictext)
 
+	// Create TLS Pipe controls group
+	if dlg.tlsPipeGroup, err = walk.NewGroupBox(dlg); err != nil {
+		return nil, err
+	}
+	dlg.tlsPipeGroup.SetTitle(l18n.Sprintf("TLS Pipe (UdpTlsPipe)"))
+	tlsPipeLayout := walk.NewGridLayout()
+	tlsPipeLayout.SetSpacing(6)
+	tlsPipeLayout.SetMargins(walk.Margins{10, 10, 10, 10})
+	dlg.tlsPipeGroup.SetLayout(tlsPipeLayout)
+	layout.SetRange(dlg.tlsPipeGroup, walk.Rectangle{0, 2, 2, 1})
+	
+	row := 0
+	tlsEnabledLabel, _ := walk.NewTextLabel(dlg.tlsPipeGroup)
+	tlsEnabledLabel.SetText(l18n.Sprintf("&Enabled:"))
+	tlsPipeLayout.SetRange(tlsEnabledLabel, walk.Rectangle{0, row, 1, 1})
+	if dlg.tlsPipeEnabledCB, err = walk.NewCheckBox(dlg.tlsPipeGroup); err != nil {
+		return nil, err
+	}
+	tlsPipeLayout.SetRange(dlg.tlsPipeEnabledCB, walk.Rectangle{1, row, 1, 1})
+	dlg.tlsPipeEnabledCB.CheckedChanged().Attach(dlg.onTlsPipeEnabledChanged)
+	row++
+	
+	tlsPasswordLabel, _ := walk.NewTextLabel(dlg.tlsPipeGroup)
+	tlsPasswordLabel.SetText(l18n.Sprintf("&Password:"))
+	tlsPipeLayout.SetRange(tlsPasswordLabel, walk.Rectangle{0, row, 1, 1})
+	if dlg.tlsPipePasswordEdit, err = walk.NewLineEdit(dlg.tlsPipeGroup); err != nil {
+		return nil, err
+	}
+	tlsPipeLayout.SetRange(dlg.tlsPipePasswordEdit, walk.Rectangle{1, row, 1, 1})
+	dlg.tlsPipePasswordEdit.SetPasswordMode(true)
+	dlg.tlsPipePasswordEdit.TextChanged().Attach(dlg.onTlsPipeFieldChanged)
+	row++
+	
+	tlsServerNameLabel, _ := walk.NewTextLabel(dlg.tlsPipeGroup)
+	tlsServerNameLabel.SetText(l18n.Sprintf("TLS &Server Name:"))
+	tlsPipeLayout.SetRange(tlsServerNameLabel, walk.Rectangle{0, row, 1, 1})
+	if dlg.tlsPipeServerNameEdit, err = walk.NewLineEdit(dlg.tlsPipeGroup); err != nil {
+		return nil, err
+	}
+	tlsPipeLayout.SetRange(dlg.tlsPipeServerNameEdit, walk.Rectangle{1, row, 1, 1})
+	dlg.tlsPipeServerNameEdit.TextChanged().Attach(dlg.onTlsPipeFieldChanged)
+	row++
+	
+	tlsSecureLabel, _ := walk.NewTextLabel(dlg.tlsPipeGroup)
+	tlsSecureLabel.SetText(l18n.Sprintf("&Secure (verify certificate):"))
+	tlsPipeLayout.SetRange(tlsSecureLabel, walk.Rectangle{0, row, 1, 1})
+	if dlg.tlsPipeSecureCB, err = walk.NewCheckBox(dlg.tlsPipeGroup); err != nil {
+		return nil, err
+	}
+	tlsPipeLayout.SetRange(dlg.tlsPipeSecureCB, walk.Rectangle{1, row, 1, 1})
+	dlg.tlsPipeSecureCB.CheckedChanged().Attach(dlg.onTlsPipeFieldChanged)
+	row++
+	
+	tlsProxyLabel, _ := walk.NewTextLabel(dlg.tlsPipeGroup)
+	tlsProxyLabel.SetText(l18n.Sprintf("&Proxy URL:"))
+	tlsPipeLayout.SetRange(tlsProxyLabel, walk.Rectangle{0, row, 1, 1})
+	if dlg.tlsPipeProxyEdit, err = walk.NewLineEdit(dlg.tlsPipeGroup); err != nil {
+		return nil, err
+	}
+	tlsPipeLayout.SetRange(dlg.tlsPipeProxyEdit, walk.Rectangle{1, row, 1, 1})
+	dlg.tlsPipeProxyEdit.SetToolTipText(l18n.Sprintf("e.g., socks5://user:pass@host:port"))
+	dlg.tlsPipeProxyEdit.TextChanged().Attach(dlg.onTlsPipeFieldChanged)
+	row++
+	
+	tlsFingerprintLabel, _ := walk.NewTextLabel(dlg.tlsPipeGroup)
+	tlsFingerprintLabel.SetText(l18n.Sprintf("Fingerprint &Profile:"))
+	tlsPipeLayout.SetRange(tlsFingerprintLabel, walk.Rectangle{0, row, 1, 1})
+	if dlg.tlsPipeFingerprintCombo, err = walk.NewComboBox(dlg.tlsPipeGroup); err != nil {
+		return nil, err
+	}
+	tlsPipeLayout.SetRange(dlg.tlsPipeFingerprintCombo, walk.Rectangle{1, row, 1, 1})
+	dlg.tlsPipeFingerprintCombo.SetModel([]string{"", "chrome", "firefox", "safari", "edge", "okhttp", "ios", "randomized"})
+	dlg.tlsPipeFingerprintCombo.TextChanged().Attach(dlg.onTlsPipeFieldChanged)
+	
+	// Create Split Tunneling controls group
+	if dlg.splitTunnelingGroup, err = walk.NewGroupBox(dlg); err != nil {
+		return nil, err
+	}
+	dlg.splitTunnelingGroup.SetTitle(l18n.Sprintf("Split Tunneling"))
+	splitLayout := walk.NewGridLayout()
+	splitLayout.SetSpacing(6)
+	splitLayout.SetMargins(walk.Margins{10, 10, 10, 10})
+	dlg.splitTunnelingGroup.SetLayout(splitLayout)
+	layout.SetRange(dlg.splitTunnelingGroup, walk.Rectangle{0, 3, 2, 1})
+	
+	splitModeLabel, _ := walk.NewTextLabel(dlg.splitTunnelingGroup)
+	splitModeLabel.SetText(l18n.Sprintf("&Mode:"))
+	splitLayout.SetRange(splitModeLabel, walk.Rectangle{0, 0, 1, 1})
+	if dlg.splitTunnelingModeCombo, err = walk.NewComboBox(dlg.splitTunnelingGroup); err != nil {
+		return nil, err
+	}
+	splitLayout.SetRange(dlg.splitTunnelingModeCombo, walk.Rectangle{1, 0, 1, 1})
+	dlg.splitTunnelingModeCombo.SetModel([]string{
+		l18n.Sprintf("All sites (default)"),
+		l18n.Sprintf("Only forward specified sites"),
+		l18n.Sprintf("All except specified sites"),
+	})
+	dlg.splitTunnelingModeCombo.CurrentIndexChanged().Attach(dlg.onSplitTunnelingModeChanged)
+	
+	splitSitesLabel, _ := walk.NewTextLabel(dlg.splitTunnelingGroup)
+	splitSitesLabel.SetText(l18n.Sprintf("&Sites:"))
+	splitLayout.SetRange(splitSitesLabel, walk.Rectangle{0, 1, 1, 1})
+	if dlg.splitTunnelingSitesEdit, err = walk.NewLineEdit(dlg.splitTunnelingGroup); err != nil {
+		return nil, err
+	}
+	splitLayout.SetRange(dlg.splitTunnelingSitesEdit, walk.Rectangle{1, 1, 1, 1})
+	dlg.splitTunnelingSitesEdit.SetToolTipText(l18n.Sprintf("Comma-separated list of IP addresses or domains"))
+	dlg.splitTunnelingSitesEdit.TextChanged().Attach(dlg.onSplitTunnelingSitesChanged)
+	
 	if dlg.syntaxEdit, err = syntax.NewSyntaxEdit(dlg); err != nil {
 		return nil, err
 	}
-	layout.SetRange(dlg.syntaxEdit, walk.Rectangle{0, 2, 2, 1})
+	layout.SetRange(dlg.syntaxEdit, walk.Rectangle{0, 4, 2, 1})
 
 	buttonsContainer, err := walk.NewComposite(dlg)
 	if err != nil {
 		return nil, err
 	}
-	layout.SetRange(buttonsContainer, walk.Rectangle{0, 3, 2, 1})
+	layout.SetRange(buttonsContainer, walk.Rectangle{0, 5, 2, 1})
 	buttonsContainer.SetLayout(walk.NewHBoxLayout())
 	buttonsContainer.Layout().SetMargins(walk.Margins{})
 
@@ -156,6 +281,9 @@ func newEditDialog(owner walk.Form, tunnel *manager.Tunnel) (*EditDialog, error)
 	dlg.syntaxEdit.PrivateKeyChanged().Attach(dlg.onSyntaxEditPrivateKeyChanged)
 	dlg.syntaxEdit.BlockUntunneledTrafficStateChanged().Attach(dlg.onBlockUntunneledTrafficStateChanged)
 	dlg.syntaxEdit.SetText(dlg.config.ToWgQuick())
+	
+	// Parse initial config and populate UI controls
+	dlg.updateControlsFromConfig()
 
 	// Insert a dummy label immediately preceding syntaxEdit to have screen readers read it.
 	// Otherwise they fallback to "RichEdit Control".
@@ -315,6 +443,10 @@ func (dlg *EditDialog) onSyntaxEditPrivateKeyChanged(privateKey string) {
 
 func (dlg *EditDialog) onSyntaxEditTextChanged() {
 	dlg.saveButton.SetEnabled(dlg.syntaxEdit.HaveErrors())
+	// Update controls from text when user edits directly
+	if !dlg.updatingFromText {
+		dlg.updateControlsFromConfig()
+	}
 }
 
 func (dlg *EditDialog) onSaveButtonClicked() {
@@ -343,6 +475,9 @@ func (dlg *EditDialog) onSaveButtonClicked() {
 		}
 	}
 
+	// Update config text from UI controls before parsing
+	dlg.updateConfigTextFromControls()
+
 	cfg, err := conf.FromWgQuick(dlg.syntaxEdit.Text(), newName)
 	if err != nil {
 		showErrorCustom(dlg, l18n.Sprintf("Unable to create new configuration"), err.Error())
@@ -351,4 +486,167 @@ func (dlg *EditDialog) onSaveButtonClicked() {
 
 	dlg.config = *cfg
 	dlg.Accept()
+}
+
+func (dlg *EditDialog) updateControlsFromConfig() {
+	dlg.updatingFromText = true
+	defer func() { dlg.updatingFromText = false }()
+	
+	cfg, err := conf.FromWgQuick(dlg.syntaxEdit.Text(), "temporary")
+	if err != nil {
+		// If parsing fails, clear controls
+		dlg.tlsPipeEnabledCB.SetChecked(false)
+		dlg.tlsPipePasswordEdit.SetText("")
+		dlg.tlsPipeServerNameEdit.SetText("")
+		dlg.tlsPipeSecureCB.SetChecked(false)
+		dlg.tlsPipeProxyEdit.SetText("")
+		dlg.tlsPipeFingerprintCombo.SetCurrentIndex(0)
+		dlg.updateTlsPipeControlsVisibility(false)
+		dlg.splitTunnelingModeCombo.SetCurrentIndex(0)
+		dlg.splitTunnelingSitesEdit.SetText("")
+		return
+	}
+	
+	// Update TLS Pipe controls from first peer
+	if len(cfg.Peers) > 0 && cfg.Peers[0].UdpTlsPipe != nil && cfg.Peers[0].UdpTlsPipe.Enabled {
+		udpTlsPipe := cfg.Peers[0].UdpTlsPipe
+		dlg.tlsPipeEnabledCB.SetChecked(true)
+		dlg.tlsPipePasswordEdit.SetText(udpTlsPipe.Password)
+		dlg.tlsPipeServerNameEdit.SetText(udpTlsPipe.TlsServerName)
+		dlg.tlsPipeSecureCB.SetChecked(udpTlsPipe.Secure)
+		dlg.tlsPipeProxyEdit.SetText(udpTlsPipe.Proxy)
+		if udpTlsPipe.FingerprintProfile != "" {
+			dlg.tlsPipeFingerprintCombo.SetText(udpTlsPipe.FingerprintProfile)
+		} else {
+			dlg.tlsPipeFingerprintCombo.SetCurrentIndex(0)
+		}
+		dlg.updateTlsPipeControlsVisibility(true)
+	} else {
+		dlg.tlsPipeEnabledCB.SetChecked(false)
+		dlg.tlsPipePasswordEdit.SetText("")
+		dlg.tlsPipeServerNameEdit.SetText("")
+		dlg.tlsPipeSecureCB.SetChecked(false)
+		dlg.tlsPipeProxyEdit.SetText("")
+		dlg.tlsPipeFingerprintCombo.SetCurrentIndex(0)
+		dlg.updateTlsPipeControlsVisibility(false)
+	}
+	
+	// Update Split Tunneling controls from interface
+	if cfg.Interface.SplitTunneling != nil && cfg.Interface.SplitTunneling.Mode != conf.SplitModeAllSites {
+		splitTunneling := cfg.Interface.SplitTunneling
+		switch splitTunneling.Mode {
+		case conf.SplitModeAllSites:
+			dlg.splitTunnelingModeCombo.SetCurrentIndex(0)
+		case conf.SplitModeOnlyForwardSites:
+			dlg.splitTunnelingModeCombo.SetCurrentIndex(1)
+		case conf.SplitModeAllExceptSites:
+			dlg.splitTunnelingModeCombo.SetCurrentIndex(2)
+		}
+		dlg.splitTunnelingSitesEdit.SetText(strings.Join(splitTunneling.Sites, ", "))
+	} else {
+		dlg.splitTunnelingModeCombo.SetCurrentIndex(0)
+		dlg.splitTunnelingSitesEdit.SetText("")
+	}
+}
+
+func (dlg *EditDialog) updateConfigTextFromControls() {
+	cfg, err := conf.FromWgQuick(dlg.syntaxEdit.Text(), "temporary")
+	if err != nil {
+		// If parsing fails, we can't update - user needs to fix the text first
+		return
+	}
+	
+	// Update TLS Pipe config for first peer (create peer if needed)
+	if dlg.tlsPipeEnabledCB.Checked() {
+		if len(cfg.Peers) == 0 {
+			// Need at least one peer for TLS pipe
+			return
+		}
+		if cfg.Peers[0].UdpTlsPipe == nil {
+			cfg.Peers[0].UdpTlsPipe = &conf.UdpTlsPipeConfig{}
+		}
+		cfg.Peers[0].UdpTlsPipe.Enabled = true
+		cfg.Peers[0].UdpTlsPipe.Password = dlg.tlsPipePasswordEdit.Text()
+		cfg.Peers[0].UdpTlsPipe.TlsServerName = dlg.tlsPipeServerNameEdit.Text()
+		cfg.Peers[0].UdpTlsPipe.Secure = dlg.tlsPipeSecureCB.Checked()
+		cfg.Peers[0].UdpTlsPipe.Proxy = dlg.tlsPipeProxyEdit.Text()
+		fingerprintText := dlg.tlsPipeFingerprintCombo.Text()
+		if fingerprintText != "" {
+			cfg.Peers[0].UdpTlsPipe.FingerprintProfile = fingerprintText
+		} else {
+			cfg.Peers[0].UdpTlsPipe.FingerprintProfile = ""
+		}
+	} else if len(cfg.Peers) > 0 {
+		cfg.Peers[0].UdpTlsPipe = nil
+	}
+	
+	// Update Split Tunneling config for interface
+	modeIndex := dlg.splitTunnelingModeCombo.CurrentIndex()
+	sitesText := strings.TrimSpace(dlg.splitTunnelingSitesEdit.Text())
+	
+	if modeIndex == 0 && sitesText == "" {
+		cfg.Interface.SplitTunneling = nil
+	} else {
+		if cfg.Interface.SplitTunneling == nil {
+			cfg.Interface.SplitTunneling = &conf.SplitTunnelingConfig{}
+		}
+		switch modeIndex {
+		case 0:
+			cfg.Interface.SplitTunneling.Mode = conf.SplitModeAllSites
+		case 1:
+			cfg.Interface.SplitTunneling.Mode = conf.SplitModeOnlyForwardSites
+		case 2:
+			cfg.Interface.SplitTunneling.Mode = conf.SplitModeAllExceptSites
+		}
+		if sitesText != "" {
+			sites := strings.Split(sitesText, ",")
+			cfg.Interface.SplitTunneling.Sites = make([]string, 0, len(sites))
+			for _, site := range sites {
+				site = strings.TrimSpace(site)
+				if site != "" {
+					cfg.Interface.SplitTunneling.Sites = append(cfg.Interface.SplitTunneling.Sites, site)
+				}
+			}
+		} else {
+			cfg.Interface.SplitTunneling.Sites = nil
+		}
+	}
+	
+	dlg.updatingFromText = true
+	dlg.syntaxEdit.SetText(cfg.ToWgQuick())
+	dlg.updatingFromText = false
+}
+
+func (dlg *EditDialog) updateTlsPipeControlsVisibility(enabled bool) {
+	dlg.tlsPipePasswordEdit.SetEnabled(enabled)
+	dlg.tlsPipeServerNameEdit.SetEnabled(enabled)
+	dlg.tlsPipeSecureCB.SetEnabled(enabled)
+	dlg.tlsPipeProxyEdit.SetEnabled(enabled)
+	dlg.tlsPipeFingerprintCombo.SetEnabled(enabled)
+}
+
+func (dlg *EditDialog) onTlsPipeEnabledChanged() {
+	enabled := dlg.tlsPipeEnabledCB.Checked()
+	dlg.updateTlsPipeControlsVisibility(enabled)
+	if !dlg.updatingFromText {
+		dlg.updateConfigTextFromControls()
+	}
+}
+
+func (dlg *EditDialog) onTlsPipeFieldChanged() {
+	if !dlg.updatingFromText {
+		dlg.updateConfigTextFromControls()
+	}
+}
+
+func (dlg *EditDialog) onSplitTunnelingModeChanged() {
+	if !dlg.updatingFromText {
+		dlg.updateConfigTextFromControls()
+	}
+}
+
+func (dlg *EditDialog) onSplitTunnelingSitesChanged() {
+	if !dlg.updatingFromText {
+		dlg.updateConfigTextFromControls()
+	}
 }

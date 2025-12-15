@@ -453,7 +453,7 @@ func (pv *peerView) widgetsLines() []widgetsLine {
 	return pv.lines
 }
 
-func (pv *peerView) apply(c *conf.Peer) {
+func (pv *peerView) apply(c *conf.Peer, splitTunneling *conf.SplitTunnelingConfig) {
 	if IsAdmin {
 		pv.publicKey.show(c.PublicKey.String())
 	} else {
@@ -514,9 +514,9 @@ func (pv *peerView) apply(c *conf.Peer) {
 	}
 
 	// Split tunneling display
-	if c.SplitTunneling != nil && c.SplitTunneling.Mode != conf.SplitModeAllSites {
+	if splitTunneling != nil && splitTunneling.Mode != conf.SplitModeAllSites {
 		var modeStr string
-		switch c.SplitTunneling.Mode {
+		switch splitTunneling.Mode {
 		case conf.SplitModeOnlyForwardSites:
 			modeStr = l18n.Sprintf("Only forward specified sites")
 		case conf.SplitModeAllExceptSites:
@@ -525,8 +525,8 @@ func (pv *peerView) apply(c *conf.Peer) {
 			modeStr = l18n.Sprintf("Unknown")
 		}
 		pv.splitMode.show(modeStr)
-		if len(c.SplitTunneling.Sites) > 0 {
-			pv.splitSites.show(strings.Join(c.SplitTunneling.Sites, l18n.EnumerationSeparator()))
+		if len(splitTunneling.Sites) > 0 {
+			pv.splitSites.show(strings.Join(splitTunneling.Sites, l18n.EnumerationSeparator()))
 		} else {
 			pv.splitSites.hide()
 		}
@@ -726,35 +726,35 @@ func (cv *ConfView) setTunnel(tunnel *manager.Tunnel, config *conf.Config, state
 			break
 		}
 	}
-	for _, peer := range config.Peers {
-		if pv := cv.peers[peer.PublicKey]; (!someMatch && len(all) > 0) || pv != nil {
-			if pv == nil {
-				pv = all[0]
-				all = all[1:]
-				k, e := conf.NewPrivateKeyFromString(pv.publicKey.text.Text())
-				if e != nil {
+		for _, peer := range config.Peers {
+			if pv := cv.peers[peer.PublicKey]; (!someMatch && len(all) > 0) || pv != nil {
+				if pv == nil {
+					pv = all[0]
+					all = all[1:]
+					k, e := conf.NewPrivateKeyFromString(pv.publicKey.text.Text())
+					if e != nil {
+						continue
+					}
+					delete(cv.peers, *k)
+					cv.peers[peer.PublicKey] = pv
+				}
+				pv.apply(&peer, config.Interface.SplitTunneling)
+				inverse[pv] = false
+			} else {
+				group, err := newPaddedGroupGrid(cv)
+				if err != nil {
 					continue
 				}
-				delete(cv.peers, *k)
+				group.SetTitle(l18n.Sprintf("Peer"))
+				pv, err := newPeerView(group)
+				if err != nil {
+					group.Dispose()
+					continue
+				}
+				pv.apply(&peer, config.Interface.SplitTunneling)
 				cv.peers[peer.PublicKey] = pv
 			}
-			pv.apply(&peer)
-			inverse[pv] = false
-		} else {
-			group, err := newPaddedGroupGrid(cv)
-			if err != nil {
-				continue
-			}
-			group.SetTitle(l18n.Sprintf("Peer"))
-			pv, err := newPeerView(group)
-			if err != nil {
-				group.Dispose()
-				continue
-			}
-			pv.apply(&peer)
-			cv.peers[peer.PublicKey] = pv
 		}
-	}
 	for pv, remove := range inverse {
 		if !remove {
 			continue
