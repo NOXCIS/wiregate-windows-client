@@ -14,7 +14,7 @@ import (
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/registry"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/version"
+	"github.com/NOXCIS/wiregate-windows-client/version"
 )
 
 const (

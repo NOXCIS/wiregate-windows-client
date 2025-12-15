@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/l18n"
-	"github.com/amnezia-vpn/amneziawg-windows-client/ringlogger"
+	"github.com/NOXCIS/wiregate-windows-client/l18n"
+	"github.com/NOXCIS/wiregate-windows-client/ringlogger"
 	"github.com/lxn/walk"
 )
 

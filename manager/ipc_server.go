@@ -19,9 +19,9 @@ import (
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/updater"
-	"github.com/amnezia-vpn/amneziawg-windows/conf"
-	"github.com/amnezia-vpn/amneziawg-windows/services"
+	"github.com/NOXCIS/wiregate-windows-client/updater"
+	"github.com/NOXCIS/wiregate-windows/conf"
+	"github.com/NOXCIS/wiregate-windows/services"
 )
 
 var (

@@ -8,7 +8,7 @@ package l18n
 import (
 	"sync"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/services"
+	"github.com/NOXCIS/wiregate-windows-client/services"
 	"golang.org/x/sys/windows"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"

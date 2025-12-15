@@ -8,8 +8,8 @@ package ui
 import (
 	"github.com/lxn/walk"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/l18n"
-	"github.com/amnezia-vpn/amneziawg-windows-client/manager"
+	"github.com/NOXCIS/wiregate-windows-client/l18n"
+	"github.com/NOXCIS/wiregate-windows-client/manager"
 )
 
 type widthAndState struct {

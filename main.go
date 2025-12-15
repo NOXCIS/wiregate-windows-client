@@ -18,14 +18,14 @@ import (
 
 	"golang.org/x/sys/windows"
 
-	"github.com/amnezia-vpn/amneziawg-windows/tunnel"
+	"github.com/NOXCIS/wiregate-windows/tunnel"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/elevate"
-	"github.com/amnezia-vpn/amneziawg-windows-client/l18n"
-	"github.com/amnezia-vpn/amneziawg-windows-client/manager"
-	"github.com/amnezia-vpn/amneziawg-windows-client/ringlogger"
-	"github.com/amnezia-vpn/amneziawg-windows-client/ui"
-	"github.com/amnezia-vpn/amneziawg-windows-client/updater"
+	"github.com/NOXCIS/wiregate-windows-client/elevate"
+	"github.com/NOXCIS/wiregate-windows-client/l18n"
+	"github.com/NOXCIS/wiregate-windows-client/manager"
+	"github.com/NOXCIS/wiregate-windows-client/ringlogger"
+	"github.com/NOXCIS/wiregate-windows-client/ui"
+	"github.com/NOXCIS/wiregate-windows-client/updater"
 )
 
 func setLogFile() {

@@ -10,9 +10,9 @@ import (
 	"time"
 	_ "unsafe"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/services"
-	"github.com/amnezia-vpn/amneziawg-windows-client/updater"
-	"github.com/amnezia-vpn/amneziawg-windows-client/version"
+	"github.com/NOXCIS/wiregate-windows-client/services"
+	"github.com/NOXCIS/wiregate-windows-client/updater"
+	"github.com/NOXCIS/wiregate-windows-client/version"
 )
 
 //go:linkname fastrandn runtime.fastrandn

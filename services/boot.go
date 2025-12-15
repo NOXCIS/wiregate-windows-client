@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/version"
+	"github.com/NOXCIS/wiregate-windows-client/version"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc"
 )

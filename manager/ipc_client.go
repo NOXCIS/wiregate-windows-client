@@ -11,8 +11,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/updater"
-	"github.com/amnezia-vpn/amneziawg-windows/conf"
+	"github.com/NOXCIS/wiregate-windows-client/updater"
+	"github.com/NOXCIS/wiregate-windows/conf"
 )
 
 type Tunnel struct {

@@ -13,9 +13,9 @@ import (
 	"github.com/lxn/walk"
 	"github.com/lxn/win"
 
-	"github.com/amnezia-vpn/amneziawg-windows-client/l18n"
-	"github.com/amnezia-vpn/amneziawg-windows-client/manager"
-	"github.com/amnezia-vpn/amneziawg-windows/conf"
+	"github.com/NOXCIS/wiregate-windows-client/l18n"
+	"github.com/NOXCIS/wiregate-windows-client/manager"
+	"github.com/NOXCIS/wiregate-windows/conf"
 )
 
 type widgetsLine interface {
